@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-10-11T04:30:51.352Z</updated>
+  <updated>2020-10-11T10:12:17.485Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hexo+Github搭建博客笔记</title>
-    <link href="http://example.com/2020/Hexo/"/>
-    <id>http://example.com/2020/Hexo/</id>
-    <published>2020-10-11T01:55:47.221Z</published>
-    <updated>2020-10-11T04:30:51.352Z</updated>
+    <link href="http://example.com/posts/fb599c35.html"/>
+    <id>http://example.com/posts/fb599c35.html</id>
+    <published>2020-10-11T08:25:41.000Z</published>
+    <updated>2020-10-11T10:12:17.485Z</updated>
     
     
       
@@ -44,10 +44,10 @@
   
   <entry>
     <title>给Git和NPM代理加速</title>
-    <link href="http://example.com/2020/%E7%BB%99Git%E5%92%8CNPM%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F/"/>
-    <id>http://example.com/2020/%E7%BB%99Git%E5%92%8CNPM%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F/</id>
-    <published>2020-10-10T15:06:34.588Z</published>
-    <updated>2020-10-11T05:48:46.666Z</updated>
+    <link href="http://example.com/posts/dde926b0.html"/>
+    <id>http://example.com/posts/dde926b0.html</id>
+    <published>2020-10-11T07:04:24.000Z</published>
+    <updated>2020-10-11T10:12:17.484Z</updated>
     
     
       
@@ -71,10 +71,10 @@
   
   <entry>
     <title>Traffic Monitor (网络流量监控器)</title>
-    <link href="http://example.com/2020/TrafficMonitor/"/>
-    <id>http://example.com/2020/TrafficMonitor/</id>
+    <link href="http://example.com/posts/bac33bc7.html"/>
+    <id>http://example.com/posts/bac33bc7.html</id>
     <published>2020-10-07T08:25:41.000Z</published>
-    <updated>2020-10-11T05:26:17.899Z</updated>
+    <updated>2020-10-11T10:12:17.478Z</updated>
     
     
     <summary type="html">&lt;h4 id=&quot;TrafficMonitor-简介&quot;&gt;&lt;a href=&quot;#TrafficMonitor-简介&quot; class=&quot;headerlink&quot; title=&quot;TrafficMonitor 简介&quot;&gt;&lt;/a&gt;TrafficMonitor 简介&lt;/h4&gt;&lt;p&gt;Traffic Monitor (网络流量监控器) 是一款 Windows 平台上开源免费的实时网速监控软件。它体积小巧而且是绿色软件，能以类似 360 助手的「桌面悬浮窗」的形式，保持在桌面角落或嵌入到任务栏为你显示当前的网络速度(上传/下载速度)，以及显示系统的 CPU 和内存利用率。&lt;/p&gt;</summary>
@@ -94,10 +94,10 @@
   
   <entry>
     <title>无损音乐下载网站资源合集</title>
-    <link href="http://example.com/2020/%E6%97%A0%E6%8D%9F%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86/"/>
-    <id>http://example.com/2020/%E6%97%A0%E6%8D%9F%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86/</id>
+    <link href="http://example.com/posts/ba78084f.html"/>
+    <id>http://example.com/posts/ba78084f.html</id>
     <published>2020-10-03T15:03:11.000Z</published>
-    <updated>2020-10-11T05:28:40.169Z</updated>
+    <updated>2020-10-11T10:12:17.482Z</updated>
     
     
     <summary type="html">&lt;p&gt;音乐陶冶情操，放松心情。但引入版权问题，越来越多的歌曲不能随便听，或者注册VIP ，只有单曲花钱。所以我们为大家整理了各种白嫖的方法，包括网页版及客户端、APP。&lt;/p&gt;</summary>
@@ -115,10 +115,10 @@
   
   <entry>
     <title>SS/SSR/V2Ray/Clash 简介和客户端软件下载</title>
-    <link href="http://example.com/2020/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E7%AE%80%E4%BB%8B/"/>
-    <id>http://example.com/2020/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E7%AE%80%E4%BB%8B/</id>
+    <link href="http://example.com/posts/42e8018b.html"/>
+    <id>http://example.com/posts/42e8018b.html</id>
     <published>2020-09-30T07:04:24.000Z</published>
-    <updated>2020-10-11T05:22:24.356Z</updated>
+    <updated>2020-10-11T10:12:17.483Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;SS-SSR-V2Ray-Clash简介&quot;&gt;&lt;a href=&quot;#SS-SSR-V2Ray-Clash简介&quot; class=&quot;headerlink&quot; title=&quot;SS/SSR/V2Ray/Clash简介&quot;&gt;&lt;/a&gt;SS/SSR/V2Ray/Clash简介&lt;/h2&gt;&lt;ul&gt;
@@ -142,10 +142,10 @@
   
   <entry>
     <title>Ventoy 一个U盘装N个系统</title>
-    <link href="http://example.com/2020/Ventoy/"/>
-    <id>http://example.com/2020/Ventoy/</id>
+    <link href="http://example.com/posts/c4252c66.html"/>
+    <id>http://example.com/posts/c4252c66.html</id>
     <published>2020-08-04T14:36:51.000Z</published>
-    <updated>2020-10-11T05:26:01.602Z</updated>
+    <updated>2020-10-11T10:12:17.477Z</updated>
     
     
     <summary type="html">&lt;p&gt;摘要：Ventoy是一款国人开发的新一代多ISO启动引导程序，这款工具最大的优点就是无需格式化优盘，用户只需要将所需的ISO镜像文件拷贝至优盘中即可在Ventoy界面中选择自己想要的ISO镜像文件。&lt;/p&gt;</summary>
@@ -163,10 +163,10 @@
   
   <entry>
     <title>免费文件存储分享（网盘）服务合集</title>
-    <link href="http://example.com/2020/%E5%85%8D%E8%B4%B9%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8%E5%88%86%E4%BA%AB%EF%BC%88%E7%BD%91%E7%9B%98%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%90%88%E9%9B%86/"/>
-    <id>http://example.com/2020/%E5%85%8D%E8%B4%B9%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8%E5%88%86%E4%BA%AB%EF%BC%88%E7%BD%91%E7%9B%98%EF%BC%89%E6%9C%8D%E5%8A%A1%E5%90%88%E9%9B%86/</id>
+    <link href="http://example.com/posts/ada3a0.html"/>
+    <id>http://example.com/posts/ada3a0.html</id>
     <published>2020-07-30T14:30:50.000Z</published>
-    <updated>2020-10-11T05:27:38.439Z</updated>
+    <updated>2020-10-11T10:12:17.481Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;蓝奏云&quot;&gt;&lt;a href=&quot;#蓝奏云&quot; class=&quot;headerlink&quot; title=&quot;蓝奏云&quot;&gt;&lt;/a&gt;蓝奏云&lt;/h3&gt;&lt;p&gt;老牌免费网盘，下载速度快。也是中国互联网目前分享小文件最多的平台。最大文件限制 100m。&lt;/p&gt;
@@ -187,10 +187,10 @@
   
   <entry>
     <title>Ditto剪贴板增强工具神器</title>
-    <link href="http://example.com/2020/Ditto%E5%89%AA%E8%B4%B4%E6%9D%BF%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7%E7%A5%9E%E5%99%A8/"/>
-    <id>http://example.com/2020/Ditto%E5%89%AA%E8%B4%B4%E6%9D%BF%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7%E7%A5%9E%E5%99%A8/</id>
+    <link href="http://example.com/posts/7bf93f81.html"/>
+    <id>http://example.com/posts/7bf93f81.html</id>
     <published>2020-07-28T13:50:34.000Z</published>
-    <updated>2020-10-11T05:25:02.739Z</updated>
+    <updated>2020-10-11T10:12:17.474Z</updated>
     
     
     <summary type="html">&lt;p&gt;虽然WIN10系统自带的剪切板 &lt;code&gt;Ctrl&lt;/code&gt;+ &lt;code&gt;V&lt;/code&gt;足够日常使用也有剪贴板历史了，但需要重复粘贴内容时效率非常低。不过有了 Ditto 这款神器就不同了。&lt;/p&gt;
@@ -211,10 +211,10 @@
   
   <entry>
     <title>HDMI DP VGA DVI的不同版本都有什么区别？</title>
-    <link href="http://example.com/2020/HDMI%20DP%20VGA%20DVI%E7%9A%84%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%AC%E9%83%BD%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/"/>
-    <id>http://example.com/2020/HDMI%20DP%20VGA%20DVI%E7%9A%84%E4%B8%8D%E5%90%8C%E7%89%88%E6%9C%AC%E9%83%BD%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F/</id>
+    <link href="http://example.com/posts/ab75ba.html"/>
+    <id>http://example.com/posts/ab75ba.html</id>
     <published>2020-07-26T02:26:32.000Z</published>
-    <updated>2020-10-11T05:28:58.763Z</updated>
+    <updated>2020-10-11T10:12:17.477Z</updated>
     
     
     <summary type="html">&lt;p&gt;显示接口区别是什么应该怎么选？HDMI DP VGA DVI的不同版本都有什么区别？如果挑选视频传输线材？&lt;/p&gt;</summary>
@@ -230,10 +230,10 @@
   
   <entry>
     <title>短地址服务汇总</title>
-    <link href="http://example.com/2020/%E7%9F%AD%E5%9C%B0%E5%9D%80%E6%9C%8D%E5%8A%A1%E6%B1%87%E6%80%BB/"/>
-    <id>http://example.com/2020/%E7%9F%AD%E5%9C%B0%E5%9D%80%E6%9C%8D%E5%8A%A1%E6%B1%87%E6%80%BB/</id>
+    <link href="http://example.com/posts/93c9885c.html"/>
+    <id>http://example.com/posts/93c9885c.html</id>
     <published>2020-07-22T12:48:57.000Z</published>
-    <updated>2020-10-11T05:26:38.008Z</updated>
+    <updated>2020-10-11T10:12:17.482Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;好用的短地址服务&quot;&gt;&lt;a href=&quot;#好用的短地址服务&quot; class=&quot;headerlink&quot; title=&quot;好用的短地址服务&quot;&gt;&lt;/a&gt;好用的短地址服务&lt;/h2&gt;&lt;p&gt;下方短地址虽小众但符合：无广告、无劫持、无审核、无需注册等特点。&lt;br&gt;特别是 &lt;strong&gt;t.cn&lt;/strong&gt; 接入了白名单审查，下方短链接更是替代最佳选择。&lt;br&gt;在生成的短链接最后加上 &lt;code&gt;+&lt;/code&gt; 或 &lt;code&gt;*&lt;/code&gt; 即可查看统计，如无统计功能则为 &lt;code&gt;/&lt;/code&gt;&lt;/p&gt;
@@ -250,10 +250,10 @@
   
   <entry>
     <title>机场推荐</title>
-    <link href="http://example.com/2020/hello-world/"/>
-    <id>http://example.com/2020/hello-world/</id>
+    <link href="http://example.com/posts/85e85e2c.html"/>
+    <id>http://example.com/posts/85e85e2c.html</id>
     <published>2020-07-05T02:49:33.000Z</published>
-    <updated>2020-10-11T07:27:08.197Z</updated>
+    <updated>2020-10-13T08:18:10.302Z</updated>
     
     
       
@@ -275,10 +275,10 @@
   
   <entry>
     <title>Adobe 2020 全家桶 Mac/Win 中文/英文破解版</title>
-    <link href="http://example.com/2020/adobe%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
-    <id>http://example.com/2020/adobe%E5%85%A8%E5%AE%B6%E6%A1%B6/</id>
+    <link href="http://example.com/posts/ec0349fb.html"/>
+    <id>http://example.com/posts/ec0349fb.html</id>
     <published>2020-07-05T02:06:37.000Z</published>
-    <updated>2020-10-11T05:25:38.954Z</updated>
+    <updated>2020-10-11T10:12:17.479Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;Adobe-2020全家桶&quot;&gt;&lt;a href=&quot;#Adobe-2020全家桶&quot; class=&quot;headerlink&quot; title=&quot;Adobe 2020全家桶&quot;&gt;&lt;/a&gt;&lt;strong&gt;Adobe 2020全家桶&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;Adobe 2020全家桶俺们求稳更新完毕，为小伙伴们带来丰富的Adobe家族产品，WiN/MAC都有！附大师版和独立安装包！不管你想要制图、剪视频还是做网页等，这里全都能满足你，无需激活，更精简操作流程，方便用户快速上手。内置Adobe Photoshop、Illustrator、Dreamweaver、InDesign、Lightroom、Animate、Audition等2020系列软件均已通过微博大神vposy修改，内置破解激活授权文件，采用独家技术封包优化处理，不集成ACC组件(不自动更新)一次安装永久授权。&lt;/p&gt;</summary>
@@ -300,10 +300,10 @@
   
   <entry>
     <title>免费无限容量谷歌团队云盘获得方法合集</title>
-    <link href="http://example.com/2020/%E5%85%8D%E8%B4%B9%E6%97%A0%E9%99%90%E5%AE%B9%E9%87%8F%E8%B0%B7%E6%AD%8C%E5%9B%A2%E9%98%9F%E4%BA%91%E7%9B%98%E8%8E%B7%E5%BE%97%E6%96%B9%E6%B3%95%E5%90%88%E9%9B%86/"/>
-    <id>http://example.com/2020/%E5%85%8D%E8%B4%B9%E6%97%A0%E9%99%90%E5%AE%B9%E9%87%8F%E8%B0%B7%E6%AD%8C%E5%9B%A2%E9%98%9F%E4%BA%91%E7%9B%98%E8%8E%B7%E5%BE%97%E6%96%B9%E6%B3%95%E5%90%88%E9%9B%86/</id>
+    <link href="http://example.com/posts/f9e8a999.html"/>
+    <id>http://example.com/posts/f9e8a999.html</id>
     <published>2020-06-28T15:43:23.000Z</published>
-    <updated>2020-10-11T05:27:47.505Z</updated>
+    <updated>2020-10-11T10:12:17.480Z</updated>
     
     
     <summary type="html">&lt;p&gt;Google Team Drive是Google提供的网络硬盘服务，是专门为团队设计的，Google Team Drive中的文件属于团队而不是单个用户，团队中的所有人都可以查看团队盘中的文件。&lt;/p&gt;
@@ -322,10 +322,10 @@
   
   <entry>
     <title>二维码生成网址</title>
-    <link href="http://example.com/2020/%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%94%9F%E6%88%90%E7%BD%91%E5%9D%80/"/>
-    <id>http://example.com/2020/%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%94%9F%E6%88%90%E7%BD%91%E5%9D%80/</id>
+    <link href="http://example.com/posts/de512d8e.html"/>
+    <id>http://example.com/posts/de512d8e.html</id>
     <published>2020-06-28T00:49:45.000Z</published>
-    <updated>2020-07-29T11:29:40.542Z</updated>
+    <updated>2020-10-11T10:12:17.481Z</updated>
     
     
     <summary type="html">&lt;p&gt;支持 https 的二维码 api 服务并不多，这里是经过站长精心筛选后剩下的结果。&lt;/p&gt;
@@ -345,10 +345,10 @@
   
   <entry>
     <title>软件APP蓝奏云网盘更新下载合集</title>
-    <link href="http://example.com/2020/%E8%BD%AF%E4%BB%B6APP%E8%93%9D%E5%A5%8F%E4%BA%91%E7%BD%91%E7%9B%98%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E5%90%88%E9%9B%86/"/>
-    <id>http://example.com/2020/%E8%BD%AF%E4%BB%B6APP%E8%93%9D%E5%A5%8F%E4%BA%91%E7%BD%91%E7%9B%98%E6%9B%B4%E6%96%B0%E4%B8%8B%E8%BD%BD%E5%90%88%E9%9B%86/</id>
+    <link href="http://example.com/posts/e40bb0d.html"/>
+    <id>http://example.com/posts/e40bb0d.html</id>
     <published>2020-06-27T00:27:35.000Z</published>
-    <updated>2020-10-11T05:27:10.911Z</updated>
+    <updated>2020-10-11T10:12:17.484Z</updated>
     
     
     <summary type="html">&lt;p&gt;蓝奏云是目前最好用的网盘之一，下载速度很快，不过限制文件最大100M，所以大多是用来分享软件和APP。&lt;/p&gt;</summary>
@@ -366,10 +366,10 @@
   
   <entry>
     <title>网盘合集</title>
-    <link href="http://example.com/2020/%E7%BD%91%E7%9B%98%E5%90%88%E9%9B%86/"/>
-    <id>http://example.com/2020/%E7%BD%91%E7%9B%98%E5%90%88%E9%9B%86/</id>
+    <link href="http://example.com/posts/820b2d9b.html"/>
+    <id>http://example.com/posts/820b2d9b.html</id>
     <published>2020-06-26T01:24:55.000Z</published>
-    <updated>2020-10-11T05:23:30.236Z</updated>
+    <updated>2020-10-11T10:12:17.483Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;长期保存文件网盘&quot;&gt;&lt;a href=&quot;#长期保存文件网盘&quot; class=&quot;headerlink&quot; title=&quot;长期保存文件网盘&quot;&gt;&lt;/a&gt;长期保存文件网盘&lt;/h2&gt;&lt;ul&gt;
@@ -392,10 +392,10 @@
   
   <entry>
     <title>国内外短信接码平台合集</title>
-    <link href="http://example.com/2020/%E5%9B%BD%E5%86%85%E5%A4%96%E7%9F%AD%E4%BF%A1%E6%8E%A5%E7%A0%81%E5%B9%B3%E5%8F%B0%E5%90%88%E9%9B%86/"/>
-    <id>http://example.com/2020/%E5%9B%BD%E5%86%85%E5%A4%96%E7%9F%AD%E4%BF%A1%E6%8E%A5%E7%A0%81%E5%B9%B3%E5%8F%B0%E5%90%88%E9%9B%86/</id>
+    <link href="http://example.com/posts/b9617f03.html"/>
+    <id>http://example.com/posts/b9617f03.html</id>
     <published>2020-06-20T12:22:45.000Z</published>
-    <updated>2020-07-29T11:29:37.072Z</updated>
+    <updated>2020-10-11T10:12:17.482Z</updated>
     
     
     <summary type="html">&lt;p&gt;最后更新于：2020年6月20日20点22分&lt;/p&gt;
