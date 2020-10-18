@@ -1,1589 +1,466 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Adobe 2020 全家桶 Mac/Win 中文/英文破解版</title>
-    <url>/posts/ec0349fb.html</url>
-    <content><![CDATA[<h3 id="Adobe-2020全家桶"><a href="#Adobe-2020全家桶" class="headerlink" title="Adobe 2020全家桶"></a><strong>Adobe 2020全家桶</strong></h3><p>Adobe 2020全家桶俺们求稳更新完毕，为小伙伴们带来丰富的Adobe家族产品，WiN/MAC都有！附大师版和独立安装包！不管你想要制图、剪视频还是做网页等，这里全都能满足你，无需激活，更精简操作流程，方便用户快速上手。内置Adobe Photoshop、Illustrator、Dreamweaver、InDesign、Lightroom、Animate、Audition等2020系列软件均已通过微博大神vposy修改，内置破解激活授权文件，采用独家技术封包优化处理，不集成ACC组件(不自动更新)一次安装永久授权。</p>
-<a id="more"></a>
-
-<p><img src="/images/ADOBE.jpg"></p>
-<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><strong>下载地址</strong></h3><p>进入网盘下载，推荐首选天翼网盘目前不限速下载速度非常快，根据自己点需求选择下载，我们分享的版本有大师版（Master Col）<strong>需要下载所有的压缩包到本地才能解压文件超大，</strong>可实现一键安装版本，无需任何激活操作。也可以选择下载独立安装版（HD SP）更针对性到下载单个软件来安装。</p>
-<p>2020 WIN/MAC 大师版/独立SP版 均会在网盘更新。<br>默认解压密码为：@vposy</p>
-<p>天翼云：<a href="https://cloud.189.cn/t/ErU3YbyAnaAn">https://cloud.189.cn/t/ErU3YbyAnaAn</a> 访问码：s4cz</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo+Github搭建博客笔记</title>
+      <link href="posts/fb599c35.html"/>
+      <url>posts/fb599c35.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h3><blockquote><p>博客 —— 可能这个东西在大多数眼中已经落后于时代甚至压根没听过。在这个信息碎片化、人人信息获取不对等的时代，各个社交平台可以很快速地发送动态、短视频，方便的跟自己的朋友们点赞、互动，而花大量时间金钱和精力去维护一个没人看的博客未免显得有点蠢？</p></blockquote><p>👨‍🔧对于个人来讲，拥有自己的域名、自己的博客、能庞大的互联网拥有自己的清静的一亩三分地，留下自己的所见所得、所想所思、能够和一同坚持维护自己的博客的人一起交流、交朋友（互换友链）…… 这都是很有很有意义的事！</p><p>写博客的人应该都会经历三个阶段：（个人偏主观总结😜）</p><ul><li>第一阶段：接触 WordPress 等大型博客程序，尝试各种复杂的功能，乐于折腾各种花里胡哨的</li><li>第二阶段：使用 MarkDown 进行创作，追求更加轻量简洁的程序，比如 Typecho、Z-Blog、Emlog……</li><li>第三阶段：希望能够脱离服务器，降低博客维护成本，更加专心于写作而不必花费大量时间在服务器维护上，但同时又希望自己拥有博客的完整掌控权，又有了 Hexo、Hugo、Gridea 等静态博客程序</li></ul><p>第三阶段很多人就是从动态博客程序转到静态博客程序，使用 Github、Gitee、Coding、Gitlab… 等 Git 代码托管仓库的 Pages 功能托管自己的静态博客🏃‍♀️</p><div class="note danger simple"><p>本篇文章全部自己码字、截图，未经本人授权许可，谢绝转载和二次创作！</p></div><h3 id="初识-Hexo"><a href="#初识-Hexo" class="headerlink" title="初识 Hexo"></a>初识 Hexo</h3><p>静态博客程序有很多，还有很多大佬甚至自己写静态博客生成器，常见的有 Hexo、Hugo、Jekyll 等等，这里介绍的是 Hexo 的一些搭建记录。为什么使用 Hexo 和 Github Pages？Hexo 基于 Node.js 静态博客框架，拥有庞大的社区 / 开源支持，仅需要极少的依赖、拥有超级丰富的主题和插件，支持 MarkDown 语法；而 Github Pages 免费、基于 Git 的版本控制不用担心文章丢失、博客生成的静态文件存储在 Github 仓库不用担心丢失（删除跑路除外🙄）</p><div class="note success simple"><p>先看看本站使用 Hexo+Butterfly 最终的效果： </p></div><p><img src="https://cdn.jsdelivr.net/gh/Spoience/pic/img/20200807000989.webp" alt="img"></p><p>Hexo 基于 Node.js 的静态博客框架，通过把 MarkDown 格式的文章渲染成静态 Html 网页，通过 Git 进行文章的发布、更改，可以部署到任意的 Git 平台（Github、Gitlab、Coding、Gitee…）以及自己的服务器 / VPS；本文以 Windows 系统下部署到 github 为例，在开始前我们需要：</p><ul><li>安装 <a href="https://nodejs.org/en/download/">Node.js</a>（推荐 LTS 版）<img src="/images/20200620224851.png" alt="img"></li></ul><ul><li>安装 <a href="https://git-scm.com/">Git</a><img src="/images/20200620224859.png" alt="img"></li></ul><blockquote><p>上面的两个都以默认设置安装就行，如果你需要更改安装路径可能需要自己配置环境变量，这个请自行百度</p></blockquote><p>在安装完 Git 和 Node.js 后在任意文件夹右键打开 <code> Git bash here</code> 即可打开 Git 的 Bash 终端</p><p><img src="/images/20200620225433.png" alt="img"></p><p>在 Git 终端里分别输入下面命令并回车，查看 Git 和 NPM 版本号：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br><span class="line">$ NPM -v</span><br></pre></td></tr></table></figure><p>如果你的配置没问题，应该是类似于下图这样的：</p><p><img src="/images/20200620225315.png" alt="img"></p><h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>✅在完成上面的 Git 和 Node.js 的正确安装后你就可以在本地安装 Hexo 了，😉以下命令均在 Git Bash 里面进行</p><h4 id="全局安装-Hexo"><a href="#全局安装-Hexo" class="headerlink" title="全局安装 Hexo"></a>全局安装 Hexo</h4><p>使用 NPM 安装 Hexo，输入命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli </span><br></pre></td></tr></table></figure><p>📌个安装时间视你的网速而定，由于在国内的部分地区或者运营商因为 DNS 污染或者防火墙导致 Git 或者 NPM 很慢，🚀请看这篇：<a href="https://spoience.com/proxy-git-npm.html">给 Git 和 NPM 代理加速</a></p><h4 id="初始化-Hexo"><a href="#初始化-Hexo" class="headerlink" title="初始化 Hexo"></a>初始化 Hexo</h4><p>🎈在你想要存储 Hexo 本地源文件的目录打开 Git Bash，然后<code>初始化Hexo</code>，比如我想要在 D 盘的一个名为 hexo 的文件夹进行写作，那我在 D 盘打开 Git Bash 使用下面的命令初始化 Hexo 博客：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init hexo</span><br></pre></td></tr></table></figure><p>此时就会自动新建一个名为 <code>hexo</code>的文件夹，并且 hexo 已经在该文件夹内完成初始化，一般的打开这个目录的结构是下面这样的（注意其中<code>.deploy.git</code>需要在本文后面配置完 Github 和本地连接才有哦）</p><p><img src="/images/20200620231308.png" alt="img"></p><p>一般的，hexo 内目录基本结构如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml # Hexo的全局配置文件，在此配置网站的主要参数</span><br><span class="line">├── package.json # npm软件包以及版本信息</span><br><span class="line">├── scaffolds # 模版文件夹</span><br><span class="line">├── source  # 资源文件夹</span><br><span class="line">|   ├── _drafts # 草稿&#x2F;模板文件</span><br><span class="line">|   └── _posts # 文章（每篇文章使用markdown格式写好保存在这里）</span><br><span class="line">└── themes  # 主题文件夹</span><br></pre></td></tr></table></figure><h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><p>在 hexo 目录内右键打开 Git Bash，使用 NPM 安装 hexo 必须的依赖：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure><h4 id="Hexo-的基本命令"><a href="#Hexo-的基本命令" class="headerlink" title="Hexo 的基本命令"></a>Hexo 的基本命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean #清除生成的博客静态文件</span><br><span class="line">$ hexo g #生成博客静态文件&#x3D;命令hexo generate</span><br><span class="line">$ hexo s #启动博客的本地预览&#x3D;命令hexo server</span><br><span class="line">$ hexo d #推送博客到远程仓库&#x3D;命令hexo deploy</span><br><span class="line">$ hexo new page xxx #新建名为&quot;xxx&quot;的页面</span><br><span class="line">$ hexo new xxx #新建名为&quot;xxx&quot;的文章</span><br><span class="line">$ hexo d -g #生成静态博客并推送到Git远程仓库</span><br><span class="line">$ hexo s -g #生成静态博客并启动本地预览</span><br></pre></td></tr></table></figure><h4 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h4><p>上面几部完成，你就可以输入下面命令启动本地预览 hexo 博客了：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>回车后打开浏览器，输入 <code><a href="http://localhost:4000/">http://localhost:4000</a> </code>就可以预览你的博客了</p><div class="note note warning simple"><p>如果上面 hexo s 没有成功，可能是本地的 4000 端口被占用，请使用 <code>hexo s -p 端口号</code>的方式修改本地预览的端口号，然后打开浏览器，输入 <code><a href="http://localhost:你的端口号">http://localhost:你的端口号</a></code>来启动本地预览😉</p></div><p>至此，你的 Hexo 博客已经安装完成，下面说明关联 Github 仓库并推送至 Github Pages</p><h3 id="关联-Github-仓库"><a href="#关联-Github-仓库" class="headerlink" title="关联 Github 仓库"></a>关联 Github 仓库</h3><h4 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h4><ul><li>登陆（没有就注册一个）你的 Github 账号</li></ul><ul><li>新建一个名为 username.github.io 的 Public 仓库，其中 username 是你的 Github 用户名，比如我的用户名是 Spoience，那么我新建的仓库名称即为：Spoience.github.io</li></ul><p><img src="/images/20200620232933.png" alt="img"></p><ul><li><p>Description 是仓库描述，自己随便写即可</p></li><li><p>勾选 Initialize this repository with a README，点击 Create Repository 完成仓库的创建</p></li><li><p>点击仓库的 Settings 勾选 Github Pages</p></li></ul><h4 id="链接-Git-到远程仓库"><a href="#链接-Git-到远程仓库" class="headerlink" title="链接 Git 到远程仓库"></a>链接 Git 到远程仓库</h4><p>打开本地 Git Bash，分别输入以下命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;username&quot; # username是你的Github用户名，注意大小写保持一致</span><br><span class="line">$ git config --global user.email &quot;your email address&quot; # your email address填写你的Github注册用的邮箱</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;your email address&quot;  # 生成SSH公钥，your email address同上填</span><br></pre></td></tr></table></figure><p>查看用户名和地址</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure><p>完成上面步骤后默认生成的密钥在<code> C:/Users/用户名/.ssh/ </code>目录下，以文本编辑器打开<code> id_rsa.pub</code> 文件，复制里面的所有内容，后面会用到</p><p><img src="/images/20200620235951.png" alt="img"></p><ul><li>在 Github 点开自己头像打开<code> Settings</code> 页面</li></ul><p><img src="/images/20200621000211.png" alt="img"></p><ul><li><p>选择 <code>SSH and GPG Keys</code>，点击 <code>New SSH Key</code></p><p><img src="/images/20200621000425.png" alt="img"></p></li><li><p><code>Title</code> 随便填，自己能辨识就行了，<code>Key</code> 中粘贴上面你在本地<code> id_rsa.pub</code> 文件中复制的所有内容，点击 <code>Add SSH Key</code></p></li><li><p>打开 Git Bash，输入下面命令:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>就会出现，类似图中的提示：(Hi 用户名！You’ve successfully authenticated，but……)<img src="/images/20200707164034.png" alt="成功提示"></p></li><li><p>打开 hexo 目录下的_config.yml 文件，修改最后一行的 deploy 配置信息：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo:</span><br><span class="line">    github: https:&#x2F;&#x2F;github.com&#x2F;username&#x2F;username.github.io.git # Git仓库地址，username是Github用户名</span><br><span class="line">  branch: master # 部署到仓库的master(主)分支</span><br></pre></td></tr></table></figure></li></ul><div class="note warning simple"><p> <strong>在此请注意：</strong></p><p>从 UTC 时间 2020 年 10 月 1 日起，github 创建仓库的默认主分支由 <code>master </code>改为 <code>main</code>，在此之前已经创建的仓库保持 <code>master</code> 主分支不受影响，如果你是在<code>此（UTC 2020.10.1）之后</code>时间创建 GitHub 仓库并且尝试使用 github 托管你的 Hexo 站点，请将上面 <code>branch后面的master改为main</code>（与你仓库实际保持一致就可以了）</p></div><h4 id="安装-Hexo-推送-Git-插件"><a href="#安装-Hexo-推送-Git-插件" class="headerlink" title="安装 Hexo 推送 Git 插件"></a>安装 Hexo 推送 Git 插件</h4><p>在 hexo 根目录打开 Git Bash，输入并回车：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h4 id="测试推送到远程仓库"><a href="#测试推送到远程仓库" class="headerlink" title="测试推送到远程仓库"></a>测试推送到远程仓库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean # 清除生成的静态文件</span><br><span class="line">$ hexo g # 生成新的博客静态文件</span><br><span class="line">$ hexo s # 启动本地预览</span><br><span class="line">$ hexo d # 推送博客静态文件到远程仓库</span><br></pre></td></tr></table></figure><p>如果前面没有出错的话，再次执行上面命令，你发现 hexo d 后本地预览的博客已经推送到你的远程仓库了，并且浏览器地址输入 <code>username.github.io</code> 可以访问你的博客了，代表推送博客静态文件到 Github 成功了！</p><h4 id="进阶配置"><a href="#进阶配置" class="headerlink" title="进阶配置"></a>进阶配置</h4><blockquote><p>上面的配置成功表示你的 Hexo 写作环境已经完成，下面是一些个性化以及站点信息的配置</p></blockquote><h5 id="推荐-关联自定义域名"><a href="#推荐-关联自定义域名" class="headerlink" title="[推荐] 关联自定义域名"></a>[推荐] 关联自定义域名</h5><p><code>username.github.io</code> 是 <code>github pages</code> 的二级域名，他是免费提供的，如果你想要更个性化，推荐使用自己的域名</p><ul><li>打开你博客仓库的 <code>Settings</code>，找到 <code>Github Pages</code> 栏填入你自己的域名，比如我的是：<code>spoience.com</code></li></ul><ul><li>进入自己的域名控制台，添加一条 <code>CNAME</code> 记录，记录值是你的博客的仓库名，比如我的：</li></ul><p>  <img src="/images/20200621003234.png" alt="添加CNAME解析记录"></p><ul><li><p>强制全站 SSL</p><p>稍等一会儿，待域名的解析记录生效后，打开博客仓库的 Settings，推荐勾选 Enforce HTTPS，Github 会帮你申请免费的 SSL 证书（来自 Let’s Encrypt），至此博客的 HTTPS 设置完成<img src="/images/20200621003556.png" alt="强制全站SSL"></p><p>Github 默认的是使用 <code>Let’s Encrypt Authority X3</code> 的 SSL 证书，有效期三个月，到期会自动续签，主流现代浏览器都兼容<img src="/images/20200621003634.png" alt="img"></p></li></ul><p>之后你就可以通过自己的域名访问自己的博客了</p><h4 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h4><p>Hexo 拥有非常丰富的<code>主题</code> , 其中 99% 都是开源的免费主题，本站使用的是 <code>Butterfly 主题</code>，以该主题为例，Clone 主题：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone -b master https:&#x2F;&#x2F;github.com&#x2F;jerryc127&#x2F;hexo-theme-butterfly.git themes&#x2F;butterfly</span><br></pre></td></tr></table></figure><p>修改 Hexo 的配置文件<code>_config.yml</code>:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">theme: landscape # 默认的主题</span><br><span class="line"># 修改为你的主题名，比如：butterfly</span><br><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure><blockquote><p>各种主题的进阶配置以及详细说明请看该主题作者写的文档</p></blockquote><div class="note warning simple"><p>尽管没有任何硬性限制这些不尊重版权信息和开源精神的人假如您搭建了 Hexo 博客，使用了开源的主题，希望您也能尊重开源精神，不要随意修改或者删除 Hexo 和 Hexo 主题的版权信息，如果您有空的话可以给这些项目点个 Star，这是对开源项目维护者力所能及的支持（本站不与任何删除主题版权的博客交换链接！） </p></div><h4 id="修改站点信息"><a href="#修改站点信息" class="headerlink" title="修改站点信息"></a>修改站点信息</h4><blockquote><p>您可以在 hexo 的 <code>_config.yml</code> 中修改大部分的站点配置，Hexo 的配置文件使用 YAML 语法，请注意空格和字符缩进</p></blockquote><table><thead><tr><th align="left">参数</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><code>title</code></td><td align="left">网站标题</td></tr><tr><td align="left"><code>subtitle</code></td><td align="left">网站副标题</td></tr><tr><td align="left"><code>description</code></td><td align="left">网站描述</td></tr><tr><td align="left"><code>keywords</code></td><td align="left">网站的关键词，使用半角逗号 , 分隔多个关键词</td></tr><tr><td align="left"><code>author</code></td><td align="left">网站作者名称</td></tr><tr><td align="left"><code>language</code></td><td align="left">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-<code>Hans</code> 和 <code>zh-CN</code>。</td></tr><tr><td align="left"><code>timezone</code></td><td align="left">网站时区，一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code></td></tr></tbody></table><h4 id="推荐插件"><a href="#推荐插件" class="headerlink" title="推荐插件"></a>推荐插件</h4><table><thead><tr><th>插件名称 [点击链接访问]</th><th>插件描述</th></tr></thead><tbody><tr><td><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></td><td>优化 / 自定义 Hexo 永久链接格式</td></tr><tr><td><a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a></td><td>生成 RSS、Atom 订阅链接</td></tr><tr><td><a href="https://github.com/hexojs/hexo-filter-nofollow">hexo-filter-nofollow</a></td><td>将 nofollow 属性自动添加到所有外部链接</td></tr><tr><td><a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></td><td>生成 xml 格式的站点地图</td></tr><tr><td><a href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a></td><td>专门生成百度可识别的站点地图</td></tr><tr><td><a href="https://github.com/willin/hexo-wordcount">hexo-wordcount</a></td><td>给文章添加字数统计</td></tr><tr><td>…</td><td>…</td></tr></tbody></table><h4 id="Hexo-的升级"><a href="#Hexo-的升级" class="headerlink" title="Hexo 的升级"></a>Hexo 的升级</h4><p>一般的，我们可以直接使用 <code>npm-check-updates</code> 来升级 Hexo 已经安装的 npm 包为最新版本，在 Hexo 本地的根目录打开 Bash 终端</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g npm-check-updates</span><br><span class="line">$ ncu  </span><br><span class="line">$ ncu -u</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure><p><img src="/images/20200918223048.png" alt="img"></p><p>升级完成后可能会出现一些警告，类似于：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules&#x2F;hexo-douban&#x2F;node_modules&#x2F;fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line">les&#x2F;fsevents):</span><br><span class="line">events@2.1.3: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules&#x2F;hexo-generator-baidu-sitemap&#x2F;node_modules&#x2F;fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line"></span><br><span class="line">updated 4 packages and audited 606 packages in 16.496s</span><br><span class="line"></span><br><span class="line">9 packages are looking for funding</span><br><span class="line">  run &#96;npm fund&#96; for details</span><br><span class="line"></span><br><span class="line">found 4 low severity vulnerabilities</span><br><span class="line">  run &#96;npm audit fix&#96; to fix them, or &#96;npm audit&#96; for details</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 自动修复&#x2F;更新这些依赖</span><br><span class="line">$ npm audit fix</span><br><span class="line"># 如果还有依赖有问题可自行cd到npm模块目录手动安装适合的版本</span><br></pre></td></tr></table></figure><h4 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h4><p>🌼基本把 Hexo 开始的全部步骤都介绍了，希望纯小白也能看懂🙄，除了上面的配置之外更多的关于主题的配置你可以看主题作者写的文档，一般文档都比较详细，得益于庞大的用户群体和社区支持，绝大多数问题你都可以通过 Google 搜索和阅读 <code>Hexo 文档</code>或者主题文档找到解决方法。如果你在使用中遇到一些无法理解、无法解决的问题也希望你在了解提问的智慧后在开源社区进行提问，可以一定程度上让你少走弯路🚀</p>]]></content>
+      
+      
       <categories>
-        <category>Windows</category>
-        <category>mac</category>
+          
+          <category> Hexo </category>
+          
       </categories>
-      <tags>
-        <tag>Windows</tag>
-        <tag>adobe</tag>
-        <tag>mac</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>机场推荐</title>
-    <url>/posts/85e85e2c.html</url>
-    <content><![CDATA[<h2 id="机场聊天软件"><a href="#机场聊天软件" class="headerlink" title="机场聊天软件"></a>机场聊天软件</h2><a class="btn-beautify button--animated blue larger" href="https://telegram.org/" 
-  title="TG聊天软件"><i class="far fa-fw"></i><span>TG聊天软件</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq/15" 
-  title="TG常见中文包"><i class="far fa-fw"></i><span>TG常见中文包</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq1" 
-  title="孤岛公告板"><i class="far fa-fw"></i><span>孤岛公告板</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq" 
-  title="孤岛交流群"><i class="far fa-fw"></i><span>孤岛交流群</span></a>
-
-<div class="note default simple"><p>梯子软件在下面，左面目录看 - SSR/Clash 简介和客户端软件下载。</p>
-</div>
-
-<h2 id="节点供应站【墙外不是法外之地】"><a href="#节点供应站【墙外不是法外之地】" class="headerlink" title="节点供应站【墙外不是法外之地】"></a>节点供应站【墙外不是法外之地】</h2><div class="note warning simple"><p>郑重声明：本文所介绍产品主要是为了方便学习、科研以及外贸工作，请遵守中华人民共和国法律法规，请珍惜当下还能让我们出去看看的大环境。</p>
-<p>保护好自己的隐私，注册机场的时候尽量不要填写个人的真实信息。用户自己心里也要有一杆秤，毕竟机场多数是个人站或合伙站，能做多久并不能保证，或因风险，或因卷钱，或因赔钱，都有可能不做，不了解的尽量不要一下充很多。</p>
-</div>
-
-<h3 id="大机场「V2RAY」"><a href="#大机场「V2RAY」" class="headerlink" title="大机场「V2RAY」"></a>大机场「V2RAY」</h3><blockquote>
-<p><a href="https://大机场.com/#/register?code=gv1z9SZR">https://xn–mesr8b36x.com/</a> </p>
-</blockquote>
-<p>【一点点流量订阅】3.99元/月、月流量为 1024G；年付29.9元。</p>
-<p>【有点多流量订阅】5.99元/月、月流量为 2048G；年付49.9元。</p>
-<p>【亿点点流量订阅】7.99元/月、月流量为 4096G；年付69.9元。</p>
-<h3 id="Q巴巴Q「SSR」"><a href="#Q巴巴Q「SSR」" class="headerlink" title="Q巴巴Q「SSR」"></a>Q巴巴Q「SSR」</h3><blockquote>
-<p><a href="https://www.q88q.club/auth/register?code=VIP">https://www.q88q.club</a> </p>
-</blockquote>
-<ul>
-<li><p>套餐限制：10设备</p>
-<p>20元/31天/总流量为 225G；55元/91天/总流量为 750G</p>
-<p>100元/180天/总流量为 1650G；190元/360天/总流量为 3600G</p>
-</li>
-</ul>
-<h3 id="奇异のtravel「SSR」"><a href="#奇异のtravel「SSR」" class="headerlink" title="奇异のtravel「SSR」"></a>奇异のtravel「SSR」</h3><blockquote>
-<p><a href="https://www.ustravel.cloud/aff.php?aff=319">https://www.ustravel.cloud/</a> </p>
-</blockquote>
-<ul>
-<li><p>初级套餐</p>
-<p>20+条美亚欧线路，每 30 天重置流量为 1000GB，在线6个设备；</p>
-<p>10元/30天； 30元/90天； 60元/180天； 100元/360天；</p>
-</li>
-<li><p>标准套餐</p>
-<p>30+条美亚澳欧服务线路，每 30 天重置流量为 1500GB，在线6个设备；</p>
-<p>15元/30天； 45元/90天； 150元/360天；</p>
-</li>
-<li><p>进阶套餐</p>
-<p>40+条美亚澳欧服务线路，每 30 天重置流量为 2000GB，在线6个设备；</p>
-<p>20元/30天； 60元/90天； 200元/360天；</p>
-</li>
-</ul>
-<h3 id="点亮国际机场「SSR-V2RAY」"><a href="#点亮国际机场「SSR-V2RAY」" class="headerlink" title="点亮国际机场「SSR V2RAY」"></a>点亮国际机场「SSR V2RAY」</h3><blockquote>
-<p><a href="https://lo-li.xyz/auth/register?code=Xgvw">https://lo-li.xyz</a></p>
-</blockquote>
-<ul>
-<li><p>白金版 - 18条线路</p>
-<p>10元/月、总流量为 100GB；30元/季、总流量为 300GB；119元/年、总流量为 1200GB</p>
-</li>
-<li><p>钻石版 - 12条线路+白金版，共计30条线路</p>
-<p>20元/月、总流量为 200GB；60元/季、总流量为 600GB；239元/年、总流量为 2400GB</p>
-</li>
-<li><p>王者版 - 6条游戏线路+白金版+钻石版，共计36条线路</p>
-<p>30元/月、总流量为 300GB；90元/季、总流量为 900GB；359元/年、总流量为 3600GB</p>
-</li>
-</ul>
-<h3 id="LeiSu「V2RAY」"><a href="#LeiSu「V2RAY」" class="headerlink" title="LeiSu「V2RAY」"></a>LeiSu「V2RAY」</h3><blockquote>
-<p><a href="https://lei-su.me/auth/register?code=12rF">https://lei-su.me</a></p>
-</blockquote>
-<ul>
-<li><p>标准月付套餐</p>
-<p>8.88元/月、月流量为 200GB，在线3个设备；没有VIP2节点。</p>
-</li>
-<li><p>钜惠年付套餐</p>
-<p>58.88元/年、月流量为 500GB，在线3个设备；</p>
-</li>
-<li><p>超值年付套餐</p>
-<p>88.88元/年、月流量为 1500GB，在线5个设备；</p>
-</li>
-<li><p>两年练习生套餐</p>
-<p>158.88元/2年、月流量为 2000GB，在线8个设备；</p>
-</li>
-</ul>
-<h3 id="无界「V2RAY」"><a href="#无界「V2RAY」" class="headerlink" title="无界「V2RAY」"></a>无界「V2RAY」</h3><blockquote>
-<p><a href="https://www.wujievpn.cc/user/index.html#/register?code=Vk5L0pv8">www.wujievpn.cc</a></p>
-</blockquote>
-<ul>
-<li><p>轻量套餐</p>
-<p>20元/月流量为 100 GB、允许多设备同时在线、可年付 199元</p>
-</li>
-<li><p>豪华套餐</p>
-<p>40元/月流量为 250GB、允许多设备同时在线、可年付 399元</p>
-</li>
-<li><p>畅爽套餐</p>
-<p>60元/月流量为 500GB、允许多设备同时在线、可年付 599元</p>
-</li>
-<li><p>闲时套餐</p>
-<p>99元/一次性总流量为 100GB、允许多设备同时在线、流量用完套餐终止</p>
-</li>
-</ul>
-<h2 id="SSR-Clash-简介和客户端软件下载"><a href="#SSR-Clash-简介和客户端软件下载" class="headerlink" title="SSR/Clash 简介和客户端软件下载"></a>SSR/Clash 简介和客户端软件下载</h2><blockquote>
-<p>v2ray机场使用Clash软件需要订阅转换，也有机场本身有Clash订阅。</p>
-<p>SSR机场想用Clash软件需要订阅转换。</p>
-</blockquote>
-<h3 id="订阅转换地址"><a href="#订阅转换地址" class="headerlink" title="订阅转换地址"></a>订阅转换地址</h3><a class="btn-beautify button--animated blue larger" href="https://acl4ssr-sub.github.io/" 
-  title="订阅转换地址1"><i class="far fa-fw"></i><span>订阅转换地址1</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="http://toss.gq/ACL4SSR/" 
-  title="订阅转换地址2"><i class="far fa-fw"></i><span>订阅转换地址2</span></a>
-
-<h3 id="软件国内下载地址"><a href="#软件国内下载地址" class="headerlink" title="软件国内下载地址"></a>软件国内下载地址</h3><blockquote>
-<p>请点击下按钮进行下载安装。</p>
-<p>下面是一个作者出的WIN和MAC两个版本。汉化版就是加了汉化补丁</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://sabrinathings.lanzoui.com/ipXwRhawjpi" 
-  title="Clash.for.Windows.安装版"><i class="far fa-fw"></i><span>Clash.for.Windows.安装版</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://sabrinathings.lanzous.com/iTuaxgq56ve" 
-  title="Clash.Mac版"><i class="far fa-fw"></i><span>Clash.Mac版</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://sabrinathings.lanzoui.com/iUJZChawina" 
-  title="Clash.for.Windows-汉化版"><i class="far fa-fw"></i><span>Clash.for.Windows-汉化版</span></a>
-
-<blockquote>
-<p>ClashX MacOS版，两个作者，长得不一样吧。</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://sabrinathings.lanzous.com/iqWYxf5cgsb" 
-  title="ClashX.for.MacOS"><i class="far fa-fw"></i><span>ClashX.for.MacOS</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://sabrinathings.lanzous.com/i3Aytg6h4oh" 
-  title="ClashX Pro.MacOS"><i class="far fa-fw"></i><span>ClashX Pro.MacOS</span></a>
-
-<blockquote>
-<p>Clash 安卓版</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://sabrinathings.lanzous.com/iW78Kf1m3ta" 
-  title="Clash.Android"><i class="far fa-fw"></i><span>Clash.Android</span></a>
-
-<blockquote>
-<p>小飞机，现在用的越来越少。</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/usr/uploads/2020/09/3411093742.zip" 
-  title="小飞机.Windows"><i class="far fa-fw"></i><span>小飞机.Windows</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://sabrinathings.lanzous.com/ieDkigfanfe" 
-  title="小飞机.macOS"><i class="far fa-fw"></i><span>小飞机.macOS</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://cdn.rixcloud.io/download/ShadowsocksR.apk" 
-  title="小飞机.安卓"><i class="far fa-fw"></i><span>小飞机.安卓</span></a>
-
-<blockquote>
-<p>iOS 客户端 (仅国区下架,其他区可下载)</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://apps.apple.com/us/app/shadowrocket/id932747118" 
-  title="Shadowrocket - $2.99 也叫:小火箭"><i class="far fa-fw"></i><span>Shadowrocket - $2.99 也叫:小火箭</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://apps.apple.com/us/app/quantumult/id1252015438" 
-  title="Quantumult - $4.99 也叫:圈"><i class="far fa-fw"></i><span>Quantumult - $4.99 也叫:圈</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://apps.apple.com/us/app/quantumult-x/id1443988620" 
-  title="Quantumult X - $7.99"><i class="far fa-fw"></i><span>Quantumult X - $7.99</span></a>
-
-<h2 id="软件教程合集"><a href="#软件教程合集" class="headerlink" title="软件教程合集"></a>软件教程合集</h2><blockquote>
-<p>下面是油管视频合集、魅影机场图文教程（每个机场不一样，作为参考。）</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://www.youtube.com/playlist?list=PLdeeEkkRA6Bai4oE06pNdxi5V8dM84uPq" 
-  title="基础翻墙教程（新手教学）油管视频"><i class="far fa-fw"></i><span>基础翻墙教程（新手教学）油管视频</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://docs.nameless13.com/" 
-  title="魅影各类教程（新手教学）"><i class="far fa-fw"></i><span>魅影各类教程（新手教学）</span></a>
-
-<blockquote>
-<p>Clash教程</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/cfw.html" 
-  title="Clash(R) for Windows教程"><i class="far fa-fw"></i><span>Clash(R) for Windows教程</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/clash-for-windows-for-mac.html" 
-  title="Clash for macOS教程"><i class="far fa-fw"></i><span>Clash for macOS教程</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/ClashX.html" 
-  title="ClashX(R) for macOS教程"><i class="far fa-fw"></i><span>ClashX(R) for macOS教程</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/cfa.html" 
-  title="Clash(R) for 安卓教程"><i class="far fa-fw"></i><span>Clash(R) for 安卓教程</span></a>
-
-<blockquote>
-<p>V2Ray教程</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/v2rayn.html" 
-  title="V2RayN for Windows教程"><i class="far fa-fw"></i><span>V2RayN for Windows教程</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/v2rayng.html" 
-  title="V2RayNG for 安卓教程"><i class="far fa-fw"></i><span>V2RayNG for 安卓教程</span></a>
-
-<blockquote>
-<p>小飞机教程</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/ssrwindows.html" 
-  title="ShadowsocksR for Windows教程"><i class="far fa-fw"></i><span>ShadowsocksR for Windows教程</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/macssr.html" 
-  title="ShadowsocksX for macOS教程"><i class="far fa-fw"></i><span>ShadowsocksX for macOS教程</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/androidssr.html" 
-  title="ShadowsocksR for 安卓教程"><i class="far fa-fw"></i><span>ShadowsocksR for 安卓教程</span></a>
-
-<blockquote>
-<p>IOS教程，不分V2Ray和SSR，软件都支持。</p>
-</blockquote>
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/shadowrocket.html" 
-  title="Shadowrocket小火箭 for IOS教程"><i class="far fa-fw"></i><span>Shadowrocket小火箭 for IOS教程</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/quan.html" 
-  title="Quantumult for IOS教程"><i class="far fa-fw"></i><span>Quantumult for IOS教程</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/quanx.html" 
-  title="Quantumult X for IOS教程"><i class="far fa-fw"></i><span>Quantumult X for IOS教程</span></a>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>给Git和NPM代理加速</title>
+      <link href="posts/dde926b0.html"/>
+      <url>posts/dde926b0.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="给Git和NPM代理加速"><a href="#给Git和NPM代理加速" class="headerlink" title="给Git和NPM代理加速"></a>给Git和NPM代理加速</h1><p>前言<br>使用 Hexo 写作离不开 Git 和 Node.js，由于某些东西经常抽风，在国内有时候 Git 连接 Github 和 Node.js 使用 NPM 包管理器变得不那么容易，但是如果我们自备小飞机的话就可以让 Git 和 NPM 走本地代理，速度直接起飞😎</p><p>查看本地代理<br>Clash 是目前 Windows 上最好用的 Vmess/Clash 协议代理工具（确信），下面以 Clash for Windows 为例（其他 V2/Clash/SS/SSR 代理工具同理）</p><p>Clash 主界面可以直观看到本地 HTTP 代理和 Socket5 代理的端口，注意下，后面要用的</p><p><img src="/images/20200614202805.png" alt="Clash查看代理端口"></p> <!--以下操作均在 Git bash/Windows终端下进行--><h3 id="配置-Git-本地代理"><a href="#配置-Git-本地代理" class="headerlink" title="配置 Git 本地代理"></a>配置 Git 本地代理</h3><blockquote><p>Git 同时支持 Socket5 和 HTTP 代理，根据本地客户端具体情况选择一种配置就可以了</p></blockquote><h4 id="Socket5-代理"><a href="#Socket5-代理" class="headerlink" title="Socket5 代理"></a>Socket5 代理</h4><p>Git 默认的 Socket5 代理应设置为：(其中 server 是服务器地址，port是代理端口)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.proxy socks5:&#x2F;&#x2F;server:port</span><br><span class="line">$ git config --global https.proxy socks5:&#x2F;&#x2F;server:port</span><br></pre></td></tr></table></figure><p>本地服务器的 IPV4 地址就是：127.0.0.1，端口填上面 Clash 中的 Socket5 代理端口</p><p>以我的本地代理端口为例，在 Git bash/Windows 终端下输入下面命令回车</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.proxy socks5:&#x2F;&#x2F;127.0.0.1:7891</span><br><span class="line">$ git config --global https.proxy socks5:&#x2F;&#x2F;127.0.0.1:7891</span><br></pre></td></tr></table></figure><p>Socket5 代理设置完成</p><h4 id="HTTP-代理"><a href="#HTTP-代理" class="headerlink" title="HTTP 代理"></a>HTTP 代理</h4><blockquote><p>如果你的代理客户端不支持 Socket5代理，那它至少是支持 HTTP代理的</p></blockquote><p>Git 默认的 HTTP 代理应设置为：(其中 server 是服务器地址，port是代理端口)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.proxy http:&#x2F;&#x2F;server:port</span><br><span class="line">$ git config --global https.proxy http:&#x2F;&#x2F;server:port</span><br></pre></td></tr></table></figure><p>本地服务器的 IPV4 地址就是：127.0.0.1，端口填上面 Clash 中的 HTTP 代理端口</p><p>以我的本地代理端口为例，在 Git bash/Windows 终端下输入下面命令回车</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.proxy http:&#x2F;&#x2F;127.0.0.1:7890</span><br><span class="line">$ git config --global https.proxy https:&#x2F;&#x2F;127.0.0.1:7890</span><br></pre></td></tr></table></figure><h4 id="测试-Git-速度"><a href="#测试-Git-速度" class="headerlink" title="测试 Git 速度"></a>测试 Git 速度</h4><p>Git 拉取<a href="https://github.com/WangNingkai/OLAINDEX">OlaIndex</a>的代码测试：</p><p><img src="/images/20200614204812.gif" alt="测试"></p><p>可以看到几乎秒拉取完成，速度快到飞起😎至此本地 Git 代理设置完成😋</p><h4 id="取消-Git-代理"><a href="#取消-Git-代理" class="headerlink" title="取消 Git 代理"></a>取消 Git 代理</h4><p>如果哪天需要取消代理，在 Git bash/Windows 终端下输入下面命令回车即可：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global --unset http.proxy</span><br><span class="line">$ git config --global --unset https.proxy</span><br></pre></td></tr></table></figure><h4 id="配置本地-NPM-代理"><a href="#配置本地-NPM-代理" class="headerlink" title="配置本地 NPM 代理"></a>配置本地 NPM 代理</h4><p>NPM 原生支持 HTTP 代理，但是不支持 Socket5 代理，要想使用 Socket5 为 NPM 代理，你还需要 HTTP 监听 Socket5 代理工具，这里不做讨论🙄</p><blockquote><p>对于没有密码的 HTTP 代理（比如上面）</p></blockquote><h4 id="HTTP-代理-1"><a href="#HTTP-代理-1" class="headerlink" title="HTTP 代理"></a>HTTP 代理</h4><p>默认的 HTTP 代理应设置为：(其中 server 是服务器地址，port是代理端口)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm config set proxy http:&#x2F;&#x2F;server:port</span><br><span class="line">$ npm config set https-proxy http:&#x2F;&#x2F;server:port</span><br></pre></td></tr></table></figure><p>打开 Git bash/Windows 终端，比如我的设置为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm config set proxy http:&#x2F;&#x2F;127.0.0.1:7890</span><br><span class="line">$ npm config set https-proxy http:&#x2F;&#x2F;127.0.0.1:7890</span><br></pre></td></tr></table></figure><p>这时本地的 NPM 的 HTTP 代理设置已经完成</p><h4 id="取消-NPM-代理"><a href="#取消-NPM-代理" class="headerlink" title="取消 NPM 代理"></a>取消 NPM 代理</h4><p>如果你需要取消代理，在终端输入下面命令即可😋</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm config delete proxy</span><br><span class="line">$ npm config delete https-proxy</span><br></pre></td></tr></table></figure><h3 id="查看-Git-和-NPM-的配置文件"><a href="#查看-Git-和-NPM-的配置文件" class="headerlink" title="查看 Git 和 NPM 的配置文件"></a>查看 Git 和 NPM 的配置文件</h3><p>以默认设置安装的 Git 和 Node.js 客户端默认的配置文件都在该目录下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Explorer</span><br><span class="line">C:\Users\用户名</span><br></pre></td></tr></table></figure><h4 id="你可以直观的查看-Git-和-NPM-的配置"><a href="#你可以直观的查看-Git-和-NPM-的配置" class="headerlink" title="你可以直观的查看 Git 和 NPM 的配置"></a>你可以直观的查看 Git 和 NPM 的配置</h4><p>其中.gitconfig 是 Git 的配置文件</p><p><img src="/images/20200614210620.png" alt="Git配置文件"></p><p>.npmrc 是 NPM 的配置文件</p><p><img src="/images/20200614210626.png" alt="NPM配置文件"></p><p>所以也可以不使用命令，直接修改配置文件里面的代理也可🤠</p>]]></content>
+      
+      
       <categories>
-        <category>科学上网</category>
+          
+          <category> Hexo </category>
+          
       </categories>
-      <tags>
-        <tag>机场</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo+Github搭建博客笔记</title>
-    <url>/posts/fb599c35.html</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h3><blockquote>
-<p>博客 —— 可能这个东西在大多数眼中已经落后于时代甚至压根没听过。在这个信息碎片化、人人信息获取不对等的时代，各个社交平台可以很快速地发送动态、短视频，方便的跟自己的朋友们点赞、互动，而花大量时间金钱和精力去维护一个没人看的博客未免显得有点蠢？</p>
-</blockquote>
-<p>👨‍🔧对于个人来讲，拥有自己的域名、自己的博客、能庞大的互联网拥有自己的清静的一亩三分地，留下自己的所见所得、所想所思、能够和一同坚持维护自己的博客的人一起交流、交朋友（互换友链）…… 这都是很有很有意义的事！</p>
-<p>写博客的人应该都会经历三个阶段：（个人偏主观总结😜）</p>
-<ul>
-<li>第一阶段：接触 WordPress 等大型博客程序，尝试各种复杂的功能，乐于折腾各种花里胡哨的</li>
-<li>第二阶段：使用 MarkDown 进行创作，追求更加轻量简洁的程序，比如 Typecho、Z-Blog、Emlog……</li>
-<li>第三阶段：希望能够脱离服务器，降低博客维护成本，更加专心于写作而不必花费大量时间在服务器维护上，但同时又希望自己拥有博客的完整掌控权，又有了 Hexo、Hugo、Gridea 等静态博客程序</li>
-</ul>
-<p>第三阶段很多人就是从动态博客程序转到静态博客程序，使用 Github、Gitee、Coding、Gitlab… 等 Git 代码托管仓库的 Pages 功能托管自己的静态博客🏃‍♀️</p>
-<div class="note danger simple"><p>本篇文章全部自己码字、截图，未经本人授权许可，谢绝转载和二次创作！</p>
-</div>
-
-<h3 id="初识-Hexo"><a href="#初识-Hexo" class="headerlink" title="初识 Hexo"></a>初识 Hexo</h3><p>静态博客程序有很多，还有很多大佬甚至自己写静态博客生成器，常见的有 Hexo、Hugo、Jekyll 等等，这里介绍的是 Hexo 的一些搭建记录。为什么使用 Hexo 和 Github Pages？Hexo 基于 Node.js 静态博客框架，拥有庞大的社区 / 开源支持，仅需要极少的依赖、拥有超级丰富的主题和插件，支持 MarkDown 语法；而 Github Pages 免费、基于 Git 的版本控制不用担心文章丢失、博客生成的静态文件存储在 Github 仓库不用担心丢失（删除跑路除外🙄）</p>
-<div class="note success simple"><p>先看看本站使用 Hexo+Butterfly 最终的效果： </p>
-</div>
-
-<p><img src="https://cdn.jsdelivr.net/gh/Spoience/pic/img/20200807000989.webp" alt="img"></p>
-<p>Hexo 基于 Node.js 的静态博客框架，通过把 MarkDown 格式的文章渲染成静态 Html 网页，通过 Git 进行文章的发布、更改，可以部署到任意的 Git 平台（Github、Gitlab、Coding、Gitee…）以及自己的服务器 / VPS；本文以 Windows 系统下部署到 github 为例，在开始前我们需要：</p>
-<ul>
-<li>安装 <a href="https://nodejs.org/en/download/">Node.js</a>（推荐 LTS 版）<img src="/images/20200620224851.png" alt="img"></li>
-</ul>
-<ul>
-<li>安装 <a href="https://git-scm.com/">Git</a><img src="/images/20200620224859.png" alt="img"></li>
-</ul>
-<blockquote>
-<p>上面的两个都以默认设置安装就行，如果你需要更改安装路径可能需要自己配置环境变量，这个请自行百度</p>
-</blockquote>
-<p>在安装完 Git 和 Node.js 后在任意文件夹右键打开 <code> Git bash here</code> 即可打开 Git 的 Bash 终端</p>
-<p><img src="/images/20200620225433.png" alt="img"></p>
-<p>在 Git 终端里分别输入下面命令并回车，查看 Git 和 NPM 版本号：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git --version</span><br><span class="line">$ NPM -v</span><br></pre></td></tr></table></figure>
-
-<p>如果你的配置没问题，应该是类似于下图这样的：</p>
-<p><img src="/images/20200620225315.png" alt="img"></p>
-<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3><p>✅在完成上面的 Git 和 Node.js 的正确安装后你就可以在本地安装 Hexo 了，😉以下命令均在 Git Bash 里面进行</p>
-<h4 id="全局安装-Hexo"><a href="#全局安装-Hexo" class="headerlink" title="全局安装 Hexo"></a>全局安装 Hexo</h4><p>使用 NPM 安装 Hexo，输入命令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli </span><br></pre></td></tr></table></figure>
-
-<p>📌个安装时间视你的网速而定，由于在国内的部分地区或者运营商因为 DNS 污染或者防火墙导致 Git 或者 NPM 很慢，🚀请看这篇：<a href="https://spoience.com/proxy-git-npm.html">给 Git 和 NPM 代理加速</a></p>
-<h4 id="初始化-Hexo"><a href="#初始化-Hexo" class="headerlink" title="初始化 Hexo"></a>初始化 Hexo</h4><p>🎈在你想要存储 Hexo 本地源文件的目录打开 Git Bash，然后<code>初始化Hexo</code>，比如我想要在 D 盘的一个名为 hexo 的文件夹进行写作，那我在 D 盘打开 Git Bash 使用下面的命令初始化 Hexo 博客：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo init hexo</span><br></pre></td></tr></table></figure>
-
-<p>此时就会自动新建一个名为 <code>hexo</code>的文件夹，并且 hexo 已经在该文件夹内完成初始化，一般的打开这个目录的结构是下面这样的（注意其中<code>.deploy.git</code>需要在本文后面配置完 Github 和本地连接才有哦）</p>
-<p><img src="/images/20200620231308.png" alt="img"></p>
-<p>一般的，hexo 内目录基本结构如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml # Hexo的全局配置文件，在此配置网站的主要参数</span><br><span class="line">├── package.json # npm软件包以及版本信息</span><br><span class="line">├── scaffolds # 模版文件夹</span><br><span class="line">├── source  # 资源文件夹</span><br><span class="line">|   ├── _drafts # 草稿&#x2F;模板文件</span><br><span class="line">|   └── _posts # 文章（每篇文章使用markdown格式写好保存在这里）</span><br><span class="line">└── themes  # 主题文件夹</span><br></pre></td></tr></table></figure>
-
-<h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><p>在 hexo 目录内右键打开 Git Bash，使用 NPM 安装 hexo 必须的依赖：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-
-<h4 id="Hexo-的基本命令"><a href="#Hexo-的基本命令" class="headerlink" title="Hexo 的基本命令"></a>Hexo 的基本命令</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo clean #清除生成的博客静态文件</span><br><span class="line">$ hexo g #生成博客静态文件&#x3D;命令hexo generate</span><br><span class="line">$ hexo s #启动博客的本地预览&#x3D;命令hexo server</span><br><span class="line">$ hexo d #推送博客到远程仓库&#x3D;命令hexo deploy</span><br><span class="line">$ hexo new page xxx #新建名为&quot;xxx&quot;的页面</span><br><span class="line">$ hexo new xxx #新建名为&quot;xxx&quot;的文章</span><br><span class="line">$ hexo d -g #生成静态博客并推送到Git远程仓库</span><br><span class="line">$ hexo s -g #生成静态博客并启动本地预览</span><br></pre></td></tr></table></figure>
-
-<h4 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h4><p>上面几部完成，你就可以输入下面命令启动本地预览 hexo 博客了：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<p>回车后打开浏览器，输入 <code><a href="http://localhost:4000/">http://localhost:4000</a> </code>就可以预览你的博客了</p>
-<div class="note note warning simple"><p>如果上面 hexo s 没有成功，可能是本地的 4000 端口被占用，请使用 <code>hexo s -p 端口号</code>的方式修改本地预览的端口号，然后打开浏览器，输入 <code><a href="http://localhost:你的端口号">http://localhost:你的端口号</a></code>来启动本地预览😉</p>
-</div>
-
-<p>至此，你的 Hexo 博客已经安装完成，下面说明关联 Github 仓库并推送至 Github Pages</p>
-<h3 id="关联-Github-仓库"><a href="#关联-Github-仓库" class="headerlink" title="关联 Github 仓库"></a>关联 Github 仓库</h3><h4 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h4><ul>
-<li>登陆（没有就注册一个）你的 Github 账号</li>
-</ul>
-<ul>
-<li>新建一个名为 username.github.io 的 Public 仓库，其中 username 是你的 Github 用户名，比如我的用户名是 Spoience，那么我新建的仓库名称即为：Spoience.github.io</li>
-</ul>
-<p><img src="/images/20200620232933.png" alt="img"></p>
-<ul>
-<li><p>Description 是仓库描述，自己随便写即可</p>
-</li>
-<li><p>勾选 Initialize this repository with a README，点击 Create Repository 完成仓库的创建</p>
-</li>
-<li><p>点击仓库的 Settings 勾选 Github Pages</p>
-</li>
-</ul>
-<h4 id="链接-Git-到远程仓库"><a href="#链接-Git-到远程仓库" class="headerlink" title="链接 Git 到远程仓库"></a>链接 Git 到远程仓库</h4><p>打开本地 Git Bash，分别输入以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name &quot;username&quot; # username是你的Github用户名，注意大小写保持一致</span><br><span class="line">$ git config --global user.email &quot;your email address&quot; # your email address填写你的Github注册用的邮箱</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;your email address&quot;  # 生成SSH公钥，your email address同上填</span><br></pre></td></tr></table></figure>
-
-<p>查看用户名和地址</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
-
-<p>完成上面步骤后默认生成的密钥在<code> C:/Users/用户名/.ssh/ </code>目录下，以文本编辑器打开<code> id_rsa.pub</code> 文件，复制里面的所有内容，后面会用到</p>
-<p><img src="/images/20200620235951.png" alt="img"></p>
-<ul>
-<li>在 Github 点开自己头像打开<code> Settings</code> 页面</li>
-</ul>
-<p><img src="/images/20200621000211.png" alt="img"></p>
-<ul>
-<li><p>选择 <code>SSH and GPG Keys</code>，点击 <code>New SSH Key</code></p>
-<p><img src="/images/20200621000425.png" alt="img"></p>
-</li>
-<li><p><code>Title</code> 随便填，自己能辨识就行了，<code>Key</code> 中粘贴上面你在本地<code> id_rsa.pub</code> 文件中复制的所有内容，点击 <code>Add SSH Key</code></p>
-</li>
-<li><p>打开 Git Bash，输入下面命令:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-<p>就会出现，类似图中的提示：(Hi 用户名！You’ve successfully authenticated，but……)<img src="/images/20200707164034.png" alt="成功提示"></p>
-</li>
-<li><p>打开 hexo 目录下的_config.yml 文件，修改最后一行的 deploy 配置信息：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo:</span><br><span class="line">    github: https:&#x2F;&#x2F;github.com&#x2F;username&#x2F;username.github.io.git # Git仓库地址，username是Github用户名</span><br><span class="line">  branch: master # 部署到仓库的master(主)分支</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<div class="note warning simple"><p> <strong>在此请注意：</strong></p>
-<p>从 UTC 时间 2020 年 10 月 1 日起，github 创建仓库的默认主分支由 <code>master </code>改为 <code>main</code>，在此之前已经创建的仓库保持 <code>master</code> 主分支不受影响，如果你是在<code>此（UTC 2020.10.1）之后</code>时间创建 GitHub 仓库并且尝试使用 github 托管你的 Hexo 站点，请将上面 <code>branch后面的master改为main</code>（与你仓库实际保持一致就可以了）</p>
-</div>
-
-<h4 id="安装-Hexo-推送-Git-插件"><a href="#安装-Hexo-推送-Git-插件" class="headerlink" title="安装 Hexo 推送 Git 插件"></a>安装 Hexo 推送 Git 插件</h4><p>在 hexo 根目录打开 Git Bash，输入并回车：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<h4 id="测试推送到远程仓库"><a href="#测试推送到远程仓库" class="headerlink" title="测试推送到远程仓库"></a>测试推送到远程仓库</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo clean # 清除生成的静态文件</span><br><span class="line">$ hexo g # 生成新的博客静态文件</span><br><span class="line">$ hexo s # 启动本地预览</span><br><span class="line">$ hexo d # 推送博客静态文件到远程仓库</span><br></pre></td></tr></table></figure>
-
-<p>如果前面没有出错的话，再次执行上面命令，你发现 hexo d 后本地预览的博客已经推送到你的远程仓库了，并且浏览器地址输入 <code>username.github.io</code> 可以访问你的博客了，代表推送博客静态文件到 Github 成功了！</p>
-<h4 id="进阶配置"><a href="#进阶配置" class="headerlink" title="进阶配置"></a>进阶配置</h4><blockquote>
-<p>上面的配置成功表示你的 Hexo 写作环境已经完成，下面是一些个性化以及站点信息的配置</p>
-</blockquote>
-<h5 id="推荐-关联自定义域名"><a href="#推荐-关联自定义域名" class="headerlink" title="[推荐] 关联自定义域名"></a>[推荐] 关联自定义域名</h5><p><code>username.github.io</code> 是 <code>github pages</code> 的二级域名，他是免费提供的，如果你想要更个性化，推荐使用自己的域名</p>
-<ul>
-<li>打开你博客仓库的 <code>Settings</code>，找到 <code>Github Pages</code> 栏填入你自己的域名，比如我的是：<code>spoience.com</code></li>
-</ul>
-<ul>
-<li>进入自己的域名控制台，添加一条 <code>CNAME</code> 记录，记录值是你的博客的仓库名，比如我的：</li>
-</ul>
-<p>  <img src="/images/20200621003234.png" alt="添加CNAME解析记录"></p>
-<ul>
-<li><p>强制全站 SSL</p>
-<p>稍等一会儿，待域名的解析记录生效后，打开博客仓库的 Settings，推荐勾选 Enforce HTTPS，Github 会帮你申请免费的 SSL 证书（来自 Let’s Encrypt），至此博客的 HTTPS 设置完成<img src="/images/20200621003556.png" alt="强制全站SSL"></p>
-<p>Github 默认的是使用 <code>Let’s Encrypt Authority X3</code> 的 SSL 证书，有效期三个月，到期会自动续签，主流现代浏览器都兼容<img src="/images/20200621003634.png" alt="img"></p>
-</li>
-</ul>
-<p>之后你就可以通过自己的域名访问自己的博客了</p>
-<h4 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h4><p>Hexo 拥有非常丰富的<code>主题</code> , 其中 99% 都是开源的免费主题，本站使用的是 <code>Butterfly 主题</code>，以该主题为例，Clone 主题：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone -b master https:&#x2F;&#x2F;github.com&#x2F;jerryc127&#x2F;hexo-theme-butterfly.git themes&#x2F;butterfly</span><br></pre></td></tr></table></figure>
-
-<p>修改 Hexo 的配置文件<code>_config.yml</code>:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: landscape # 默认的主题</span><br><span class="line"># 修改为你的主题名，比如：butterfly</span><br><span class="line">theme: butterfly</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>各种主题的进阶配置以及详细说明请看该主题作者写的文档</p>
-</blockquote>
-<div class="note warning simple"><p>尽管没有任何硬性限制这些不尊重版权信息和开源精神的人假如您搭建了 Hexo 博客，使用了开源的主题，希望您也能尊重开源精神，不要随意修改或者删除 Hexo 和 Hexo 主题的版权信息，如果您有空的话可以给这些项目点个 Star，这是对开源项目维护者力所能及的支持（本站不与任何删除主题版权的博客交换链接！） </p>
-</div>
-
-<h4 id="修改站点信息"><a href="#修改站点信息" class="headerlink" title="修改站点信息"></a>修改站点信息</h4><blockquote>
-<p>您可以在 hexo 的 <code>_config.yml</code> 中修改大部分的站点配置，Hexo 的配置文件使用 YAML 语法，请注意空格和字符缩进</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th align="left">参数</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>title</code></td>
-<td align="left">网站标题</td>
-</tr>
-<tr>
-<td align="left"><code>subtitle</code></td>
-<td align="left">网站副标题</td>
-</tr>
-<tr>
-<td align="left"><code>description</code></td>
-<td align="left">网站描述</td>
-</tr>
-<tr>
-<td align="left"><code>keywords</code></td>
-<td align="left">网站的关键词，使用半角逗号 , 分隔多个关键词</td>
-</tr>
-<tr>
-<td align="left"><code>author</code></td>
-<td align="left">网站作者名称</td>
-</tr>
-<tr>
-<td align="left"><code>language</code></td>
-<td align="left">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-<code>Hans</code> 和 <code>zh-CN</code>。</td>
-</tr>
-<tr>
-<td align="left"><code>timezone</code></td>
-<td align="left">网站时区，一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code></td>
-</tr>
-</tbody></table>
-<h4 id="推荐插件"><a href="#推荐插件" class="headerlink" title="推荐插件"></a>推荐插件</h4><table>
-<thead>
-<tr>
-<th>插件名称 [点击链接访问]</th>
-<th>插件描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></td>
-<td>优化 / 自定义 Hexo 永久链接格式</td>
-</tr>
-<tr>
-<td><a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a></td>
-<td>生成 RSS、Atom 订阅链接</td>
-</tr>
-<tr>
-<td><a href="https://github.com/hexojs/hexo-filter-nofollow">hexo-filter-nofollow</a></td>
-<td>将 nofollow 属性自动添加到所有外部链接</td>
-</tr>
-<tr>
-<td><a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></td>
-<td>生成 xml 格式的站点地图</td>
-</tr>
-<tr>
-<td><a href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a></td>
-<td>专门生成百度可识别的站点地图</td>
-</tr>
-<tr>
-<td><a href="https://github.com/willin/hexo-wordcount">hexo-wordcount</a></td>
-<td>给文章添加字数统计</td>
-</tr>
-<tr>
-<td>…</td>
-<td>…</td>
-</tr>
-</tbody></table>
-<h4 id="Hexo-的升级"><a href="#Hexo-的升级" class="headerlink" title="Hexo 的升级"></a>Hexo 的升级</h4><p>一般的，我们可以直接使用 <code>npm-check-updates</code> 来升级 Hexo 已经安装的 npm 包为最新版本，在 Hexo 本地的根目录打开 Bash 终端</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install -g npm-check-updates</span><br><span class="line">$ ncu  </span><br><span class="line">$ ncu -u</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-
-<p><img src="/images/20200918223048.png" alt="img"></p>
-<p>升级完成后可能会出现一些警告，类似于：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules&#x2F;hexo-douban&#x2F;node_modules&#x2F;fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line">les&#x2F;fsevents):</span><br><span class="line">events@2.1.3: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules&#x2F;hexo-generator-baidu-sitemap&#x2F;node_modules&#x2F;fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line"></span><br><span class="line">updated 4 packages and audited 606 packages in 16.496s</span><br><span class="line"></span><br><span class="line">9 packages are looking for funding</span><br><span class="line">  run &#96;npm fund&#96; for details</span><br><span class="line"></span><br><span class="line">found 4 low severity vulnerabilities</span><br><span class="line">  run &#96;npm audit fix&#96; to fix them, or &#96;npm audit&#96; for details</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 自动修复&#x2F;更新这些依赖</span><br><span class="line">$ npm audit fix</span><br><span class="line"># 如果还有依赖有问题可自行cd到npm模块目录手动安装适合的版本</span><br></pre></td></tr></table></figure>
-
-<h4 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h4><p>🌼基本把 Hexo 开始的全部步骤都介绍了，希望纯小白也能看懂🙄，除了上面的配置之外更多的关于主题的配置你可以看主题作者写的文档，一般文档都比较详细，得益于庞大的用户群体和社区支持，绝大多数问题你都可以通过 Google 搜索和阅读 <code>Hexo 文档</code>或者主题文档找到解决方法。如果你在使用中遇到一些无法理解、无法解决的问题也希望你在了解提问的智慧后在开源社区进行提问，可以一定程度上让你少走弯路🚀</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+            <tag> NPM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Traffic Monitor (网络流量监控器)</title>
+      <link href="posts/bac33bc7.html"/>
+      <url>posts/bac33bc7.html</url>
+      
+        <content type="html"><![CDATA[<h4 id="TrafficMonitor-简介"><a href="#TrafficMonitor-简介" class="headerlink" title="TrafficMonitor 简介"></a>TrafficMonitor 简介</h4><p>Traffic Monitor (网络流量监控器) 是一款 Windows 平台上开源免费的实时网速监控软件。它体积小巧而且是绿色软件，能以类似 360 助手的「桌面悬浮窗」的形式，保持在桌面角落或嵌入到任务栏为你显示当前的网络速度(上传/下载速度)，以及显示系统的 CPU 和内存利用率。</p><a id="more"></a><h4 id="实时显示网速和资源占用率"><a href="#实时显示网速和资源占用率" class="headerlink" title="实时显示网速和资源占用率"></a>实时显示网速和资源占用率</h4><p>以“<strong>悬浮窗</strong>”形式显示的好处是用户在任何时候都能非常直观地一眼看到当前<a href="https://www.iplaysoft.com/tag/%E7%BD%91%E7%BB%9C">网络</a>和电脑的资源使用情况，不必每次手动去运行，就能时刻留意到有无软件在后台悄悄地上传东西、CPU 和内存有无无故被利用等等，便于随时观察和发现异常状况。</p><p><img src="/images/trafficmonitor_window.gif"></p><h4 id="主悬浮窗："><a href="#主悬浮窗：" class="headerlink" title="主悬浮窗："></a>主悬浮窗：</h4><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/main1.png"></p><p>右键点击 TrafficMonitor 的悬浮窗，你可以根据自己的需要，对显示样式进行自定义，比如选择显示的监控项目、透明度等，也能设置不同字样以及显示的内容。</p><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/main.png"></p><h4 id="任务栏窗口"><a href="#任务栏窗口" class="headerlink" title="任务栏窗口"></a>任务栏窗口</h4><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/taskbar.PNG"></p><h4 id="选项设置"><a href="#选项设置" class="headerlink" title="选项设置"></a>选项设置</h4><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/option.jpg"></p><h4 id="自定义皮肤"><a href="#自定义皮肤" class="headerlink" title="自定义皮肤"></a>自定义皮肤</h4><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/selecte_skin.png"></p><p>多彩皮肤：</p><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/skins.PNG"></p><p>TrafficMonitor皮肤编辑器：<a href="https://github.com/zhongyang219/TrafficMonitorSkinEditor/releases">点此下载</a></p><p>TrafficMonitor皮肤编辑器使用教程：<a href="https://github.com/zhongyang219/TrafficMonitorSkinEditor/blob/master/README.md">点击此处</a></p><p>更多皮肤下载：<a href="https://github.com/zhongyang219/TrafficMonitorSkin/blob/master/%E7%9A%AE%E8%82%A4%E4%B8%8B%E8%BD%BD.md">点击此处</a></p><h4 id="流量统计-日历视图："><a href="#流量统计-日历视图：" class="headerlink" title="流量统计 - 日历视图："></a>流量统计 - 日历视图：</h4><p><img src="/images/trafficmonitor_16-33-33.png"></p><h4 id="流量统计-列表视图："><a href="#流量统计-列表视图：" class="headerlink" title="流量统计 - 列表视图："></a>流量统计 - 列表视图：</h4><p><img src="/images/trafficmonitor_16-33-24.png"></p><h4 id="主要功能特性"><a href="#主要功能特性" class="headerlink" title="主要功能特性"></a>主要功能特性</h4><ul><li>显示当前实现网络传输速率、CPU和内存占用率</li><li>如果电脑有多个网卡，支持自动和手动选择网络连接</li><li>查看网络详细信息</li><li>支持嵌入到任务栏显示</li><li>支持更换皮肤和自定义皮肤</li><li>历史流量统计</li></ul><h4 id="下载链接："><a href="#下载链接：" class="headerlink" title="下载链接："></a>下载链接：</h4><p>官方下载：<a href="https://github.com/zhongyang219/TrafficMonitor/releases/latest">点击此处下载</a><br>蓝奏网盘：<a href="https://pigu.lanzoui.com/i4fh9h8n41i">https://pigu.lanzoui.com/i4fh9h8n41i</a></p>]]></content>
+      
+      
       <categories>
-        <category>Hexo</category>
+          
+          <category> Windows </category>
+          
       </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给Git和NPM代理加速</title>
-    <url>/posts/dde926b0.html</url>
-    <content><![CDATA[<h1 id="给Git和NPM代理加速"><a href="#给Git和NPM代理加速" class="headerlink" title="给Git和NPM代理加速"></a>给Git和NPM代理加速</h1><p>前言<br>使用 Hexo 写作离不开 Git 和 Node.js，由于某些东西经常抽风，在国内有时候 Git 连接 Github 和 Node.js 使用 NPM 包管理器变得不那么容易，但是如果我们自备小飞机的话就可以让 Git 和 NPM 走本地代理，速度直接起飞😎</p>
-<p>查看本地代理<br>Clash 是目前 Windows 上最好用的 Vmess/Clash 协议代理工具（确信），下面以 Clash for Windows 为例（其他 V2/Clash/SS/SSR 代理工具同理）</p>
-<p>Clash 主界面可以直观看到本地 HTTP 代理和 Socket5 代理的端口，注意下，后面要用的</p>
-<p><img src="/images/20200614202805.png" alt="Clash查看代理端口"></p>
- <!--以下操作均在 Git bash/Windows终端下进行-->
-
-<h3 id="配置-Git-本地代理"><a href="#配置-Git-本地代理" class="headerlink" title="配置 Git 本地代理"></a>配置 Git 本地代理</h3><blockquote>
-<p>Git 同时支持 Socket5 和 HTTP 代理，根据本地客户端具体情况选择一种配置就可以了</p>
-</blockquote>
-<h4 id="Socket5-代理"><a href="#Socket5-代理" class="headerlink" title="Socket5 代理"></a>Socket5 代理</h4><p>Git 默认的 Socket5 代理应设置为：(其中 server 是服务器地址，port是代理端口)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git config --global http.proxy socks5:&#x2F;&#x2F;server:port</span><br><span class="line">$ git config --global https.proxy socks5:&#x2F;&#x2F;server:port</span><br></pre></td></tr></table></figure>
-
-<p>本地服务器的 IPV4 地址就是：127.0.0.1，端口填上面 Clash 中的 Socket5 代理端口</p>
-<p>以我的本地代理端口为例，在 Git bash/Windows 终端下输入下面命令回车</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git config --global http.proxy socks5:&#x2F;&#x2F;127.0.0.1:7891</span><br><span class="line">$ git config --global https.proxy socks5:&#x2F;&#x2F;127.0.0.1:7891</span><br></pre></td></tr></table></figure>
-
-<p>Socket5 代理设置完成</p>
-<h4 id="HTTP-代理"><a href="#HTTP-代理" class="headerlink" title="HTTP 代理"></a>HTTP 代理</h4><blockquote>
-<p>如果你的代理客户端不支持 Socket5代理，那它至少是支持 HTTP代理的</p>
-</blockquote>
-<p>Git 默认的 HTTP 代理应设置为：(其中 server 是服务器地址，port是代理端口)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git config --global http.proxy http:&#x2F;&#x2F;server:port</span><br><span class="line">$ git config --global https.proxy http:&#x2F;&#x2F;server:port</span><br></pre></td></tr></table></figure>
-
-<p>本地服务器的 IPV4 地址就是：127.0.0.1，端口填上面 Clash 中的 HTTP 代理端口</p>
-<p>以我的本地代理端口为例，在 Git bash/Windows 终端下输入下面命令回车</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git config --global http.proxy http:&#x2F;&#x2F;127.0.0.1:7890</span><br><span class="line">$ git config --global https.proxy https:&#x2F;&#x2F;127.0.0.1:7890</span><br></pre></td></tr></table></figure>
-
-<h4 id="测试-Git-速度"><a href="#测试-Git-速度" class="headerlink" title="测试 Git 速度"></a>测试 Git 速度</h4><p>Git 拉取<a href="https://github.com/WangNingkai/OLAINDEX">OlaIndex</a>的代码测试：</p>
-<p><img src="/images/20200614204812.gif" alt="测试"></p>
-<p>可以看到几乎秒拉取完成，速度快到飞起😎至此本地 Git 代理设置完成😋</p>
-<h4 id="取消-Git-代理"><a href="#取消-Git-代理" class="headerlink" title="取消 Git 代理"></a>取消 Git 代理</h4><p>如果哪天需要取消代理，在 Git bash/Windows 终端下输入下面命令回车即可：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git config --global --unset http.proxy</span><br><span class="line">$ git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
-
-<h4 id="配置本地-NPM-代理"><a href="#配置本地-NPM-代理" class="headerlink" title="配置本地 NPM 代理"></a>配置本地 NPM 代理</h4><p>NPM 原生支持 HTTP 代理，但是不支持 Socket5 代理，要想使用 Socket5 为 NPM 代理，你还需要 HTTP 监听 Socket5 代理工具，这里不做讨论🙄</p>
-<blockquote>
-<p>对于没有密码的 HTTP 代理（比如上面）</p>
-</blockquote>
-<h4 id="HTTP-代理-1"><a href="#HTTP-代理-1" class="headerlink" title="HTTP 代理"></a>HTTP 代理</h4><p>默认的 HTTP 代理应设置为：(其中 server 是服务器地址，port是代理端口)</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm config set proxy http:&#x2F;&#x2F;server:port</span><br><span class="line">$ npm config set https-proxy http:&#x2F;&#x2F;server:port</span><br></pre></td></tr></table></figure>
-
-<p>打开 Git bash/Windows 终端，比如我的设置为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm config set proxy http:&#x2F;&#x2F;127.0.0.1:7890</span><br><span class="line">$ npm config set https-proxy http:&#x2F;&#x2F;127.0.0.1:7890</span><br></pre></td></tr></table></figure>
-
-<p>这时本地的 NPM 的 HTTP 代理设置已经完成</p>
-<h4 id="取消-NPM-代理"><a href="#取消-NPM-代理" class="headerlink" title="取消 NPM 代理"></a>取消 NPM 代理</h4><p>如果你需要取消代理，在终端输入下面命令即可😋</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm config delete proxy</span><br><span class="line">$ npm config delete https-proxy</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看-Git-和-NPM-的配置文件"><a href="#查看-Git-和-NPM-的配置文件" class="headerlink" title="查看 Git 和 NPM 的配置文件"></a>查看 Git 和 NPM 的配置文件</h3><p>以默认设置安装的 Git 和 Node.js 客户端默认的配置文件都在该目录下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Explorer</span><br><span class="line">C:\Users\用户名</span><br></pre></td></tr></table></figure>
-
-<h4 id="你可以直观的查看-Git-和-NPM-的配置"><a href="#你可以直观的查看-Git-和-NPM-的配置" class="headerlink" title="你可以直观的查看 Git 和 NPM 的配置"></a>你可以直观的查看 Git 和 NPM 的配置</h4><p>其中.gitconfig 是 Git 的配置文件</p>
-<p><img src="/images/20200614210620.png" alt="Git配置文件"></p>
-<p>.npmrc 是 NPM 的配置文件</p>
-<p><img src="/images/20200614210626.png" alt="NPM配置文件"></p>
-<p>所以也可以不使用命令，直接修改配置文件里面的代理也可🤠</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> CPU </tag>
+            
+            <tag> 内存 </tag>
+            
+            <tag> 网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无损音乐下载网站资源合集</title>
+      <link href="posts/ba78084f.html"/>
+      <url>posts/ba78084f.html</url>
+      
+        <content type="html"><![CDATA[<p>音乐陶冶情操，放松心情。但引入版权问题，越来越多的歌曲不能随便听，或者注册VIP ，只有单曲花钱。所以我们为大家整理了各种白嫖的方法，包括网页版及客户端、APP。</p><a id="more"></a><h2 id="网页版网站"><a href="#网页版网站" class="headerlink" title="网页版网站"></a>网页版网站</h2><ul><li><p>超高无损音乐：</p><p><a href="https://www.sq688.com/">https://www.sq688.com</a></p><ul><li>可以下载无损音乐。如果你比较喜欢听和收藏无损音乐的话，那么这个网站最合适你了，提供百度网盘的下载链接下载无损音乐，还可以直接保存到自己网盘。</li><li>无在线试听</li></ul></li><li><p>51ape：</p><p><a href="http://www.51ape.com/">http://www.51ape.com</a></p><ul><li>这也是一个无损音乐下载网站，拥有大量的无损音乐歌曲，数量高达数10万。而且大部分格式的无损音乐几乎可以搜索到。此外，网站还根据本周、本月和专辑等分类。同时提供歌曲歌词。</li><li>无在线试听</li></ul></li><li><p>果汁音乐：</p><p><a href="http://guozhivip.com/yinyue">http://guozhivip.com/yinyue</a></p><ul><li>一个在线音乐播放网站。当前主流和热门的音乐都可以随便下载。此外，它还可以定义私人的专属歌单。</li></ul></li><li><p>墨灵音乐：</p><p><a href="https://yinyue.qugeek.com/">https://yinyue.qugeek.com</a></p><ul><li>这个网站相当于一个在线音乐播放器，与上面的音乐有着本质性的不同。在这网站上我们不仅可以试听，下载歌曲，还可以看它的歌词和歌单，就仿佛是在使用一个非常精美的播放器一般。</li><li><a href="https://yinyue.qugeek.com/app/player">在线音乐播放器</a>|<a href="https://yinyue.qugeek.com/app/storage/local/add.php">本地音乐库</a>|<a href="https://yinyue.qugeek.com/app/instrument">在线乐器</a>|<a href="https://yinyue.qugeek.com/app/id3writer">在线编辑音乐的ID3信息</a>|<a href="https://yinyue.qugeek.com/app/rainyscope">白噪音</a></li></ul></li><li><p>音乐下载器：</p><p><a href="https://huan-xi.github.io/">https://huan-xi.github.io</a></p><ul><li>无损音乐，下载只有MP3格式，可以在线试听</li></ul></li><li><p>HiFiNi：</p><p><a href="https://www.hifini.com/">https://www.hifini.com</a></p><ul><li>提供无损音乐百度网盘下载，多种音质可供选择</li><li>回复获取提取码会扣金币</li></ul></li><li><p>麦克周：</p><p><a href="https://mkzhou.com/">https://mkzhou.com</a></p><ul><li>提供无损音乐百度网盘下载</li><li>注册需要购买邀请码</li></ul></li></ul><h2 id="Windows软件版"><a href="#Windows软件版" class="headerlink" title="Windows软件版"></a>Windows软件版</h2><ul><li><p>音乐下载器Music-Downloader-UI版：</p><p><a href="https://www.nitian1207.cn/archives/496">https://www.nitian1207.cn/archives/496</a></p><ul><li><p>可下载网易云音乐和QQ音乐上的音乐，无对应品质音乐将自动下载低品质版本，如果一直提示无版权就是服务器掉线了，晚上 10 点后刷新。下载提示无版权可能是没有所选品质的音乐，可以更换音质后再试</p></li><li><p><a href="https://github.com/NiTian1207/Music-Downloader-UI">GitHub</a></p></li></ul></li><li><p>酷我音乐 8.7.7.1_BDS4_豪华版</p><ul><li>不用登陆就可以下载无损音乐</li><li>微云：<a href="https://share.weiyun.com/5BPnTh7">https://share.weiyun.com/5BPnTh7</a> 密码：uf6mg6</li></ul></li><li><p>网易云歌单下载器：</p><ul><li>下载网易云歌单/歌曲，可下载VIP歌曲</li><li><a href="https://www.52pojie.cn/thread-1159566-1-1.html">源代码</a></li><li><a href="https://pan.baidu.com/s/1SdYn53wiBrerX3mBNZmLvg">百度云</a> 提取码：2333</li></ul></li><li><p>洛雪音乐助手桌面版：</p><p><a href="https://www.lanzous.com/b906260/">https://www.lanzous.com/b906260/</a></p><p> 密码：glqw</p><ul><li><a href="https://github.com/lyswhut/lx-music-desktop">GitHub</a></li></ul></li></ul><h2 id="安卓Android版"><a href="#安卓Android版" class="headerlink" title="安卓Android版"></a>安卓Android版</h2><p>大部分可以直接在手机应用商店下载</p><ul><li>五音助手<ul><li><a href="https://www.sixx.cc/887.html">2.3.1版</a>：<a href="https://wwa.lanzous.com/b0354oa6d">https://wwa.lanzous.com/b0354oa6d</a></li><li>持续更新：<a href="https://soft.shouji.com.cn/down/1568927.html">https://soft.shouji.com.cn/down/1568927.html</a></li></ul></li><li>轻松音乐 APP<ul><li>下载：<a href="https://www.jb51.net/softs/721353.html">https://www.jb51.net/softs/721353.html</a></li></ul></li><li><strong>MOO音乐</strong></li><li><strong>咪咕音乐</strong></li><li>网易云音乐<ul><li><a href="https://www.52pojie.cn/thread-1249894-1-1.html">去广告极致精简版</a>：<a href="https://www.lanzoux.com/iCsFWftic4d">https://www.lanzoux.com/iCsFWftic4d</a></li></ul></li><li><strong>QQ音乐</strong></li><li><strong>酷狗音乐</strong></li><li><strong>酷我音乐</strong></li><li><strong>虾米音乐</strong></li><li><strong>魔音Morin：</strong><a href="http://huanghunxiao.com/">http://huanghunxiao.com</a></li><li>无损音乐<ul><li><a href="https://www.52pojie.cn/thread-1237056-1-1.html">2.2版</a>：<a href="https://www.lanzoui.com/ikufWfbjouj">https://www.lanzoui.com/ikufWfbjouj</a></li></ul></li><li>听下<ul><li><a href="https://www.52pojie.cn/thread-1247686-1-1.html">v1.2.2版</a>：<a href="https://www.lanzoux.com/ilm7sfois6b">https://www.lanzoux.com/ilm7sfois6b</a></li></ul></li></ul><h2 id="在线听歌"><a href="#在线听歌" class="headerlink" title="在线听歌"></a>在线听歌</h2><p>最近网易云音乐和QQ音乐的网页版都改成歌单只能在线听前10首歌曲，想听全部需要下载软件，所以加上几个在线听歌的网站</p><ul><li><p><strong>‎Apple Music：</strong><a href="https://music.apple.com/">https://music.apple.com</a></p></li><li><p><strong>铜钟的音乐：</strong><a href="http://tongzhong.xyz/hot">http://tongzhong.xyz/hot</a></p></li><li><p><strong>刘明野的音乐：</strong><a href="http://tool.liumingye.cn/music/">http://tool.liumingye.cn/music</a></p></li><li><p><strong>Audiomack：</strong><a href="https://audiomack.com/">https://audiomack.com/</a> 国外音乐分享网站</p></li><li><p>Listen 1 音乐播放器：</p><p><a href="https://listen1.github.io/listen1/">https://listen1.github.io/listen1/</a></p><ul><li>这是个软件播放器，只能在线听歌，所以还是放这了</li><li>支持平台：Chrome插件版 | Firefox插件版 | Windows桌面版 | Mac桌面版 | Linux桌面版</li></ul></li></ul>]]></content>
+      
+      
       <categories>
-        <category>Hexo</category>
+          
+          <category> 杂七杂八 </category>
+          
       </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>NPM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Traffic Monitor (网络流量监控器)</title>
-    <url>/posts/bac33bc7.html</url>
-    <content><![CDATA[<h4 id="TrafficMonitor-简介"><a href="#TrafficMonitor-简介" class="headerlink" title="TrafficMonitor 简介"></a>TrafficMonitor 简介</h4><p>Traffic Monitor (网络流量监控器) 是一款 Windows 平台上开源免费的实时网速监控软件。它体积小巧而且是绿色软件，能以类似 360 助手的「桌面悬浮窗」的形式，保持在桌面角落或嵌入到任务栏为你显示当前的网络速度(上传/下载速度)，以及显示系统的 CPU 和内存利用率。</p>
-<a id="more"></a>
-
-<h4 id="实时显示网速和资源占用率"><a href="#实时显示网速和资源占用率" class="headerlink" title="实时显示网速和资源占用率"></a>实时显示网速和资源占用率</h4><p>以“<strong>悬浮窗</strong>”形式显示的好处是用户在任何时候都能非常直观地一眼看到当前<a href="https://www.iplaysoft.com/tag/%E7%BD%91%E7%BB%9C">网络</a>和电脑的资源使用情况，不必每次手动去运行，就能时刻留意到有无软件在后台悄悄地上传东西、CPU 和内存有无无故被利用等等，便于随时观察和发现异常状况。</p>
-<p><img src="/images/trafficmonitor_window.gif"></p>
-<h4 id="主悬浮窗："><a href="#主悬浮窗：" class="headerlink" title="主悬浮窗："></a>主悬浮窗：</h4><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/main1.png"></p>
-<p>右键点击 TrafficMonitor 的悬浮窗，你可以根据自己的需要，对显示样式进行自定义，比如选择显示的监控项目、透明度等，也能设置不同字样以及显示的内容。</p>
-<p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/main.png"></p>
-<h4 id="任务栏窗口"><a href="#任务栏窗口" class="headerlink" title="任务栏窗口"></a>任务栏窗口</h4><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/taskbar.PNG"></p>
-<h4 id="选项设置"><a href="#选项设置" class="headerlink" title="选项设置"></a>选项设置</h4><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/option.jpg"></p>
-<h4 id="自定义皮肤"><a href="#自定义皮肤" class="headerlink" title="自定义皮肤"></a>自定义皮肤</h4><p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/selecte_skin.png"></p>
-<p>多彩皮肤：</p>
-<p><img src="https://raw.githubusercontent.com/zhongyang219/TrafficMonitor/master/Screenshots/skins.PNG"></p>
-<p>TrafficMonitor皮肤编辑器：<a href="https://github.com/zhongyang219/TrafficMonitorSkinEditor/releases">点此下载</a></p>
-<p>TrafficMonitor皮肤编辑器使用教程：<a href="https://github.com/zhongyang219/TrafficMonitorSkinEditor/blob/master/README.md">点击此处</a></p>
-<p>更多皮肤下载：<a href="https://github.com/zhongyang219/TrafficMonitorSkin/blob/master/%E7%9A%AE%E8%82%A4%E4%B8%8B%E8%BD%BD.md">点击此处</a></p>
-<h4 id="流量统计-日历视图："><a href="#流量统计-日历视图：" class="headerlink" title="流量统计 - 日历视图："></a>流量统计 - 日历视图：</h4><p><img src="/images/trafficmonitor_16-33-33.png"></p>
-<h4 id="流量统计-列表视图："><a href="#流量统计-列表视图：" class="headerlink" title="流量统计 - 列表视图："></a>流量统计 - 列表视图：</h4><p><img src="/images/trafficmonitor_16-33-24.png"></p>
-<h4 id="主要功能特性"><a href="#主要功能特性" class="headerlink" title="主要功能特性"></a>主要功能特性</h4><ul>
-<li>显示当前实现网络传输速率、CPU和内存占用率</li>
-<li>如果电脑有多个网卡，支持自动和手动选择网络连接</li>
-<li>查看网络详细信息</li>
-<li>支持嵌入到任务栏显示</li>
-<li>支持更换皮肤和自定义皮肤</li>
-<li>历史流量统计</li>
-</ul>
-<h4 id="下载链接："><a href="#下载链接：" class="headerlink" title="下载链接："></a>下载链接：</h4><p>官方下载：<a href="https://github.com/zhongyang219/TrafficMonitor/releases/latest">点击此处下载</a><br>蓝奏网盘：<a href="https://pigu.lanzoui.com/i4fh9h8n41i">https://pigu.lanzoui.com/i4fh9h8n41i</a></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 合集 </tag>
+            
+            <tag> 音乐 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SS/SSR/V2Ray/Clash 简介和客户端软件下载</title>
+      <link href="posts/42e8018b.html"/>
+      <url>posts/42e8018b.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="SS-SSR-V2Ray-Clash简介"><a href="#SS-SSR-V2Ray-Clash简介" class="headerlink" title="SS/SSR/V2Ray/Clash简介"></a>SS/SSR/V2Ray/Clash简介</h2><ul><li>SS = <a href="https://zh.wikipedia.org/wiki/Shadowsocks">Shadowsocks</a></li><li>SSR = <a href="https://zh.wikipedia.org/wiki/ShadowsocksR">ShadowsocksR</a></li><li>SS ≠ SOCKS5</li><li>SS ≠ VPN</li><li><a href="https://www.v2ray.com/">V2Ray</a></li><li><a href="https://github.com/trojan-gfw/trojan">Trojan</a></li><li><a href="https://github.com/Dreamacro/clash">Clash</a></li></ul><a id="more"></a><h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><h5 id="推荐客户端"><a href="#推荐客户端" class="headerlink" title="推荐客户端"></a>推荐客户端</h5><ul><li><code>iOS</code>: Surge 4, Quantumult X, Quantumult, Loon, Shadowrocket</li><li><code>Android</code>: Clash for Android, Surfboard</li><li><code>macOS</code>: Surge for Mac, ClashX, Clash for Windows</li><li><code>Windows</code>: Clash for Windows</li><li><code>Linux</code>: Clash<br>*(下方有下载地址)*</li></ul><h5 id="iOS-客户端-仅国区下架-其他区可下载"><a href="#iOS-客户端-仅国区下架-其他区可下载" class="headerlink" title="iOS 客户端 (仅国区下架,其他区可下载)"></a>iOS 客户端 (仅国区下架,其他区可下载)</h5><ul><li><a href="https://apps.apple.com/us/app/id1442620678">Surge 4</a> 更新订阅制,首年:$49.99,次年开始:$19.99/年 (支持SS/Snell/Vmess/Trojan)</li><li><a href="https://apps.apple.com/us/app/quantumult-x/id1443988620">Quantumult X</a> $7.99 (支持SS/SSR/Vmess/Trojan)</li><li><a href="https://apps.apple.com/us/app/quantumult/id1252015438">Quantumult</a> $4.99 (也叫:圈, 支持SS/SSR/Vmess)</li><li><a href="https://apps.apple.com/us/app-bundle/quantumult-x-upgrade/id1482985563">Quantumult Bundle</a> $9.99 (Bundle包,包括Quantumult X和Quantumult)</li><li><a href="https://apps.apple.com/us/app/shadowrocket/id932747118">Shadowrocket</a> $2.99 (也叫:小火箭, 支持SS/SSR/Vmess/Trojan/Snell/Lua/Vless)</li></ul><h5 id="macOS-客户端"><a href="#macOS-客户端" class="headerlink" title="macOS 客户端"></a>macOS 客户端</h5><ul><li><a href="http://nssurge.com/">Surge for Mac</a> $49.99/$69.99/$99.99 (支持SS/Snell/Vmess/Trojan)</li><li><a href="https://github.com/yichengchen/clashX/releases">ClashX</a> Clash的Mac图形客户端 (支持SS/Snell/Vmess) - 推荐</li><li><a href="https://github.com/paradiseduo/ClashXR/releases">ClashXR</a> ClashR的Mac图形客户端 (支持SS/SSR/Snell/Vmess) - 推荐</li><li><a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public">ClashX Pro</a> 支持开启”增强模式的”ClashX</li><li><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">Clash for Windows</a> Clash的Windows/macOS图形客户端,简称:CFW (支持SS/SSR/Snell/Vmess/Trojan)</li><li><a href="https://github.com/Dreamacro/clash/releases">Clash 内核</a> 一个Go语言开发的多平台代理客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li><li><a href="https://github.com/Dreamacro/clash/releases/tag/premium">Clash Premium 内核</a></li><li><a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> (支持SS/SSR/Snell/Vmess/Trojan)</li><li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases">ShadowsocksX-NG</a> (支持SS)</li><li><a href="https://github.com/qinyuhang/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R8</a> (支持SS/SSR) - 推荐</li><li><a href="https://github.com/paradiseduo/ShadowsocksX-NG-R8/releases">ShadowsocksX-NG-R8</a></li><li><a href="https://github.com/leadscloud/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R</a></li><li><a href="https://github.com/wzdnzd/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R</a></li></ul><h5 id="Windows-客户端"><a href="#Windows-客户端" class="headerlink" title="Windows 客户端"></a>Windows 客户端</h5><ul><li><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">Clash for Windows</a> Clash的Windows/macOS图形客户端,简称:CFW (支持SS/SSR/Snell/Vmess/Trojan) - 推荐</li><li><a href="https://github.com/kallydev/clash_for_windows_pkg_zh-cn/releases">Clash for Windows 中文版</a> 非官方提供 - 推荐</li><li><a href="https://github.com/Dreamacro/clash/releases">Clash 内核</a> 一个Go语言开发的多平台代理客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li><li><a href="https://github.com/Dreamacro/clash/releases/tag/premium">Clash Premium 内核</a></li><li><a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> (支持SS/SSR/Snell/Vmess/Trojan)</li><li><a href="https://github.com/netchx/Netch/releases">Netch</a> (支持SS/SSR/Vmess)</li><li><a href="https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases">ShadowsocksR</a> (简称:SSR)</li><li><a href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases">ShadowsocksR</a> (HMBSbige 修改版) - 推荐</li><li><a href="https://github.com/congcong0806/congcong0806.github.io/raw/master/files/ShadowsocksR_4.7.0_Windows.7z">ShadowsocksR 4.7.0</a> (@breakwa11 破娃最后一版)</li></ul><h5 id="Android-客户端"><a href="#Android-客户端" class="headerlink" title="Android 客户端"></a>Android 客户端</h5><ul><li><a href="https://github.com/Kr328/ClashForAndroid/releases">Clash for Android</a> Clash的Android图形客户端 (支持SS/SSR/Snell/Vmess/Trojan) - 推荐</li><li><a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">Clash for Android Google Play</a> Clash的Android图形客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li><li><a href="https://github.com/shadowsocksr-backup/shadowsocksr-android/releases">ShadowsocksR</a> (简称:SSR)</li><li><a href="https://github.com/congcong0806/congcong0806.github.io/raw/master/files/ShadowsocksR_3.4.0.6_Android.zip">ShadowsocksR 3.4.0.6</a> (@breakwa11 破娃最后一版)</li><li><a href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases">shadowsocksRb</a>(简称:酸酸乳) - 推荐</li></ul><h5 id="TV"><a href="#TV" class="headerlink" title="TV"></a>TV</h5><ul><li><a href="https://github.com/Kr328/ClashForAndroid/releases">Clash for Android</a></li><li><a href="https://github.com/shadowsocks/shadowsocks-android/releases">Shadowsocks 影梭</a> (选择shadowsocks-tv)</li></ul><h5 id="V2Ray-客户端"><a href="#V2Ray-客户端" class="headerlink" title="V2Ray 客户端"></a>V2Ray 客户端</h5><ul><li>iOS<ul><li>Surge 4, Quantumult X, Quantumult, Shadowrocket, Pharos Pro, Kitsunebi, Loon ↑</li><li><a href="https://apps.apple.com/us/app/id1445270056">i2Ray</a> $3.99</li></ul></li><li>Windows<ul><li>Clash for Windows ↑</li><li><a href="https://github.com/2dust/v2rayN/releases">v2rayN</a></li><li><a href="https://github.com/Cenmrev/V2RayW/releases">V2RayW</a></li><li><a href="https://github.com/Shinlor/V2RayS/releases">V2RayS</a></li><li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li></ul></li><li>macOS<ul><li>ClashX ↑</li><li><a href="https://github.com/Cenmrev/V2RayX/releases">V2RayX</a></li><li><a href="https://github.com/yanue/V2rayU/releases">V2rayU</a></li><li><a href="https://github.com/gssdromen/V2RayC">V2RayC</a></li><li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li></ul></li><li>Linux<ul><li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li></ul></li><li>Android<ul><li>Clash for Android ↑</li><li><a href="https://github.com/2dust/v2rayNG/releases">v2rayNG</a></li><li><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang">v2rayNG Google Play</a></li></ul></li></ul><h5 id="Trojan-客户端"><a href="#Trojan-客户端" class="headerlink" title="Trojan 客户端"></a>Trojan 客户端</h5><ul><li>iOS: Surge 4, Shadowrocket, Pharos Pro ↑</li><li>Android: <a href="https://github.com/trojan-gfw/igniter/releases/tag/v0.1.0-pre-alpha16">igniter</a></li><li>Windows: <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a></li><li>macOS: Surge Mac, <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> <a href="https://github.com/JimLee1996/TrojanX/releases">TrojanX</a></li><li>Linux: <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a></li></ul><h3 id="耗电-流量"><a href="#耗电-流量" class="headerlink" title="耗电/流量"></a>耗电/流量</h3><p><em>为什么使用了代理应用后在电量统计中显示耗电很多？</em><br>这是移动操作系统的一个特殊机制, Surge、Quantumult、Shadowrocket等等所有的 SS/SSR/V2Ray 客户端开启后会接管全局的（几乎）所有通信, 所以所有的网络方面电量消耗都会被算在 SS 客户端头上, 实际使用中不会感到 SS 客户端对电量有明显影响, 「设置-电池」中看到它的电池用量, 绝大部分都是网络所消耗的电量, 并不是 SS 客户端消耗的电量, SS 客户端就是背锅侠。<br>网络流量也是如此的。</p>]]></content>
+      
+      
       <categories>
-        <category>Windows</category>
+          
+          <category> 科学上网 </category>
+          
       </categories>
-      <tags>
-        <tag>CPU</tag>
-        <tag>内存</tag>
-        <tag>网络</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无损音乐下载网站资源合集</title>
-    <url>/posts/ba78084f.html</url>
-    <content><![CDATA[<p>音乐陶冶情操，放松心情。但引入版权问题，越来越多的歌曲不能随便听，或者注册VIP ，只有单曲花钱。所以我们为大家整理了各种白嫖的方法，包括网页版及客户端、APP。</p>
-<a id="more"></a>
-
-<h2 id="网页版网站"><a href="#网页版网站" class="headerlink" title="网页版网站"></a>网页版网站</h2><ul>
-<li><p>超高无损音乐：</p>
-<p><a href="https://www.sq688.com/">https://www.sq688.com</a></p>
-<ul>
-<li>可以下载无损音乐。如果你比较喜欢听和收藏无损音乐的话，那么这个网站最合适你了，提供百度网盘的下载链接下载无损音乐，还可以直接保存到自己网盘。</li>
-<li>无在线试听</li>
-</ul>
-</li>
-<li><p>51ape：</p>
-<p><a href="http://www.51ape.com/">http://www.51ape.com</a></p>
-<ul>
-<li>这也是一个无损音乐下载网站，拥有大量的无损音乐歌曲，数量高达数10万。而且大部分格式的无损音乐几乎可以搜索到。此外，网站还根据本周、本月和专辑等分类。同时提供歌曲歌词。</li>
-<li>无在线试听</li>
-</ul>
-</li>
-<li><p>果汁音乐：</p>
-<p><a href="http://guozhivip.com/yinyue">http://guozhivip.com/yinyue</a></p>
-<ul>
-<li>一个在线音乐播放网站。当前主流和热门的音乐都可以随便下载。此外，它还可以定义私人的专属歌单。</li>
-</ul>
-</li>
-<li><p>墨灵音乐：</p>
-<p><a href="https://yinyue.qugeek.com/">https://yinyue.qugeek.com</a></p>
-<ul>
-<li>这个网站相当于一个在线音乐播放器，与上面的音乐有着本质性的不同。在这网站上我们不仅可以试听，下载歌曲，还可以看它的歌词和歌单，就仿佛是在使用一个非常精美的播放器一般。</li>
-<li><a href="https://yinyue.qugeek.com/app/player">在线音乐播放器</a>|<a href="https://yinyue.qugeek.com/app/storage/local/add.php">本地音乐库</a>|<a href="https://yinyue.qugeek.com/app/instrument">在线乐器</a>|<a href="https://yinyue.qugeek.com/app/id3writer">在线编辑音乐的ID3信息</a>|<a href="https://yinyue.qugeek.com/app/rainyscope">白噪音</a></li>
-</ul>
-</li>
-<li><p>音乐下载器：</p>
-<p><a href="https://huan-xi.github.io/">https://huan-xi.github.io</a></p>
-<ul>
-<li>无损音乐，下载只有MP3格式，可以在线试听</li>
-</ul>
-</li>
-<li><p>HiFiNi：</p>
-<p><a href="https://www.hifini.com/">https://www.hifini.com</a></p>
-<ul>
-<li>提供无损音乐百度网盘下载，多种音质可供选择</li>
-<li>回复获取提取码会扣金币</li>
-</ul>
-</li>
-<li><p>麦克周：</p>
-<p><a href="https://mkzhou.com/">https://mkzhou.com</a></p>
-<ul>
-<li>提供无损音乐百度网盘下载</li>
-<li>注册需要购买邀请码</li>
-</ul>
-</li>
-</ul>
-<h2 id="Windows软件版"><a href="#Windows软件版" class="headerlink" title="Windows软件版"></a>Windows软件版</h2><ul>
-<li><p>音乐下载器Music-Downloader-UI版：</p>
-<p><a href="https://www.nitian1207.cn/archives/496">https://www.nitian1207.cn/archives/496</a></p>
-<ul>
-<li><p>可下载网易云音乐和QQ音乐上的音乐，无对应品质音乐将自动下载低品质版本，如果一直提示无版权就是服务器掉线了，晚上 10 点后刷新。下载提示无版权可能是没有所选品质的音乐，可以更换音质后再试</p>
-</li>
-<li><p><a href="https://github.com/NiTian1207/Music-Downloader-UI">GitHub</a></p>
-</li>
-</ul>
-</li>
-<li><p>酷我音乐 8.7.7.1_BDS4_豪华版</p>
-<ul>
-<li>不用登陆就可以下载无损音乐</li>
-<li>微云：<a href="https://share.weiyun.com/5BPnTh7">https://share.weiyun.com/5BPnTh7</a> 密码：uf6mg6</li>
-</ul>
-</li>
-<li><p>网易云歌单下载器：</p>
-<ul>
-<li>下载网易云歌单/歌曲，可下载VIP歌曲</li>
-<li><a href="https://www.52pojie.cn/thread-1159566-1-1.html">源代码</a></li>
-<li><a href="https://pan.baidu.com/s/1SdYn53wiBrerX3mBNZmLvg">百度云</a> 提取码：2333</li>
-</ul>
-</li>
-<li><p>洛雪音乐助手桌面版：</p>
-<p><a href="https://www.lanzous.com/b906260/">https://www.lanzous.com/b906260/</a></p>
-<p> 密码：glqw</p>
-<ul>
-<li><a href="https://github.com/lyswhut/lx-music-desktop">GitHub</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="安卓Android版"><a href="#安卓Android版" class="headerlink" title="安卓Android版"></a>安卓Android版</h2><p>大部分可以直接在手机应用商店下载</p>
-<ul>
-<li>五音助手<ul>
-<li><a href="https://www.sixx.cc/887.html">2.3.1版</a>：<a href="https://wwa.lanzous.com/b0354oa6d">https://wwa.lanzous.com/b0354oa6d</a></li>
-<li>持续更新：<a href="https://soft.shouji.com.cn/down/1568927.html">https://soft.shouji.com.cn/down/1568927.html</a></li>
-</ul>
-</li>
-<li>轻松音乐 APP<ul>
-<li>下载：<a href="https://www.jb51.net/softs/721353.html">https://www.jb51.net/softs/721353.html</a></li>
-</ul>
-</li>
-<li><strong>MOO音乐</strong></li>
-<li><strong>咪咕音乐</strong></li>
-<li>网易云音乐<ul>
-<li><a href="https://www.52pojie.cn/thread-1249894-1-1.html">去广告极致精简版</a>：<a href="https://www.lanzoux.com/iCsFWftic4d">https://www.lanzoux.com/iCsFWftic4d</a></li>
-</ul>
-</li>
-<li><strong>QQ音乐</strong></li>
-<li><strong>酷狗音乐</strong></li>
-<li><strong>酷我音乐</strong></li>
-<li><strong>虾米音乐</strong></li>
-<li><strong>魔音Morin：</strong><a href="http://huanghunxiao.com/">http://huanghunxiao.com</a></li>
-<li>无损音乐<ul>
-<li><a href="https://www.52pojie.cn/thread-1237056-1-1.html">2.2版</a>：<a href="https://www.lanzoui.com/ikufWfbjouj">https://www.lanzoui.com/ikufWfbjouj</a></li>
-</ul>
-</li>
-<li>听下<ul>
-<li><a href="https://www.52pojie.cn/thread-1247686-1-1.html">v1.2.2版</a>：<a href="https://www.lanzoux.com/ilm7sfois6b">https://www.lanzoux.com/ilm7sfois6b</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="在线听歌"><a href="#在线听歌" class="headerlink" title="在线听歌"></a>在线听歌</h2><p>最近网易云音乐和QQ音乐的网页版都改成歌单只能在线听前10首歌曲，想听全部需要下载软件，所以加上几个在线听歌的网站</p>
-<ul>
-<li><p><strong>‎Apple Music：</strong><a href="https://music.apple.com/">https://music.apple.com</a></p>
-</li>
-<li><p><strong>铜钟的音乐：</strong><a href="http://tongzhong.xyz/hot">http://tongzhong.xyz/hot</a></p>
-</li>
-<li><p><strong>刘明野的音乐：</strong><a href="http://tool.liumingye.cn/music/">http://tool.liumingye.cn/music</a></p>
-</li>
-<li><p><strong>Audiomack：</strong><a href="https://audiomack.com/">https://audiomack.com/</a> 国外音乐分享网站</p>
-</li>
-<li><p>Listen 1 音乐播放器：</p>
-<p><a href="https://listen1.github.io/listen1/">https://listen1.github.io/listen1/</a></p>
-<ul>
-<li>这是个软件播放器，只能在线听歌，所以还是放这了</li>
-<li>支持平台：Chrome插件版 | Firefox插件版 | Windows桌面版 | Mac桌面版 | Linux桌面版</li>
-</ul>
-</li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 机场 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ventoy 一个U盘装N个系统</title>
+      <link href="posts/c4252c66.html"/>
+      <url>posts/c4252c66.html</url>
+      
+        <content type="html"><![CDATA[<p>摘要：Ventoy是一款国人开发的新一代多ISO启动引导程序，这款工具最大的优点就是无需格式化优盘，用户只需要将所需的ISO镜像文件拷贝至优盘中即可在Ventoy界面中选择自己想要的ISO镜像文件。</p><a id="more"></a><p>Ventoy是一个制作可启动U盘的开源工具。有了Ventoy你就无需反复地格式化U盘，你只需要把ISO文件拷贝到U盘里面就可以启动了，无需其他操作。 你可以一次性拷贝很多个不同类型的ISO文件，在启动时Ventoy会显示一个菜单来选择(<a href="https://www.ventoy.net/cn/screenshot.html">截图</a>)。 无差异支持Legacy BIOS和UEFI模式。目前已经测试了各类超过<strong>450+</strong> 个ISO文件(<a href="https://www.ventoy.net/cn/isolist.html">列表</a>). 同时提出了**”Ventoy Compatible”**的概念，若被支持则理论上可以启动任何ISO文件.</p><p><img src="/images/Ventoy.png"></p><p><img src="/images/Ventoy1.png"></p><h4 id="五大优势"><a href="#五大优势" class="headerlink" title="五大优势"></a>五大优势</h4><p>广泛兼容：支持Windows10、Windows8.1、Windows7、WinPE系统及Ubuntu等多种Linux发行版<br>无需格盘：可以直接安装到U盘上且不需要将其他镜像刻录U盘，用户需要做的仅仅是将ISO复制到U盘中<br>启动兼容：无差别支持LegacyBIOS和UEFI模式，无论电脑主板什么模式Ventoy都可以自动检测识别<br>大型文件：支持将超过4GB的镜像文件复制到U盘，这点很重要因为Windows 10 镜像文件已超过4GB<br>其他优势：可并存多个操作系统镜像无需每次使用重新格盘刻录、启动过程支持写保护、版本升级不丢数据</p><h4 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h4><ul><li><a href="https://github.com/ventoy/Ventoy/releases">https://github.com/ventoy/Ventoy/releases</a></li><li><a href="https://gitee.com/longpanda/Ventoy/releases/">https://gitee.com/longpanda/Ventoy/releases/</a></li><li><a href="https://www.lanzoux.com/b01bd54gb">https://www.lanzoux.com/b01bd54gb</a> （蓝奏云）</li><li><a href="https://cloud.189.cn/t/b2eMBrrmay2y">https://cloud.189.cn/t/b2eMBrrmay2y</a> （天翼云）      </li><li><a href="https://pan.baidu.com/s/1UzHMzn6SToxHRYw7HR16_w">https://pan.baidu.com/s/1UzHMzn6SToxHRYw7HR16_w</a> 提取码: vtoy （百度网盘）</li></ul>]]></content>
+      
+      
       <categories>
-        <category>杂七杂八</category>
+          
+          <category> Windows </category>
+          
       </categories>
-      <tags>
-        <tag>合集</tag>
-        <tag>音乐</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SS/SSR/V2Ray/Clash 简介和客户端软件下载</title>
-    <url>/posts/42e8018b.html</url>
-    <content><![CDATA[<h2 id="SS-SSR-V2Ray-Clash简介"><a href="#SS-SSR-V2Ray-Clash简介" class="headerlink" title="SS/SSR/V2Ray/Clash简介"></a>SS/SSR/V2Ray/Clash简介</h2><ul>
-<li>SS = <a href="https://zh.wikipedia.org/wiki/Shadowsocks">Shadowsocks</a></li>
-<li>SSR = <a href="https://zh.wikipedia.org/wiki/ShadowsocksR">ShadowsocksR</a></li>
-<li>SS ≠ SOCKS5</li>
-<li>SS ≠ VPN</li>
-<li><a href="https://www.v2ray.com/">V2Ray</a></li>
-<li><a href="https://github.com/trojan-gfw/trojan">Trojan</a></li>
-<li><a href="https://github.com/Dreamacro/clash">Clash</a></li>
-</ul>
-<a id="more"></a>
-
-<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><h5 id="推荐客户端"><a href="#推荐客户端" class="headerlink" title="推荐客户端"></a>推荐客户端</h5><ul>
-<li><code>iOS</code>: Surge 4, Quantumult X, Quantumult, Loon, Shadowrocket</li>
-<li><code>Android</code>: Clash for Android, Surfboard</li>
-<li><code>macOS</code>: Surge for Mac, ClashX, Clash for Windows</li>
-<li><code>Windows</code>: Clash for Windows</li>
-<li><code>Linux</code>: Clash<br>*(下方有下载地址)*</li>
-</ul>
-<h5 id="iOS-客户端-仅国区下架-其他区可下载"><a href="#iOS-客户端-仅国区下架-其他区可下载" class="headerlink" title="iOS 客户端 (仅国区下架,其他区可下载)"></a>iOS 客户端 (仅国区下架,其他区可下载)</h5><ul>
-<li><a href="https://apps.apple.com/us/app/id1442620678">Surge 4</a> 更新订阅制,首年:$49.99,次年开始:$19.99/年 (支持SS/Snell/Vmess/Trojan)</li>
-<li><a href="https://apps.apple.com/us/app/quantumult-x/id1443988620">Quantumult X</a> $7.99 (支持SS/SSR/Vmess/Trojan)</li>
-<li><a href="https://apps.apple.com/us/app/quantumult/id1252015438">Quantumult</a> $4.99 (也叫:圈, 支持SS/SSR/Vmess)</li>
-<li><a href="https://apps.apple.com/us/app-bundle/quantumult-x-upgrade/id1482985563">Quantumult Bundle</a> $9.99 (Bundle包,包括Quantumult X和Quantumult)</li>
-<li><a href="https://apps.apple.com/us/app/shadowrocket/id932747118">Shadowrocket</a> $2.99 (也叫:小火箭, 支持SS/SSR/Vmess/Trojan/Snell/Lua/Vless)</li>
-</ul>
-<h5 id="macOS-客户端"><a href="#macOS-客户端" class="headerlink" title="macOS 客户端"></a>macOS 客户端</h5><ul>
-<li><a href="http://nssurge.com/">Surge for Mac</a> $49.99/$69.99/$99.99 (支持SS/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/yichengchen/clashX/releases">ClashX</a> Clash的Mac图形客户端 (支持SS/Snell/Vmess) - 推荐</li>
-<li><a href="https://github.com/paradiseduo/ClashXR/releases">ClashXR</a> ClashR的Mac图形客户端 (支持SS/SSR/Snell/Vmess) - 推荐</li>
-<li><a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public">ClashX Pro</a> 支持开启”增强模式的”ClashX</li>
-<li><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">Clash for Windows</a> Clash的Windows/macOS图形客户端,简称:CFW (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/Dreamacro/clash/releases">Clash 内核</a> 一个Go语言开发的多平台代理客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/Dreamacro/clash/releases/tag/premium">Clash Premium 内核</a></li>
-<li><a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases">ShadowsocksX-NG</a> (支持SS)</li>
-<li><a href="https://github.com/qinyuhang/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R8</a> (支持SS/SSR) - 推荐</li>
-<li><a href="https://github.com/paradiseduo/ShadowsocksX-NG-R8/releases">ShadowsocksX-NG-R8</a></li>
-<li><a href="https://github.com/leadscloud/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R</a></li>
-<li><a href="https://github.com/wzdnzd/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R</a></li>
-</ul>
-<h5 id="Windows-客户端"><a href="#Windows-客户端" class="headerlink" title="Windows 客户端"></a>Windows 客户端</h5><ul>
-<li><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">Clash for Windows</a> Clash的Windows/macOS图形客户端,简称:CFW (支持SS/SSR/Snell/Vmess/Trojan) - 推荐</li>
-<li><a href="https://github.com/kallydev/clash_for_windows_pkg_zh-cn/releases">Clash for Windows 中文版</a> 非官方提供 - 推荐</li>
-<li><a href="https://github.com/Dreamacro/clash/releases">Clash 内核</a> 一个Go语言开发的多平台代理客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/Dreamacro/clash/releases/tag/premium">Clash Premium 内核</a></li>
-<li><a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/netchx/Netch/releases">Netch</a> (支持SS/SSR/Vmess)</li>
-<li><a href="https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases">ShadowsocksR</a> (简称:SSR)</li>
-<li><a href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases">ShadowsocksR</a> (HMBSbige 修改版) - 推荐</li>
-<li><a href="https://github.com/congcong0806/congcong0806.github.io/raw/master/files/ShadowsocksR_4.7.0_Windows.7z">ShadowsocksR 4.7.0</a> (@breakwa11 破娃最后一版)</li>
-</ul>
-<h5 id="Android-客户端"><a href="#Android-客户端" class="headerlink" title="Android 客户端"></a>Android 客户端</h5><ul>
-<li><a href="https://github.com/Kr328/ClashForAndroid/releases">Clash for Android</a> Clash的Android图形客户端 (支持SS/SSR/Snell/Vmess/Trojan) - 推荐</li>
-<li><a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">Clash for Android Google Play</a> Clash的Android图形客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/shadowsocksr-backup/shadowsocksr-android/releases">ShadowsocksR</a> (简称:SSR)</li>
-<li><a href="https://github.com/congcong0806/congcong0806.github.io/raw/master/files/ShadowsocksR_3.4.0.6_Android.zip">ShadowsocksR 3.4.0.6</a> (@breakwa11 破娃最后一版)</li>
-<li><a href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases">shadowsocksRb</a>(简称:酸酸乳) - 推荐</li>
-</ul>
-<h5 id="TV"><a href="#TV" class="headerlink" title="TV"></a>TV</h5><ul>
-<li><a href="https://github.com/Kr328/ClashForAndroid/releases">Clash for Android</a></li>
-<li><a href="https://github.com/shadowsocks/shadowsocks-android/releases">Shadowsocks 影梭</a> (选择shadowsocks-tv)</li>
-</ul>
-<h5 id="V2Ray-客户端"><a href="#V2Ray-客户端" class="headerlink" title="V2Ray 客户端"></a>V2Ray 客户端</h5><ul>
-<li>iOS<ul>
-<li>Surge 4, Quantumult X, Quantumult, Shadowrocket, Pharos Pro, Kitsunebi, Loon ↑</li>
-<li><a href="https://apps.apple.com/us/app/id1445270056">i2Ray</a> $3.99</li>
-</ul>
-</li>
-<li>Windows<ul>
-<li>Clash for Windows ↑</li>
-<li><a href="https://github.com/2dust/v2rayN/releases">v2rayN</a></li>
-<li><a href="https://github.com/Cenmrev/V2RayW/releases">V2RayW</a></li>
-<li><a href="https://github.com/Shinlor/V2RayS/releases">V2RayS</a></li>
-<li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li>
-</ul>
-</li>
-<li>macOS<ul>
-<li>ClashX ↑</li>
-<li><a href="https://github.com/Cenmrev/V2RayX/releases">V2RayX</a></li>
-<li><a href="https://github.com/yanue/V2rayU/releases">V2rayU</a></li>
-<li><a href="https://github.com/gssdromen/V2RayC">V2RayC</a></li>
-<li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li>
-</ul>
-</li>
-<li>Linux<ul>
-<li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li>
-</ul>
-</li>
-<li>Android<ul>
-<li>Clash for Android ↑</li>
-<li><a href="https://github.com/2dust/v2rayNG/releases">v2rayNG</a></li>
-<li><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang">v2rayNG Google Play</a></li>
-</ul>
-</li>
-</ul>
-<h5 id="Trojan-客户端"><a href="#Trojan-客户端" class="headerlink" title="Trojan 客户端"></a>Trojan 客户端</h5><ul>
-<li>iOS: Surge 4, Shadowrocket, Pharos Pro ↑</li>
-<li>Android: <a href="https://github.com/trojan-gfw/igniter/releases/tag/v0.1.0-pre-alpha16">igniter</a></li>
-<li>Windows: <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a></li>
-<li>macOS: Surge Mac, <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> <a href="https://github.com/JimLee1996/TrojanX/releases">TrojanX</a></li>
-<li>Linux: <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a></li>
-</ul>
-<h3 id="耗电-流量"><a href="#耗电-流量" class="headerlink" title="耗电/流量"></a>耗电/流量</h3><p><em>为什么使用了代理应用后在电量统计中显示耗电很多？</em><br>这是移动操作系统的一个特殊机制, Surge、Quantumult、Shadowrocket等等所有的 SS/SSR/V2Ray 客户端开启后会接管全局的（几乎）所有通信, 所以所有的网络方面电量消耗都会被算在 SS 客户端头上, 实际使用中不会感到 SS 客户端对电量有明显影响, 「设置-电池」中看到它的电池用量, 绝大部分都是网络所消耗的电量, 并不是 SS 客户端消耗的电量, SS 客户端就是背锅侠。<br>网络流量也是如此的。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Ventoy </tag>
+            
+            <tag> U盘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>免费文件存储分享（网盘）服务合集</title>
+      <link href="posts/ada3a0.html"/>
+      <url>posts/ada3a0.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>老牌免费网盘，下载速度快。也是中国互联网目前分享小文件最多的平台。最大文件限制 100m。</p><p><a href="https://lanzou.com/">https://lanzou.com</a></p><h3 id="奶牛快传"><a href="#奶牛快传" class="headerlink" title="奶牛快传"></a>奶牛快传</h3><p>总共支持 2.0GB 大小，单次上传最多支持 6 个文件同时上传，下载速度快，上传简单，无需注册，无广告，支持设置分享链接密码！奶牛快传免费用户可以保存 7 天。 非常适合分享一些视频、压缩包、音乐等文件。</p><p><a href="https://cowtransfer.com/">https://cowtransfer.com</a></p><a id="more"></a><h3 id="求是潮云-U-盘"><a href="#求是潮云-U-盘" class="headerlink" title="求是潮云 U 盘"></a>求是潮云 U 盘</h3><p>求是潮云 U 盘 是浙江大学党委学工部 所提供的一项服务，支持最多 30 天的临时存储，最大文件限制 100M。</p><p><a href="https://box.zjuqsc.com/">https://box.zjuqsc.com</a></p><h3 id="文叔叔"><a href="#文叔叔" class="headerlink" title="文叔叔"></a>文叔叔</h3><p>可以上传分享单文件最大 5g 的文件。上传下载速度不限速，注册十分简单可以用 QQ / 微信一键登录。登陆用户拥有 20g 的永久存储空间。目前限制变多，分享文件有流量限制，可以作为个人存储或小范围分享使用。</p><p><a href="https://www.wenshushu.cn/">https://www.wenshushu.cn</a></p><h3 id="Send-Firefox"><a href="#Send-Firefox" class="headerlink" title="Send Firefox"></a>Send Firefox</h3><p>火狐浏览器官方出品的一款免费的匿名私密文件分享服务。<strong>目前由于滥用暂停服务，等待恢复</strong></p><ul><li>私密、安全的文件分享服务</li><li>支持最大 1GB 的任何文件上传</li><li>通过一个安全、私密且加密的链接发送文件。</li><li>首次下载或 24 小时候自动失效，链接到期后文件将从网上彻底抹去。</li></ul><p><a href="https://send.firefox.com/">https://send.firefox.com</a></p><h3 id="石墨文档"><a href="#石墨文档" class="headerlink" title="石墨文档"></a>石墨文档</h3><p>免费版 支持 10M 大小文件，无限容量。可以将文档中添加压缩包、音乐然后点击分享，将文档链接发送对方。适合小文件传输，速度快。</p><p><a href="https://shimo.im/">https://shimo.im</a></p><h3 id="快文件"><a href="#快文件" class="headerlink" title="快文件"></a>快文件</h3><p>国内上传下载速度快，适合临时传输文件，默认 10 分钟后删除文件，可以续期。</p><p><a href="https://quickfile.cn/">https://quickfile.cn</a></p><h3 id="小麦云链"><a href="#小麦云链" class="headerlink" title="小麦云链"></a>小麦云链</h3><p>小麦云盘推出的文件直链服务，上传文件直接获取 http+ftp 外链，没有防盗链，文件有效期 7 天，国内速度可跑满。看起来很不错的样子，具体是否稳定需要时间证明。</p><p><a href="http://ftpod.cn/">http://ftpod.cn</a></p><h3 id="netcut-网络剪贴板"><a href="#netcut-网络剪贴板" class="headerlink" title="netcut 网络剪贴板"></a>netcut 网络剪贴板</h3><p>支持设置失效时间，最高 3 年。支持上传文件，单次最多上传 100 个文件，单文件 50MB 内，总大小 500MB 内。直接获取的链接权限太大可以直接进行修改删除，可以找到只读链接进行分享。由于没有人工审核，举报机制比较死板，所以该服务更适合个人或小范围使用。</p><p><a href="https://netcut.cn/">https://netcut.cn</a></p><h3 id="BitSend"><a href="#BitSend" class="headerlink" title="BitSend"></a>BitSend</h3><p>BitSend 是一个日本的免费网盘，没有容量限制和流量限制，可以用来进行临时的大文件转存下载使用。速度对比其他国外网盘算是很快了。需要注意的是 BitSend 最多可选择保留 14 天，适合临时分享文件。</p><p><a href="https://bitsend.jp/">https://bitsend.jp</a></p><h3 id="catbox-moe"><a href="#catbox-moe" class="headerlink" title="catbox.moe"></a>catbox.moe</h3><p>支持 200m，可以上传任何格式的文件。支持创建专辑并分享。支持图片、音乐、视频外链， 国内的速度一般，更适合国外用户使用。</p><p><a href="https://catbox.moe/">https://catbox.moe</a></p><h3 id="dmca-gripe"><a href="#dmca-gripe" class="headerlink" title="dmca.gripe"></a>dmca.gripe</h3><p>支持 dmca 的托管服务，每个文件的最大上传大小是 5120MB，不限制任何文件，不审查任何内容，更适合国外用户使用。</p><p><a href="https://dmca.gripe/">https://dmca.gripe</a></p><h3 id="zaix-ru"><a href="#zaix-ru" class="headerlink" title="zaix.ru"></a>zaix.ru</h3><p>俄罗斯的免费网盘，无需注册以及验证，上传简单，最大上传文件 100M，支持直接外链。国内速度一般，更适合国外用户使用。如果在三个月内没有任何访问或下载，文件将会自动删除。</p><p><a href="https://zaix.ru/">https://zaix.ru</a></p><h3 id="anonfiles"><a href="#anonfiles" class="headerlink" title="anonfiles"></a>anonfiles</h3><p>匿名上传文件，免费提供 20 GB的空间，国内速度不错。</p><p><a href="https://anonfiles.com/">https://anonfiles.com</a></p>]]></content>
+      
+      
       <categories>
-        <category>科学上网</category>
+          
+          <category> 网盘 </category>
+          
       </categories>
-      <tags>
-        <tag>机场</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ventoy 一个U盘装N个系统</title>
-    <url>/posts/c4252c66.html</url>
-    <content><![CDATA[<p>摘要：Ventoy是一款国人开发的新一代多ISO启动引导程序，这款工具最大的优点就是无需格式化优盘，用户只需要将所需的ISO镜像文件拷贝至优盘中即可在Ventoy界面中选择自己想要的ISO镜像文件。</p>
-<a id="more"></a>
-<p>Ventoy是一个制作可启动U盘的开源工具。有了Ventoy你就无需反复地格式化U盘，你只需要把ISO文件拷贝到U盘里面就可以启动了，无需其他操作。 你可以一次性拷贝很多个不同类型的ISO文件，在启动时Ventoy会显示一个菜单来选择(<a href="https://www.ventoy.net/cn/screenshot.html">截图</a>)。 无差异支持Legacy BIOS和UEFI模式。目前已经测试了各类超过<strong>450+</strong> 个ISO文件(<a href="https://www.ventoy.net/cn/isolist.html">列表</a>). 同时提出了**”Ventoy Compatible”**的概念，若被支持则理论上可以启动任何ISO文件.</p>
-<p><img src="/images/Ventoy.png"></p>
-<p><img src="/images/Ventoy1.png"></p>
-<h4 id="五大优势"><a href="#五大优势" class="headerlink" title="五大优势"></a>五大优势</h4><p>广泛兼容：支持Windows10、Windows8.1、Windows7、WinPE系统及Ubuntu等多种Linux发行版<br>无需格盘：可以直接安装到U盘上且不需要将其他镜像刻录U盘，用户需要做的仅仅是将ISO复制到U盘中<br>启动兼容：无差别支持LegacyBIOS和UEFI模式，无论电脑主板什么模式Ventoy都可以自动检测识别<br>大型文件：支持将超过4GB的镜像文件复制到U盘，这点很重要因为Windows 10 镜像文件已超过4GB<br>其他优势：可并存多个操作系统镜像无需每次使用重新格盘刻录、启动过程支持写保护、版本升级不丢数据</p>
-<h4 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h4><ul>
-<li><a href="https://github.com/ventoy/Ventoy/releases">https://github.com/ventoy/Ventoy/releases</a></li>
-<li><a href="https://gitee.com/longpanda/Ventoy/releases/">https://gitee.com/longpanda/Ventoy/releases/</a></li>
-<li><a href="https://www.lanzoux.com/b01bd54gb">https://www.lanzoux.com/b01bd54gb</a> （蓝奏云）</li>
-<li><a href="https://cloud.189.cn/t/b2eMBrrmay2y">https://cloud.189.cn/t/b2eMBrrmay2y</a> （天翼云）      </li>
-<li><a href="https://pan.baidu.com/s/1UzHMzn6SToxHRYw7HR16_w">https://pan.baidu.com/s/1UzHMzn6SToxHRYw7HR16_w</a> 提取码: vtoy （百度网盘）</li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 合集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ditto剪贴板增强工具神器</title>
+      <link href="posts/7bf93f81.html"/>
+      <url>posts/7bf93f81.html</url>
+      
+        <content type="html"><![CDATA[<p>虽然WIN10系统自带的剪切板 <code>Ctrl</code>+ <code>V</code>足够日常使用也有剪贴板历史了，但需要重复粘贴内容时效率非常低。不过有了 Ditto 这款神器就不同了。</p><p><strong>Ditto</strong> 是 Windows 一款免费开源的<strong>剪贴板增强软件</strong>，支持主流<a href="https://www.iplaysoft.com/tag/%E7%B3%BB%E7%BB%9F">系统</a>，支持中文，并且提供免安装绿色版。使用它你只需像往常一些复制东西，然后按下 <code>Ctrl</code>+ <code>~</code>(数字1前面那个按键)，就能唤出它的界面，里面记录了所有历史复制内容，你可以选择性进行粘贴，非常方便……</p><a id="more"></a><p>下载地址：<a href="https://ditto-cp.sourceforge.io/">https://ditto-cp.sourceforge.io/</a></p><iframe src="//player.bilibili.com/player.html?aid=30459563&bvid=BV1Ws411F7CS&cid=53152415&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="width:100%;height:500px;min-width:375px;min-height:200px"> </iframe> ]]></content>
+      
+      
       <categories>
-        <category>Windows</category>
+          
+          <category> Windows </category>
+          
       </categories>
-      <tags>
-        <tag>Ventoy</tag>
-        <tag>U盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>免费文件存储分享（网盘）服务合集</title>
-    <url>/posts/ada3a0.html</url>
-    <content><![CDATA[<h3 id="蓝奏云"><a href="#蓝奏云" class="headerlink" title="蓝奏云"></a>蓝奏云</h3><p>老牌免费网盘，下载速度快。也是中国互联网目前分享小文件最多的平台。最大文件限制 100m。</p>
-<p><a href="https://lanzou.com/">https://lanzou.com</a></p>
-<h3 id="奶牛快传"><a href="#奶牛快传" class="headerlink" title="奶牛快传"></a>奶牛快传</h3><p>总共支持 2.0GB 大小，单次上传最多支持 6 个文件同时上传，下载速度快，上传简单，无需注册，无广告，支持设置分享链接密码！奶牛快传免费用户可以保存 7 天。 非常适合分享一些视频、压缩包、音乐等文件。</p>
-<p><a href="https://cowtransfer.com/">https://cowtransfer.com</a></p>
-<a id="more"></a>
-
-<h3 id="求是潮云-U-盘"><a href="#求是潮云-U-盘" class="headerlink" title="求是潮云 U 盘"></a>求是潮云 U 盘</h3><p>求是潮云 U 盘 是浙江大学党委学工部 所提供的一项服务，支持最多 30 天的临时存储，最大文件限制 100M。</p>
-<p><a href="https://box.zjuqsc.com/">https://box.zjuqsc.com</a></p>
-<h3 id="文叔叔"><a href="#文叔叔" class="headerlink" title="文叔叔"></a>文叔叔</h3><p>可以上传分享单文件最大 5g 的文件。上传下载速度不限速，注册十分简单可以用 QQ / 微信一键登录。登陆用户拥有 20g 的永久存储空间。目前限制变多，分享文件有流量限制，可以作为个人存储或小范围分享使用。</p>
-<p><a href="https://www.wenshushu.cn/">https://www.wenshushu.cn</a></p>
-<h3 id="Send-Firefox"><a href="#Send-Firefox" class="headerlink" title="Send Firefox"></a>Send Firefox</h3><p>火狐浏览器官方出品的一款免费的匿名私密文件分享服务。<strong>目前由于滥用暂停服务，等待恢复</strong></p>
-<ul>
-<li>私密、安全的文件分享服务</li>
-<li>支持最大 1GB 的任何文件上传</li>
-<li>通过一个安全、私密且加密的链接发送文件。</li>
-<li>首次下载或 24 小时候自动失效，链接到期后文件将从网上彻底抹去。</li>
-</ul>
-<p><a href="https://send.firefox.com/">https://send.firefox.com</a></p>
-<h3 id="石墨文档"><a href="#石墨文档" class="headerlink" title="石墨文档"></a>石墨文档</h3><p>免费版 支持 10M 大小文件，无限容量。可以将文档中添加压缩包、音乐然后点击分享，将文档链接发送对方。适合小文件传输，速度快。</p>
-<p><a href="https://shimo.im/">https://shimo.im</a></p>
-<h3 id="快文件"><a href="#快文件" class="headerlink" title="快文件"></a>快文件</h3><p>国内上传下载速度快，适合临时传输文件，默认 10 分钟后删除文件，可以续期。</p>
-<p><a href="https://quickfile.cn/">https://quickfile.cn</a></p>
-<h3 id="小麦云链"><a href="#小麦云链" class="headerlink" title="小麦云链"></a>小麦云链</h3><p>小麦云盘推出的文件直链服务，上传文件直接获取 http+ftp 外链，没有防盗链，文件有效期 7 天，国内速度可跑满。看起来很不错的样子，具体是否稳定需要时间证明。</p>
-<p><a href="http://ftpod.cn/">http://ftpod.cn</a></p>
-<h3 id="netcut-网络剪贴板"><a href="#netcut-网络剪贴板" class="headerlink" title="netcut 网络剪贴板"></a>netcut 网络剪贴板</h3><p>支持设置失效时间，最高 3 年。支持上传文件，单次最多上传 100 个文件，单文件 50MB 内，总大小 500MB 内。直接获取的链接权限太大可以直接进行修改删除，可以找到只读链接进行分享。由于没有人工审核，举报机制比较死板，所以该服务更适合个人或小范围使用。</p>
-<p><a href="https://netcut.cn/">https://netcut.cn</a></p>
-<h3 id="BitSend"><a href="#BitSend" class="headerlink" title="BitSend"></a>BitSend</h3><p>BitSend 是一个日本的免费网盘，没有容量限制和流量限制，可以用来进行临时的大文件转存下载使用。速度对比其他国外网盘算是很快了。需要注意的是 BitSend 最多可选择保留 14 天，适合临时分享文件。</p>
-<p><a href="https://bitsend.jp/">https://bitsend.jp</a></p>
-<h3 id="catbox-moe"><a href="#catbox-moe" class="headerlink" title="catbox.moe"></a>catbox.moe</h3><p>支持 200m，可以上传任何格式的文件。支持创建专辑并分享。支持图片、音乐、视频外链， 国内的速度一般，更适合国外用户使用。</p>
-<p><a href="https://catbox.moe/">https://catbox.moe</a></p>
-<h3 id="dmca-gripe"><a href="#dmca-gripe" class="headerlink" title="dmca.gripe"></a>dmca.gripe</h3><p>支持 dmca 的托管服务，每个文件的最大上传大小是 5120MB，不限制任何文件，不审查任何内容，更适合国外用户使用。</p>
-<p><a href="https://dmca.gripe/">https://dmca.gripe</a></p>
-<h3 id="zaix-ru"><a href="#zaix-ru" class="headerlink" title="zaix.ru"></a>zaix.ru</h3><p>俄罗斯的免费网盘，无需注册以及验证，上传简单，最大上传文件 100M，支持直接外链。国内速度一般，更适合国外用户使用。如果在三个月内没有任何访问或下载，文件将会自动删除。</p>
-<p><a href="https://zaix.ru/">https://zaix.ru</a></p>
-<h3 id="anonfiles"><a href="#anonfiles" class="headerlink" title="anonfiles"></a>anonfiles</h3><p>匿名上传文件，免费提供 20 GB的空间，国内速度不错。</p>
-<p><a href="https://anonfiles.com/">https://anonfiles.com</a></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> ditto </tag>
+            
+            <tag> 剪切板 </tag>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HDMI DP VGA DVI的不同版本都有什么区别？</title>
+      <link href="posts/ab75ba.html"/>
+      <url>posts/ab75ba.html</url>
+      
+        <content type="html"><![CDATA[<p>显示接口区别是什么应该怎么选？HDMI DP VGA DVI的不同版本都有什么区别？如果挑选视频传输线材？</p><a id="more"></a><iframe src="//player.bilibili.com/player.html?aid=413879350&bvid=BV1FV411r7vk&cid=214241718&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="width:100%;height:500px;min-width:375px;min-height:200px"> </iframe>]]></content>
+      
+      
       <categories>
-        <category>网盘</category>
+          
+          <category> 设备 </category>
+          
       </categories>
-      <tags>
-        <tag>免费</tag>
-        <tag>合集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ditto剪贴板增强工具神器</title>
-    <url>/posts/7bf93f81.html</url>
-    <content><![CDATA[<p>虽然WIN10系统自带的剪切板 <code>Ctrl</code>+ <code>V</code>足够日常使用也有剪贴板历史了，但需要重复粘贴内容时效率非常低。不过有了 Ditto 这款神器就不同了。</p>
-<p><strong>Ditto</strong> 是 Windows 一款免费开源的<strong>剪贴板增强软件</strong>，支持主流<a href="https://www.iplaysoft.com/tag/%E7%B3%BB%E7%BB%9F">系统</a>，支持中文，并且提供免安装绿色版。使用它你只需像往常一些复制东西，然后按下 <code>Ctrl</code>+ <code>~</code>(数字1前面那个按键)，就能唤出它的界面，里面记录了所有历史复制内容，你可以选择性进行粘贴，非常方便……</p>
-<a id="more"></a>
-
-<p>下载地址：<a href="https://ditto-cp.sourceforge.io/">https://ditto-cp.sourceforge.io/</a></p>
-<iframe src="//player.bilibili.com/player.html?aid=30459563&bvid=BV1Ws411F7CS&cid=53152415&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="width:100%;height:500px;min-width:375px;min-height:200px"> </iframe> 
-
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 接口 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>短地址服务汇总</title>
+      <link href="posts/93c9885c.html"/>
+      <url>posts/93c9885c.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="好用的短地址服务"><a href="#好用的短地址服务" class="headerlink" title="好用的短地址服务"></a>好用的短地址服务</h2><p>下方短地址虽小众但符合：无广告、无劫持、无审核、无需注册等特点。<br>特别是 <strong>t.cn</strong> 接入了白名单审查，下方短链接更是替代最佳选择。<br>在生成的短链接最后加上 <code>+</code> 或 <code>*</code> 即可查看统计，如无统计功能则为 <code>/</code></p><p>如：<code>url.kr/BJiMxy*</code></p><a id="more"></a><table><thead><tr><th>语言</th><th>网址</th><th>统计</th></tr></thead><tbody><tr><td>韩语</td><td><a href="https://url.kr/?toss.gq">url.kr</a></td><td><code>*</code></td></tr><tr><td>中文</td><td><a href="https://n9.cl/zh?toss.gq">n9.cl</a></td><td><code>/</code></td></tr><tr><td>泰语</td><td><a href="https://1th.me/?toss.gq">1th.me</a></td><td><code>+</code></td></tr><tr><td>意大利</td><td><a href="http://vado.li/?toss.gq">vado.li</a></td><td><code>/</code></td></tr><tr><td>英语</td><td><a href="https://o.tt/?toss.gq">o.tt</a></td><td><code>/</code></td></tr><tr><td>韩语</td><td><a href="https://xzx.kr/?toss.gq">xzx.kr</a></td><td><code>+</code></td></tr><tr><td>意大利</td><td><a href="https://gat.to/?toss.gq">gat.to</a></td><td><code>/</code></td></tr><tr><td>韩语</td><td><a href="https://qops.xyz/?toss.gq">qops.xyz</a></td><td><code>/</code></td></tr></tbody></table><h2 id="国内短地址"><a href="#国内短地址" class="headerlink" title="国内短地址"></a>国内短地址</h2><p><a href="http://aad.tw/?toss.gq">aad.tw</a>、<a href="http://rrd.me/?toss.gq">rrd.me</a>、<a href="http://suo.im/?toss.gq">suo.im</a>、<a href="http://sohu.gg/?toss.gq">sohu.gg</a>、<a href="https://dwz.51.la/">51.la</a>、<a href="http://weibo.ws/?toss.gq">weibo.ws</a>、<a href="https://urlify.cn/?toss.gq">urlify.cn</a></p><p>国内的短网址服务，可能会做过滤与劫持，可临时使用。</p><h2 id="小码短链接"><a href="#小码短链接" class="headerlink" title="小码短链接"></a>小码短链接</h2><p><a href="http://6url.cn/?toss.gq">6url.cn</a></p><p>国内新崛起的短地址提供商，需要微信登陆。拥有丰富的统计功能，可以绑定自定义域名，适合复合社会主义核心价值观的链接。</p><h2 id="好记的短地址"><a href="#好记的短地址" class="headerlink" title="好记的短地址"></a>好记的短地址</h2><ul><li><a href="https://u.nu/?toss.gq">u.nu</a> SM.MS/SB.SB 域名拥有者<code>兽兽</code>提供的短地址服务</li><li><a href="http://gg.gg/?toss.gq">gg.gg</a> 老牌国外短地址服务</li></ul>]]></content>
+      
+      
       <categories>
-        <category>Windows</category>
+          
+          <category> 杂七杂八 </category>
+          
       </categories>
-      <tags>
-        <tag>ditto</tag>
-        <tag>剪切板</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HDMI DP VGA DVI的不同版本都有什么区别？</title>
-    <url>/posts/ab75ba.html</url>
-    <content><![CDATA[<p>显示接口区别是什么应该怎么选？HDMI DP VGA DVI的不同版本都有什么区别？如果挑选视频传输线材？</p>
-<a id="more"></a>
-
-
-
-<iframe src="//player.bilibili.com/player.html?aid=413879350&bvid=BV1FV411r7vk&cid=214241718&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"style="width:100%;height:500px;min-width:375px;min-height:200px"> </iframe>
-
-
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 短域名 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>机场推荐【墙外不是法外之地】</title>
+      <link href="posts/85e85e2c.html"/>
+      <url>posts/85e85e2c.html</url>
+      
+        <content type="html"><![CDATA[<div class="note warning simple"><p>郑重声明：本文所介绍产品主要是为了方便学习、科研以及外贸工作，请遵守中华人民共和国法律法规，请珍惜当下还能让我们出去看看的大环境。</p><p>用户自己心里也要有一杆秤，毕竟机场多数是个人站或合伙站，能做多久并不能保证，或因风险，或因卷钱，或因赔钱，都有可能不做，不了解的尽量不要一下充很多。</p><p>大家通过下方链接注册，我有返利，不能提现，但可以白嫖。</p></div><h3 id="TG聊天软件"><a href="#TG聊天软件" class="headerlink" title="TG聊天软件"></a>TG聊天软件</h3><blockquote><p>Telegram简称TG或电报，这是需要梯子的聊天软件。很多机场都用TG联系。</p><p>有问题大家通过TG找站长解决，找我没用。</p></blockquote><a class="btn-beautify button--animated blue larger" href="https://telegram.org/"   title="TG聊天软件"><span>TG聊天软件</span></a><a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq/15"   title="TG常见中文包"><span>TG常见中文包</span></a><a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq1"   title="TG孤岛公告板"><span>TG孤岛公告板</span></a><a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq"   title="TG孤岛交流群"><span>TG孤岛交流群</span></a><div class="note default simple"><p>V2RAY机场 - - 使用 - <code>Clash客户端</code>软件在下面提供</p><p>SSR机场 - - 使用 - <code>SSR客户端</code>软件在下面提供</p></div><h3 id="订阅转换地址"><a href="#订阅转换地址" class="headerlink" title="订阅转换地址"></a>订阅转换地址</h3><a class="btn-beautify button--animated blue larger" href="https://acl4ssr-sub.github.io/"   title="订阅转换地址1"><span>订阅转换地址1</span></a><a class="btn-beautify button--animated blue larger" href="http://toss.gq/ACL4SSR/"   title="订阅转换地址2"><span>订阅转换地址2</span></a><h3 id="大机场「V2RAY」"><a href="#大机场「V2RAY」" class="headerlink" title="大机场「V2RAY」"></a>大机场「V2RAY」</h3><blockquote><p>使用15天、速度YouTube -  4K视频秒开。</p><p><a href="https://大机场.com/#/register?code=gv1z9SZR">https://大机场.com/#/register?code=gv1z9SZR</a> </p></blockquote><ul><li><p>套餐限制：3设备</p><p>【一点点流量订阅】3.99元/月、月流量为 1024G；年付29.9元。</p><p>【有点多流量订阅】5.99元/月、月流量为 2048G；年付49.9元。</p><p>【亿点点流量订阅】7.99元/月、月流量为 4096G；年付69.9元。</p></li></ul><h3 id="放心云「V2RAY」"><a href="#放心云「V2RAY」" class="headerlink" title="放心云「V2RAY」"></a>放心云「V2RAY」</h3><blockquote><p>试用3天、速度YouTube -  4K视频秒开。</p><p><a href="https://speed17.com/#/register?code=naA9ZXBF">https://speed17.com/#/register?code=naA9ZXBF</a> </p></blockquote><ul><li><p>套餐限制：无限制，注册送3天试用200G流量。</p><p>【基础版】 9.9元/月、月流量为 200G；年付97.9元。</p><p>【专业版】19.9元/月、月流量为 500G；年付199.9元。</p><p>【豪华版】 29.9元/月、月流量为 1024G；年付279.9元。</p><p>【1T流量包】199元/用完为止、流量为1024G；</p></li></ul><h3 id="Q巴巴Q「SSR」"><a href="#Q巴巴Q「SSR」" class="headerlink" title="Q巴巴Q「SSR」"></a>Q巴巴Q「SSR」</h3><blockquote><p>使用2年、速度YouTube -  4K视频秒开。</p><p><a href="https://www.q88q.club/auth/register?code=VIP">https://www.q88q.club/auth/register?code=VIP</a> </p></blockquote><ul><li><p>套餐限制：10设备</p><p>20元/31天/总流量为 225G；55元/91天/总流量为 750G</p><p>100元/180天/总流量为 1650G；190元/360天/总流量为 3600G</p></li></ul><h2 id="Clash-客户端下载"><a href="#Clash-客户端下载" class="headerlink" title="Clash 客户端下载"></a>Clash 客户端下载</h2><blockquote><p>v2ray订阅使用Clash软件需要订阅转换，也有机场本身有Clash订阅。</p><p>SSR订阅想用Clash软件需要订阅转换。</p></blockquote><a class="btn-beautify button--animated blue larger" href="https://www.youtube.com/playlist?list=PLdeeEkkRA6Bai4oE06pNdxi5V8dM84uPq"   title="基础翻墙教程（新手教学）油管视频"><span>基础翻墙教程（新手教学）油管视频</span></a><h3 id="iOS-客户端"><a href="#iOS-客户端" class="headerlink" title="iOS 客户端"></a>iOS 客户端</h3><p>仅国区下架，其他区可下载，教程内附带下载地址。</p><a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/shadowrocket.html"   title="Shadowrocket小火箭 for 教程"><span>Shadowrocket小火箭 for 教程</span></a><a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/quan.html"   title="Quantumult for 教程"><span>Quantumult for 教程</span></a><a class="btn-beautify button--animated blue larger" href="https://merlinblog.xyz/wiki/quanx.html"   title="Quantumult X for 教程"><span>Quantumult X for 教程</span></a><h3 id="Clash-WIN版"><a href="#Clash-WIN版" class="headerlink" title="Clash WIN版"></a>Clash WIN版</h3><p>Clash for Windows 是目前在 Windows 上唯一可用的图形化 Clash 分支</p><p>Github项目地址：<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p><a class="btn-beautify button--animated purple larger" href="https://sabrinathings.lanzoui.com/ipXwRhawjpi"   title="Clash.for.Windows-原版英文"><span>Clash.for.Windows-原版英文</span></a><a class="btn-beautify button--animated purple larger" href="https://sabrinathings.lanzoui.com/iUJZChawina"   title="Clash.for.Windows-汉化版"><span>Clash.for.Windows-汉化版</span></a><a class="btn-beautify button--animated purple larger" href="https://merlinblog.xyz/wiki/cfw.html"   title="Clash(R) for Windows教程"><span>Clash(R) for Windows教程</span></a><h3 id="Clash-MacOS版"><a href="#Clash-MacOS版" class="headerlink" title="Clash MacOS版"></a>Clash MacOS版</h3><p>Clash for Windows for Mac 是 Clash for Windows 作者的另一款作品。</p><p>Github项目地址：<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p><a class="btn-beautify button--animated purple larger" href="https://sabrinathings.lanzous.com/iTuaxgq56ve"   title="Clash for macOS"><span>Clash for macOS</span></a><a class="btn-beautify button--animated purple larger" href="https://merlinblog.xyz/wiki/clash-for-windows-for-mac.html"   title="Clash for macOS教程"><span>Clash for macOS教程</span></a><p>ClashX 是运行在 macOS 上的一款科学上网工具。</p><p>Github地址：<a href="https://github.com/yichengchen/clashX/releases">https://github.com/yichengchen/clashX/releases</a></p><a class="btn-beautify button--animated purple larger" href="https://sabrinathings.lanzous.com/iqWYxf5cgsb"   title="ClashX.for.MacOS"><span>ClashX.for.MacOS</span></a><a class="btn-beautify button--animated purple larger" href="https://sabrinathings.lanzous.com/i3Aytg6h4oh"   title="ClashX Pro.MacOS"><span>ClashX Pro.MacOS</span></a><a class="btn-beautify button--animated purple larger" href="https://merlinblog.xyz/wiki/ClashX.html"   title="ClashX(R) for macOS教程"><span>ClashX(R) for macOS教程</span></a><p>ClashX Pro：这是作者的另一款软件，只用作代理的话，也非常好用。用法和ClashX差不多，有“增强模式”。</p><h3 id="Clash-安卓版"><a href="#Clash-安卓版" class="headerlink" title="Clash 安卓版"></a>Clash 安卓版</h3><p>Clash for Android 是安卓系统上的一款 Clash 客户端。<br>Github 项目地址：<a href="https://github.com/Kr328/ClashForAndroid">https://github.com/Kr328/ClashForAndroid</a></p><a class="btn-beautify button--animated purple larger" href="https://sabrinathings.lanzous.com/iW78Kf1m3ta"   title="Clash.Android"><span>Clash.Android</span></a><a class="btn-beautify button--animated purple larger" href="https://merlinblog.xyz/wiki/cfa.html"   title="Clash(R) for 安卓教程"><span>Clash(R) for 安卓教程</span></a><h2 id="SSR-客户端下载"><a href="#SSR-客户端下载" class="headerlink" title="SSR 客户端下载"></a>SSR 客户端下载</h2><blockquote><p>ShadowsocksR简称SSR、小飞机和酸酸乳。</p></blockquote><a class="btn-beautify button--animated blue larger" href="https://www.youtube.com/playlist?list=PLdeeEkkRA6Bai4oE06pNdxi5V8dM84uPq"   title="基础翻墙教程（新手教学）油管视频"><span>基础翻墙教程（新手教学）油管视频</span></a><h3 id="小飞机-WIN版"><a href="#小飞机-WIN版" class="headerlink" title="小飞机 WIN版"></a>小飞机 WIN版</h3><p>Windwos平台的 原版ShadowsocksR（简称SSR、小飞机和酸酸乳） 已经在 2017 年 7 月 24 日停止维护。</p><p>Github 项目地址：<a href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases">https://github.com/HMBSbige/ShadowsocksR-Windows/releases</a></p><a class="btn-beautify button--animated pink larger" href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/5.1.9/ShadowsocksR-net48-5.1.9.zip"   title="小飞机【推荐】"><span>小飞机【推荐】</span></a><a class="btn-beautify button--animated pink larger" href="https://merlinblog.xyz/usr/uploads/2020/09/3411093742.zip"   title="RixCloud修改版本SSR小飞机"><span>RixCloud修改版本SSR小飞机</span></a><a class="btn-beautify button--animated pink larger" href="https://merlinblog.xyz/wiki/ssrwindows.html"   title="SSR小飞机教程"><span>SSR小飞机教程</span></a><h4 id="小飞机-MacOS版"><a href="#小飞机-MacOS版" class="headerlink" title="小飞机 MacOS版"></a>小飞机 MacOS版</h4><p>ShadowsocksX-NG-R8 是一款运行在 macOS 上的科学上网工具。已经在 2018年 10月 8 日停止维护</p><p>Github 项目地址：<a href="https://github.com/qinyuhang/ShadowsocksX-NG-R/releases">https://github.com/qinyuhang/ShadowsocksX-NG-R/releases</a></p><a class="btn-beautify button--animated pink larger" href="https://sabrinathings.lanzous.com/ieDkigfanfe"   title="ShadowsocksX-NG-R8"><span>ShadowsocksX-NG-R8</span></a><a class="btn-beautify button--animated pink larger" href="https://merlinblog.xyz/wiki/macssr.html"   title="ShadowsocksX-NG-R8教程"><span>ShadowsocksX-NG-R8教程</span></a><h4 id="小飞机-安卓版"><a href="#小飞机-安卓版" class="headerlink" title="小飞机 安卓版"></a>小飞机 安卓版</h4><p>Github 项目地址：<a href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases">https://github.com/shadowsocksRb/shadowsocksRb-android/releases</a></p><a class="btn-beautify button--animated pink larger" href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases/download/v5.0.6R.1/v5.0.6R.1.apk"   title="酸酸乳【推荐】"><span>酸酸乳【推荐】</span></a><a class="btn-beautify button--animated pink larger" href="https://cdn.rixcloud.io/download/ShadowsocksR.apk"   title="RixCloud定制版SSR小飞机【兼容性高|推荐使用】"><span>RixCloud定制版SSR小飞机【兼容性高|推荐使用】</span></a><a class="btn-beautify button--animated pink larger" href="https://merlinblog.xyz/wiki/androidssr.html"   title="RixCloud定制版SSR小飞机 for 安卓教程"><span>RixCloud定制版SSR小飞机 for 安卓教程</span></a>]]></content>
+      
+      
       <categories>
-        <category>设备</category>
+          
+          <category> 科学上网 </category>
+          
       </categories>
-      <tags>
-        <tag>接口</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>短地址服务汇总</title>
-    <url>/posts/93c9885c.html</url>
-    <content><![CDATA[<h2 id="好用的短地址服务"><a href="#好用的短地址服务" class="headerlink" title="好用的短地址服务"></a>好用的短地址服务</h2><p>下方短地址虽小众但符合：无广告、无劫持、无审核、无需注册等特点。<br>特别是 <strong>t.cn</strong> 接入了白名单审查，下方短链接更是替代最佳选择。<br>在生成的短链接最后加上 <code>+</code> 或 <code>*</code> 即可查看统计，如无统计功能则为 <code>/</code></p>
-<p>如：<code>url.kr/BJiMxy*</code></p>
-<a id="more"></a>
-
-<table>
-<thead>
-<tr>
-<th>语言</th>
-<th>网址</th>
-<th>统计</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>韩语</td>
-<td><a href="https://url.kr/?toss.gq">url.kr</a></td>
-<td><code>*</code></td>
-</tr>
-<tr>
-<td>中文</td>
-<td><a href="https://n9.cl/zh?toss.gq">n9.cl</a></td>
-<td><code>/</code></td>
-</tr>
-<tr>
-<td>泰语</td>
-<td><a href="https://1th.me/?toss.gq">1th.me</a></td>
-<td><code>+</code></td>
-</tr>
-<tr>
-<td>意大利</td>
-<td><a href="http://vado.li/?toss.gq">vado.li</a></td>
-<td><code>/</code></td>
-</tr>
-<tr>
-<td>英语</td>
-<td><a href="https://o.tt/?toss.gq">o.tt</a></td>
-<td><code>/</code></td>
-</tr>
-<tr>
-<td>韩语</td>
-<td><a href="https://xzx.kr/?toss.gq">xzx.kr</a></td>
-<td><code>+</code></td>
-</tr>
-<tr>
-<td>意大利</td>
-<td><a href="https://gat.to/?toss.gq">gat.to</a></td>
-<td><code>/</code></td>
-</tr>
-<tr>
-<td>韩语</td>
-<td><a href="https://qops.xyz/?toss.gq">qops.xyz</a></td>
-<td><code>/</code></td>
-</tr>
-</tbody></table>
-<h2 id="国内短地址"><a href="#国内短地址" class="headerlink" title="国内短地址"></a>国内短地址</h2><p><a href="http://aad.tw/?toss.gq">aad.tw</a>、<a href="http://rrd.me/?toss.gq">rrd.me</a>、<a href="http://suo.im/?toss.gq">suo.im</a>、<a href="http://sohu.gg/?toss.gq">sohu.gg</a>、<a href="https://dwz.51.la/">51.la</a>、<a href="http://weibo.ws/?toss.gq">weibo.ws</a>、<a href="https://urlify.cn/?toss.gq">urlify.cn</a></p>
-<p>国内的短网址服务，可能会做过滤与劫持，可临时使用。</p>
-<h2 id="小码短链接"><a href="#小码短链接" class="headerlink" title="小码短链接"></a>小码短链接</h2><p><a href="http://6url.cn/?toss.gq">6url.cn</a></p>
-<p>国内新崛起的短地址提供商，需要微信登陆。拥有丰富的统计功能，可以绑定自定义域名，适合复合社会主义核心价值观的链接。</p>
-<h2 id="好记的短地址"><a href="#好记的短地址" class="headerlink" title="好记的短地址"></a>好记的短地址</h2><ul>
-<li><a href="https://u.nu/?toss.gq">u.nu</a> SM.MS/SB.SB 域名拥有者<code>兽兽</code>提供的短地址服务</li>
-<li><a href="http://gg.gg/?toss.gq">gg.gg</a> 老牌国外短地址服务</li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 机场 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Adobe 2020 全家桶 Mac/Win 中文/英文破解版</title>
+      <link href="posts/ec0349fb.html"/>
+      <url>posts/ec0349fb.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="Adobe-2020全家桶"><a href="#Adobe-2020全家桶" class="headerlink" title="Adobe 2020全家桶"></a><strong>Adobe 2020全家桶</strong></h3><p>Adobe 2020全家桶俺们求稳更新完毕，为小伙伴们带来丰富的Adobe家族产品，WiN/MAC都有！附大师版和独立安装包！不管你想要制图、剪视频还是做网页等，这里全都能满足你，无需激活，更精简操作流程，方便用户快速上手。内置Adobe Photoshop、Illustrator、Dreamweaver、InDesign、Lightroom、Animate、Audition等2020系列软件均已通过微博大神vposy修改，内置破解激活授权文件，采用独家技术封包优化处理，不集成ACC组件(不自动更新)一次安装永久授权。</p><a id="more"></a><p><img src="/images/ADOBE.jpg"></p><h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a><strong>下载地址</strong></h3><p>进入网盘下载，推荐首选天翼网盘目前不限速下载速度非常快，根据自己点需求选择下载，我们分享的版本有大师版（Master Col）<strong>需要下载所有的压缩包到本地才能解压文件超大，</strong>可实现一键安装版本，无需任何激活操作。也可以选择下载独立安装版（HD SP）更针对性到下载单个软件来安装。</p><p>2020 WIN/MAC 大师版/独立SP版 均会在网盘更新。<br>默认解压密码为：@vposy</p><p>天翼云：<a href="https://cloud.189.cn/t/ErU3YbyAnaAn">https://cloud.189.cn/t/ErU3YbyAnaAn</a> 访问码：s4cz</p>]]></content>
+      
+      
       <categories>
-        <category>杂七杂八</category>
+          
+          <category> Windows </category>
+          
+          <category> mac </category>
+          
       </categories>
-      <tags>
-        <tag>短域名</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>免费无限容量谷歌团队云盘获得方法合集</title>
-    <url>/posts/f9e8a999.html</url>
-    <content><![CDATA[<p>Google Team Drive是Google提供的网络硬盘服务，是专门为团队设计的，Google Team Drive中的文件属于团队而不是单个用户，团队中的所有人都可以查看团队盘中的文件。</p>
-<p>谷歌团队盘理论上是无限空间，但文件数量有限制：40万。</p>
-<a id="more"></a>
-
-<p>获取方法1：</p>
-<p>购买G Suite，官方正规渠道价格为$12/月。谷歌官方购买地址：<a href="https://gsuite.google.com/intl/en_my/pricing.html">https://gsuite.google.com/intl/en_my/pricing.html</a></p>
-<p>获取方法2：</p>
-<p>通过下方网友分享的网址自行添加自己想要的网盘名和谷歌账号，提示成功后前往<a href="https://drive.google.com/drive/u/0/shared-drives%E7%99%BB%E9%99%86%E6%9F%A5%E7%9C%8B%E3%80%82">https://drive.google.com/drive/u/0/shared-drives登陆查看。</a></p>
-<ul>
-<li><p><a href="https://gd.zxd.workers.dev/">https://gd.zxd.workers.dev/</a> 所属团队：yesyesxx.me</p>
-</li>
-<li><p><a href="https://gd.404edu.workers.dev/">https://gd.404edu.workers.dev/</a> 所属团队：alum.ccu.edu.tw</p>
-</li>
-<li><p><a href="https://teamdrive.xcpx.workers.dev/">https://teamdrive.xcpx.workers.dev/</a> 所属团队：swccd.edu</p>
-</li>
-<li><p><a href="https://gdrive.zppcw.cn/">https://gdrive.zppcw.cn/</a> 所属团队：sheffield.ac.uk</p>
-</li>
-<li><p><a href="https://td.fastio.me/">https://td.fastio.me/</a></p>
-<p>多合一，聚合多个团队盘</p>
-<ul>
-<li>正规学校团队盘 所属团队： mail.ccsf.edu</li>
-<li>自建公益全局团队盘 所属团队： lordspantryofdowningtowns.org</li>
-<li>自建教育全局团队盘 所属团队： ssrp.me</li>
-</ul>
-</li>
-<li><p><a href="http://leon.educationhost.cloud/">http://leon.educationhost.cloud/</a> 所属团队：swccd.edu</p>
-</li>
-</ul>
-<p>获取方法3：</p>
-<p>申请国外EDU教育邮箱，国外有些学校的邮箱可以创建团队盘，这里就不列举了，因为我没法申请测试。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> adobe </tag>
+            
+            <tag> mac </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>免费无限容量谷歌团队云盘获得方法合集</title>
+      <link href="posts/f9e8a999.html"/>
+      <url>posts/f9e8a999.html</url>
+      
+        <content type="html"><![CDATA[<p>Google Team Drive是Google提供的网络硬盘服务，是专门为团队设计的，Google Team Drive中的文件属于团队而不是单个用户，团队中的所有人都可以查看团队盘中的文件。</p><p>谷歌团队盘理论上是无限空间，但文件数量有限制：40万。</p><a id="more"></a><p>获取方法1：</p><p>购买G Suite，官方正规渠道价格为$12/月。谷歌官方购买地址：<a href="https://gsuite.google.com/intl/en_my/pricing.html">https://gsuite.google.com/intl/en_my/pricing.html</a></p><p>获取方法2：</p><p>通过下方网友分享的网址自行添加自己想要的网盘名和谷歌账号，提示成功后前往<a href="https://drive.google.com/drive/u/0/shared-drives%E7%99%BB%E9%99%86%E6%9F%A5%E7%9C%8B%E3%80%82">https://drive.google.com/drive/u/0/shared-drives登陆查看。</a></p><ul><li><p><a href="https://gd.zxd.workers.dev/">https://gd.zxd.workers.dev/</a> 所属团队：yesyesxx.me</p></li><li><p><a href="https://gd.404edu.workers.dev/">https://gd.404edu.workers.dev/</a> 所属团队：alum.ccu.edu.tw</p></li><li><p><a href="https://teamdrive.xcpx.workers.dev/">https://teamdrive.xcpx.workers.dev/</a> 所属团队：swccd.edu</p></li><li><p><a href="https://gdrive.zppcw.cn/">https://gdrive.zppcw.cn/</a> 所属团队：sheffield.ac.uk</p></li><li><p><a href="https://td.fastio.me/">https://td.fastio.me/</a></p><p>多合一，聚合多个团队盘</p><ul><li>正规学校团队盘 所属团队： mail.ccsf.edu</li><li>自建公益全局团队盘 所属团队： lordspantryofdowningtowns.org</li><li>自建教育全局团队盘 所属团队： ssrp.me</li></ul></li><li><p><a href="http://leon.educationhost.cloud/">http://leon.educationhost.cloud/</a> 所属团队：swccd.edu</p></li></ul><p>获取方法3：</p><p>申请国外EDU教育邮箱，国外有些学校的邮箱可以创建团队盘，这里就不列举了，因为我没法申请测试。</p>]]></content>
+      
+      
       <categories>
-        <category>网盘</category>
+          
+          <category> 网盘 </category>
+          
       </categories>
-      <tags>
-        <tag>免费</tag>
-        <tag>谷歌</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>二维码生成网址</title>
-    <url>/posts/de512d8e.html</url>
-    <content><![CDATA[<p>支持 https 的二维码 api 服务并不多，这里是经过站长精心筛选后剩下的结果。</p>
-<p>推荐日常使用搜狐视频提供的二维码 api 接口，稳定性很好，已使用多年。</p>
-<p>使用方法很简单，替换 <code>https://XXXX</code> 为想要生成的<strong>文字或链接</strong>即可。</p>
-<a id="more"></a>
-
-<h2 id="搜狐视频提供的二维码-api，已稳定五年以上。"><a href="#搜狐视频提供的二维码-api，已稳定五年以上。" class="headerlink" title="搜狐视频提供的二维码 api，已稳定五年以上。"></a>搜狐视频提供的二维码 api，已稳定五年以上。</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;my.tv.sohu.com&#x2F;user&#x2F;a&#x2F;wvideo&#x2F;getQRCode.do?text&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure>
-
-
-
-<p><img src="https://my.tv.sohu.com/user/a/wvideo/getQRCode.do?text=http://moosm.cf&width=250&height=250"></p>
-<h2 id="网易-lofter-二维码-api-接口，已稳定五年以上。"><a href="#网易-lofter-二维码-api-接口，已稳定五年以上。" class="headerlink" title="网易 lofter 二维码 api 接口，已稳定五年以上。"></a>网易 lofter 二维码 api 接口，已稳定五年以上。</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.lofter.com&#x2F;genBitmaxImage?url&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure>
-<p><img src="https://www.lofter.com/genBitmaxImage?url=http://moosm.cf"></p>
-<h2 id="qrserver-提供的二维码-api，国外服务，已稳定五年以上。"><a href="#qrserver-提供的二维码-api，国外服务，已稳定五年以上。" class="headerlink" title="qrserver 提供的二维码 api，国外服务，已稳定五年以上。"></a>qrserver 提供的二维码 api，国外服务，已稳定五年以上。</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;api.qrserver.com&#x2F;v1&#x2F;create-qr-code&#x2F;?size&amp;data&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure>
-<p><img src="https://api.qrserver.com/v1/create-qr-code/?size&data=http://moosm.cf"></p>
-<h2 id="qrcoder-提供的二维码-api，国外服务，已稳定五年以上。"><a href="#qrcoder-提供的二维码-api，国外服务，已稳定五年以上。" class="headerlink" title="qrcoder 提供的二维码 api，国外服务，已稳定五年以上。"></a>qrcoder 提供的二维码 api，国外服务，已稳定五年以上。</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.qrcoder.co.uk&#x2F;api&#x2F;v1&#x2F;?text&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure>
-<p><img src="https://www.qrcoder.co.uk/api/v1/?text=http://moosm.cf"></p>
-<h2 id="INSO-搜索二维码尺寸，可选范围-1-40-已稳定有两年左右。"><a href="#INSO-搜索二维码尺寸，可选范围-1-40-已稳定有两年左右。" class="headerlink" title="INSO 搜索二维码尺寸，可选范围 1-40 已稳定有两年左右。"></a>INSO 搜索二维码尺寸，可选范围 1-40 已稳定有两年左右。</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;api.isoyu.com&#x2F;qr&#x2F;?m&#x3D;0&amp;e&#x3D;L&amp;p&#x3D;12&amp;url&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure>
-<p><img src="https://api.isoyu.com/qr/?m=0&e=L&p=12&url=http://moosm.cf"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 谷歌 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>二维码生成网址</title>
+      <link href="posts/de512d8e.html"/>
+      <url>posts/de512d8e.html</url>
+      
+        <content type="html"><![CDATA[<p>支持 https 的二维码 api 服务并不多，这里是经过站长精心筛选后剩下的结果。</p><p>推荐日常使用搜狐视频提供的二维码 api 接口，稳定性很好，已使用多年。</p><p>使用方法很简单，替换 <code>https://XXXX</code> 为想要生成的<strong>文字或链接</strong>即可。</p><a id="more"></a><h2 id="搜狐视频提供的二维码-api，已稳定五年以上。"><a href="#搜狐视频提供的二维码-api，已稳定五年以上。" class="headerlink" title="搜狐视频提供的二维码 api，已稳定五年以上。"></a>搜狐视频提供的二维码 api，已稳定五年以上。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;my.tv.sohu.com&#x2F;user&#x2F;a&#x2F;wvideo&#x2F;getQRCode.do?text&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure><p><img src="https://my.tv.sohu.com/user/a/wvideo/getQRCode.do?text=http://moosm.cf&width=250&height=250"></p><h2 id="网易-lofter-二维码-api-接口，已稳定五年以上。"><a href="#网易-lofter-二维码-api-接口，已稳定五年以上。" class="headerlink" title="网易 lofter 二维码 api 接口，已稳定五年以上。"></a>网易 lofter 二维码 api 接口，已稳定五年以上。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.lofter.com&#x2F;genBitmaxImage?url&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure><p><img src="https://www.lofter.com/genBitmaxImage?url=http://moosm.cf"></p><h2 id="qrserver-提供的二维码-api，国外服务，已稳定五年以上。"><a href="#qrserver-提供的二维码-api，国外服务，已稳定五年以上。" class="headerlink" title="qrserver 提供的二维码 api，国外服务，已稳定五年以上。"></a>qrserver 提供的二维码 api，国外服务，已稳定五年以上。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;api.qrserver.com&#x2F;v1&#x2F;create-qr-code&#x2F;?size&amp;data&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure><p><img src="https://api.qrserver.com/v1/create-qr-code/?size&data=http://moosm.cf"></p><h2 id="qrcoder-提供的二维码-api，国外服务，已稳定五年以上。"><a href="#qrcoder-提供的二维码-api，国外服务，已稳定五年以上。" class="headerlink" title="qrcoder 提供的二维码 api，国外服务，已稳定五年以上。"></a>qrcoder 提供的二维码 api，国外服务，已稳定五年以上。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.qrcoder.co.uk&#x2F;api&#x2F;v1&#x2F;?text&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure><p><img src="https://www.qrcoder.co.uk/api/v1/?text=http://moosm.cf"></p><h2 id="INSO-搜索二维码尺寸，可选范围-1-40-已稳定有两年左右。"><a href="#INSO-搜索二维码尺寸，可选范围-1-40-已稳定有两年左右。" class="headerlink" title="INSO 搜索二维码尺寸，可选范围 1-40 已稳定有两年左右。"></a>INSO 搜索二维码尺寸，可选范围 1-40 已稳定有两年左右。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;api.isoyu.com&#x2F;qr&#x2F;?m&#x3D;0&amp;e&#x3D;L&amp;p&#x3D;12&amp;url&#x3D;http:&#x2F;&#x2F;moosm.cf</span><br></pre></td></tr></table></figure><p><img src="https://api.isoyu.com/qr/?m=0&e=L&p=12&url=http://moosm.cf"></p>]]></content>
+      
+      
       <categories>
-        <category>杂七杂八</category>
+          
+          <category> 杂七杂八 </category>
+          
       </categories>
-      <tags>
-        <tag>二维码</tag>
-        <tag>API接口</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>软件APP蓝奏云网盘更新下载合集</title>
-    <url>/posts/e40bb0d.html</url>
-    <content><![CDATA[<p>蓝奏云是目前最好用的网盘之一，下载速度很快，不过限制文件最大100M，所以大多是用来分享软件和APP。</p>
-<a id="more"></a>
-
-<ul>
-<li><p>好软分享：<a href="https://github.com/yoyodadada/haoruanfenxiang">https://github.com/yoyodadada/haoruanfenxiang</a></p>
-<ul>
-<li>优质APP集散地： <a href="https://www.lanzous.com/u/yoyodadada">https://www.lanzous.com/u/yoyodadada</a></li>
-<li>未归类的比较好用的软件： <a href="https://www.lanzous.com/b01b01h9a">https://www.lanzous.com/b01b01h9a</a></li>
-</ul>
-</li>
-<li><p>安卓，请卡上车： <a href="https://www.lanzous.com/b136096/">https://www.lanzous.com/b136096/</a> 密码：app1</p>
-</li>
-<li><p>团队分享合集：<a href="https://www.lanzous.com/b93256/">https://www.lanzous.com/b93256/</a></p>
-</li>
-<li><p>安惠购分享合集：<a href="https://lanzous.com/b174576/">https://lanzous.com/b174576/</a></p>
-</li>
-<li><p>rjlm软件联盟：<a href="https://lanzous.com/b98540/">https://lanzous.com/b98540/</a></p>
-</li>
-<li><p>hai分享推荐合集：<a href="https://lanzous.com/b221497/">https://lanzous.com/b221497/</a></p>
-</li>
-<li><p>辉少软件分享合集：<a href="https://lanzous.com/b221505">https://lanzous.com/b221505</a></p>
-</li>
-<li><p>乐分享软件合集：<a href="https://lanzous.com/b215476/">https://lanzous.com/b215476/</a></p>
-</li>
-<li><p>大肥精品软件合集：<a href="https://lanzous.com/u/qianxun8">https://lanzous.com/u/qianxun8</a></p>
-</li>
-<li><p>影视合集软件：<a href="https://www.lanzous.com/b0jrkv4b">https://www.lanzous.com/b0jrkv4b</a></p>
-</li>
-<li><p>暗部分享免费软件：<a href="https://www.lanzous.com/u/chudali">https://www.lanzous.com/u/chudali</a></p>
-</li>
-<li><p>分享社软件分享：<a href="https://lanzous.com/b63771/">https://lanzous.com/b63771/</a></p>
-</li>
-<li><p>稚初软件集合：<a href="https://lanzous.com/b200130">https://lanzous.com/b200130</a></p>
-</li>
-<li><p>无名软件汇总：<a href="https://lanzous.com/b206983/">https://lanzous.com/b206983/</a></p>
-</li>
-<li><p>口令专享软件团队：<a href="https://lanzous.com/b240011/">https://lanzous.com/b240011/</a></p>
-</li>
-<li><p>安卓破解类软件：<a href="https://lanzous.com/b828085">https://lanzous.com/b828085</a></p>
-</li>
-<li><p>Hs团队破解游戏：<a href="https://lanzous.com/b888887">https://lanzous.com/b888887</a></p>
-</li>
-<li><p>淘购街软件分享：<a href="https://lanzous.com/b165784">https://lanzous.com/b165784</a></p>
-</li>
-<li><p>小聪分享社合集：<a href="https://lanzous.com/b94326/">https://lanzous.com/b94326/</a></p>
-</li>
-<li><p>允晨软件库合集：<a href="https://lanzous.com/b54212/">https://lanzous.com/b54212/</a></p>
-</li>
-<li><p>电视盒子软件：<a href="https://lanzous.com/b167839/">https://lanzous.com/b167839/</a></p>
-</li>
-<li><p>软件实验室合集：<a href="http://pan.lanzou.com/u/ygtq">http://pan.lanzou.com/u/ygtq</a></p>
-</li>
-<li><p>软件田园合集：<a href="https://lanzous.com/u/longluobo">https://lanzous.com/u/longluobo</a></p>
-</li>
-<li><p>日历APP分享合集：<a href="https://lanzous.com/u/hyfl">https://lanzous.com/u/hyfl</a></p>
-</li>
-<li><p>破解类游戏合集：<a href="https://lanzous.com/b778831">https://lanzous.com/b778831</a></p>
-</li>
-<li><p>青风软件分享合集：<a href="https://lanzous.com/b60564/">https://lanzous.com/b60564/</a></p>
-</li>
-<li><p>电脑软件仓库：<a href="https://lanzous.com/b105201">https://lanzous.com/b105201</a></p>
-</li>
-<li><p>搬运鼠服务公社：<a href="https://lanzous.com/b218606">https://lanzous.com/b218606</a></p>
-</li>
-<li><p>小说软件合集：<a href="https://lanzous.com/b158157/">https://lanzous.com/b158157/</a></p>
-</li>
-<li><p>漫画类软件合集：<a href="https://lanzous.com/b765262/">https://lanzous.com/b765262/</a></p>
-</li>
-<li><p>FKzhang_WX模块：<a href="https://lanzous.com/b44314">https://lanzous.com/b44314</a></p>
-</li>
-<li><p>TV/盒子软件合集：<a href="https://www.lanzous.com/b699768/">https://www.lanzous.com/b699768/</a>  密码：987456</p>
-</li>
-<li><p>清秋暖冬合集：<a href="https://www.lanzous.com/b474214">https://www.lanzous.com/b474214</a>    密码：qingqiu</p>
-</li>
-<li><p>二狗娱乐网合集：<a href="https://www.lanzous.com/b896145">https://www.lanzous.com/b896145</a></p>
-</li>
-<li><p>阿友软件合集：<a href="https://lanzous.com/u/aybaba">https://lanzous.com/u/aybaba</a></p>
-</li>
-<li><p>无作为分享：<a href="https://www.lanzous.com/u/wuzuowei">https://www.lanzous.com/u/wuzuowei</a></p>
-</li>
-<li><p>影视TV版APP合集： <a href="https://lanzous.com/b00t6lcrg">https://lanzous.com/b00t6lcrg</a> 密码：QPMZ</p>
-</li>
-<li><p>戏子软件库分享：<a href="https://www.lanzous.com/b554854">https://www.lanzous.com/b554854</a></p>
-</li>
-<li><p>免费看视频：<a href="https://www.lanzous.com/b749444">https://www.lanzous.com/b749444</a></p>
-</li>
-<li><p>黑科技玩机：<a href="https://www.lanzous.com/b281858">https://www.lanzous.com/b281858</a></p>
-</li>
-<li><p>兜兜线报软件合集： <a href="https://www.lanzous.com/b133841/">https://www.lanzous.com/b133841/</a></p>
-</li>
-<li><p>软科技软件合集： <a href="https://www.lanzous.com/u/13145212431">https://www.lanzous.com/u/13145212431</a></p>
-</li>
-<li><p>霖淘购软件共享： <a href="https://www.lanzous.com/b252370/">https://www.lanzous.com/b252370/</a></p>
-</li>
-<li><p>小鹏软件合集：<a href="http://www.lanzous.com/u/xiaopengi">http://www.lanzous.com/u/xiaopengi</a></p>
-</li>
-<li><p>分享社：<a href="https://www.lanzous.com/b63771/">https://www.lanzous.com/b63771/</a></p>
-</li>
-<li><p>『BhVip』软件更新合集：<a href="https://lanzous.com/u/%E5%BD%AA%E7%85%8Cqq1846055318">https://lanzous.com/u/彪煌qq1846055318</a></p>
-</li>
-<li><p>软件梦软件合集：<a href="https://www.lanzous.com/u/Hicro">https://www.lanzous.com/u/Hicro</a></p>
-</li>
-<li><p>全网软件分享合集：<a href="https://www.lanzous.com/b117359">https://www.lanzous.com/b117359</a></p>
-</li>
-<li><p>全网软件合集：<a href="https://www.lanzous.com/b66477">https://www.lanzous.com/b66477</a></p>
-</li>
-<li><p>软件合集：<a href="http://www.lanzous.com/u/9383679">http://www.lanzous.com/u/9383679</a></p>
-</li>
-<li><p>软件库软件阁线报软件基地：<a href="https://www.lanzous.com/b244238">https://www.lanzous.com/b244238</a></p>
-</li>
-<li><p>嗨分享软件合集：<a href="https://www.lanzous.com/u/%E6%8B%BD%E6%8B%BD">https://www.lanzous.com/u/拽拽</a></p>
-</li>
-<li><p>软件库软件游戏合集：<a href="https://www.lanzous.com/u/rjk">https://www.lanzous.com/u/rjk</a></p>
-</li>
-<li><p>牛之家：<a href="https://www.lanzous.com/u/memedawq">https://www.lanzous.com/u/memedawq</a></p>
-</li>
-<li><p>星辰软件合集：<a href="https://www.lanzous.com/u/azsoft">https://www.lanzous.com/u/azsoft</a></p>
-</li>
-<li><p>爱分享团队软件合集：<a href="https://www.lanzous.com/u/zqf000">https://www.lanzous.com/u/zqf000</a></p>
-</li>
-<li><p>七月软件库：<a href="https://www.lanzous.com/b196932">https://www.lanzous.com/b196932</a></p>
-</li>
-<li><p>软件大全：<a href="https://www.lanzous.com/u/296742969">https://www.lanzous.com/u/296742969</a></p>
-</li>
-<li><p>旧梦软件集合：<a href="https://www.lanzous.com/u/jinjunpo">https://www.lanzous.com/u/jinjunpo</a></p>
-</li>
-<li><p>大白雄哥软件合集：<a href="https://www.lanzous.com/u/%E9%9B%84%E5%93%A5%E7%BD%91%E7%BB%9C%E4%BC%A0%E5%AA%92">https://www.lanzous.com/u/雄哥网络传媒</a>.</p>
-</li>
-<li><p>轩哥软件网盘：<a href="https://www.lanzous.com/u/%E8%BD%A9%E5%93%A5%E7%BD%91%E7%BB%9C%E4%BC%A0%E5%AA%92">https://www.lanzous.com/u/轩哥网络传媒</a></p>
-</li>
-<li><p>安卓软件合集：<a href="https://www.lanzous.com/u/langman666">https://www.lanzous.com/u/langman666</a></p>
-</li>
-<li><p>小蠢货旗下软件合集：<a href="https://www.lanzous.com/u/616737520">https://www.lanzous.com/u/616737520</a></p>
-</li>
-<li><p>大白软件库：<a href="https://www.lanzous.com/u/dabai666">https://www.lanzous.com/u/dabai666</a></p>
-</li>
-<li><p>牛牛软件合集：<a href="http://www.lanzous.com/u/36277009">http://www.lanzous.com/u/36277009</a></p>
-</li>
-<li><p>软件屋：<a href="https://www.lanzous.com/u/xaichen">https://www.lanzous.com/u/xaichen</a></p>
-</li>
-<li><p>萝卜软件库：<a href="https://www.lanzous.com/u/longluobo">https://www.lanzous.com/u/longluobo</a></p>
-</li>
-<li><p>小银软件库：<a href="https://www.lanzous.com/u/jiek">https://www.lanzous.com/u/jiek</a></p>
-</li>
-<li><p>优享汇-软件镖局：<a href="https://www.lanzous.com/u/%E6%B1%9F%E4%B8%8A">https://www.lanzous.com/u/江上</a></p>
-</li>
-<li><p>新起点软件库：<a href="https://www.lanzous.com/u/xinqidian">https://www.lanzous.com/u/xinqidian</a></p>
-</li>
-<li><p>辉少软件集：<a href="https://www.lanzous.com/u/%E4%B8%9C%E6%80%BB2017">https://www.lanzous.com/u/东总2017</a></p>
-</li>
-<li><p>新世界软件合集：<a href="https://www.lanzous.com/u/adminqizhu">https://www.lanzous.com/u/adminqizhu</a></p>
-</li>
-<li><p>老撕鸡专区： <a href="https://www.lanzous.com/b04rzij1a?t">https://www.lanzous.com/b04rzij1a?t</a></p>
-</li>
-<li><p>少宇团队：<a href="https://www.lanzous.com/u/shaoyu">https://www.lanzous.com/u/shaoyu</a></p>
-</li>
-<li><p>阿轻软件库：<a href="https://www.lanzous.com/u/aq1433709042">https://www.lanzous.com/u/aq1433709042</a></p>
-</li>
-<li><p>稚初软件分享：<a href="https://www.lanzous.com/u/zhichu">https://www.lanzous.com/u/zhichu</a></p>
-</li>
-<li><p>Kl软件分享库：<a href="https://www.lanzous.com/u/aguo">https://www.lanzous.com/u/aguo</a></p>
-</li>
-<li><p>软件分享基地：<a href="https://www.lanzous.com/u/aiwange">https://www.lanzous.com/u/aiwange</a></p>
-</li>
-<li><p>软件园旗下软件共享：<a href="https://www.lanzous.com/u/anxin666">https://www.lanzous.com/u/anxin666</a></p>
-</li>
-<li><p>小伟软件库发布：<a href="https://www.lanzous.com/u/%E5%B0%8F%E4%BC%9F%E8%BD%AF%E4%BB%B6%E5%BA%93">https://www.lanzous.com/u/小伟软件库</a></p>
-</li>
-<li><p>千城软件库：<a href="https://www.lanzous.com/u/%E5%8D%83%E5%9F%8E1">https://www.lanzous.com/u/千城1</a></p>
-</li>
-<li><p>A分享-全网软件合集：<a href="https://www.lanzous.com/b205552/">https://www.lanzous.com/b205552/</a></p>
-</li>
-<li><p>秋颜软件库：<a href="https://www.lanzous.com/b341705">https://www.lanzous.com/b341705</a></p>
-</li>
-<li><p>天天分享软件库：<a href="http://pan.lanzou.com/u/qq348740911">http://pan.lanzou.com/u/qq348740911</a></p>
-</li>
-<li><p>游戏破解合集：<a href="https://www.lanzous.com/b654140">https://www.lanzous.com/b654140</a></p>
-</li>
-<li><p>H神科技软件库：<a href="https://www.lanzous.com/s/hsrjk8">https://www.lanzous.com/s/hsrjk8</a></p>
-</li>
-<li><p>阡陌软件库：<a href="https://lanzous.com/b221640/">https://lanzous.com/b221640/</a></p>
-</li>
-<li><p>浅陌vip软件合集：<a href="https://lanzous.com/b143023">https://lanzous.com/b143023</a></p>
-</li>
-<li><p>软件工厂精品软件：<a href="https://www.lanzous.com/u/sg88">https://www.lanzous.com/u/sg88</a></p>
-</li>
-<li><p>nPlayer： <a href="https://www.lanzous.com/b0cpu28tc">https://www.lanzous.com/b0cpu28tc</a></p>
-</li>
-<li><p>乐淘分享软件库： <a href="https://www.lanzous.com/u/YZ457104">https://www.lanzous.com/u/YZ457104</a></p>
-</li>
-<li><p>滚哥网盘资源： <a href="https://www.lanzous.com/b838976">https://www.lanzous.com/b838976</a></p>
-</li>
-<li><p>电视盒子软件合集： <a href="https://www.lanzous.com/b07xdohkf">https://www.lanzous.com/b07xdohkf</a> 密码：FULIBA</p>
-</li>
-<li><p>壹零贰肆软件分享：<a href="https://1024.lanzous.com/b06xqal9g">https://1024.lanzous.com/b06xqal9g</a> 密码:dl7p</p>
-</li>
-<li><p>乌龟上高速：<a href="https://www.lanzous.com/b0ejb48da">https://www.lanzous.com/b0ejb48da</a></p>
-</li>
-<li><p>安卓精选破解游戏合集：<a href="https://www.lanzous.com/b053xt4vg">https://www.lanzous.com/b053xt4vg</a></p>
-</li>
-</ul>
-<p>破解辅助更新（辅助类无法确定是否有毒有木马，请慎用）</p>
-<ul>
-<li>超牛辅助网DNF专区：<a href="https://1fzba.lanzous.com/b015chjoj">https://1fzba.lanzous.com/b015chjoj</a></li>
-<li>超牛辅助网CF专区：<a href="https://1fzba.lanzous.com/b015c17mj">https://1fzba.lanzous.com/b015c17mj</a></li>
-<li>超牛辅助网和平精英专区：<a href="https://1fzba.lanzous.com/s/1fzba01">https://1fzba.lanzous.com/s/1fzba01</a></li>
-<li>超牛辅助网云顶之弈专区：<a href="https://1fzba.lanzous.com/b015c9lpe">https://1fzba.lanzous.com/b015c9lpe</a></li>
-<li>超牛辅助网绝地求生专区：<a href="https://1fzba.lanzous.com/b015chkwd">https://1fzba.lanzous.com/b015chkwd</a></li>
-<li>超牛辅助网CSGO专区：<a href="https://lanzous.com/b015cdhwb">https://lanzous.com/b015cdhwb</a></li>
-<li>超牛辅助网加速器专区：<a href="https://1fzba.lanzous.com/b015chlfc">https://1fzba.lanzous.com/b015chlfc</a></li>
-</ul>
-<p>附上一些应用官方自己的持续更新地址</p>
-<ul>
-<li>极客喵盒：<a href="https://www.lanzous.com/b0kdszfg">https://www.lanzous.com/b0kdszfg</a> 聚合多种工具APP</li>
-<li><a href="https://github.com/eprendre/tingshu">我的听书</a>：<a href="https://www.lanzous.com/b873905">https://www.lanzous.com/b873905</a> 听有声小说APP</li>
-<li><a href="http://www.wellcms.cn/">wellcms</a> v2.0：<a href="https://www.lanzous.com/b00t7l8kb">https://www.lanzous.com/b00t7l8kb</a> 密码:7ktk 建站CMS源码</li>
-<li>GEE大师：<a href="https://www.lanzous.com/u/gee321">https://www.lanzous.com/u/gee321</a> 收费传奇游戏辅助</li>
-<li>涨停板多多：<a href="https://www.lanzous.com/b00n52cha">https://www.lanzous.com/b00n52cha</a> 炒股软件，有电脑版和安卓版</li>
-<li>穿越火线天煞者：<a href="https://www.lanzous.com/b098reauj/">https://www.lanzous.com/b098reauj/</a> 收费CF辅助</li>
-</ul>
-<p>第三方持续更新某一软件地址</p>
-<ul>
-<li>qBittorrentEE：<a href="https://www.lanzous.com/b073dnr7g">https://www.lanzous.com/b073dnr7g</a></li>
-<li>BiliBili视频下载工具：<a href="https://www.lanzous.com/b0lkrxzg">https://www.lanzous.com/b0lkrxzg</a></li>
-<li>比特彗星-BitComet：<a href="https://www.lanzous.com/b073c7g4f">https://www.lanzous.com/b073c7g4f</a></li>
-<li><a href="https://www.runningcheese.com/v9">RunningCheese Firefox V9</a> 传统版：<a href="https://www.lanzous.com/b07lfbczc">https://www.lanzous.com/b07lfbczc</a></li>
-<li><a href="https://www.runningcheese.com/firefox">RunningCheese Firefox</a>  定制版：<a href="https://lanzous.com/b0ufrtlc">https://lanzous.com/b0ufrtlc</a></li>
-<li><a href="https://www.runningcheese.com/firefox-for-mac">RunningCheese Firefox for Mac</a> 定制版：<a href="https://lanzous.com/b07lbtsda">https://lanzous.com/b07lbtsda</a></li>
-<li><a href="https://www.runningcheese.com/chrome">RunningCheese Chrome</a> 定制版：<a href="https://lanzous.com/b0ufru1i">https://lanzous.com/b0ufru1i</a></li>
-<li><a href="https://www.runningcheese.com/chrome-for-mac">RunningCheese Chrome for Mac</a>  定制版：暂时没下载地址。</li>
-<li><a href="https://www.runningcheese.com/edge">RunningCheese Edge</a> 定制版：<a href="https://www.lanzous.com/b07lee7ih">https://www.lanzous.com/b07lee7ih</a></li>
-<li>北极XS 视频解析播放和下载工具(MPV启动器): <a href="https://www.lanzous.com/b07r5v35e">https://www.lanzous.com/b07r5v35e</a> 密码:35n5</li>
-<li>南瓜影视[去广告_去投屏限制]：<a href="https://www.lanzous.com/b866490">https://www.lanzous.com/b866490</a></li>
-<li>迅雷Thunder5：<a href="https://www.lanzous.com/b695126">https://www.lanzous.com/b695126</a></li>
-<li>乐秀视频编辑器破解内购版：<a href="https://www.lanzous.com/b692872">https://www.lanzous.com/b692872</a></li>
-<li>安卓抖音短视频精简版：<a href="https://www.lanzous.com/b834225">https://www.lanzous.com/b834225</a></li>
-<li>闪电下载：<a href="https://www.lanzous.com/b643989/">https://www.lanzous.com/b643989/</a> 密码：heio</li>
-<li>搜书大师：<a href="https://www.lanzous.com/b687426/">https://www.lanzous.com/b687426/</a> 密码：gfog</li>
-<li>小米画报：<a href="https://www.lanzous.com/b0cpsrobi">https://www.lanzous.com/b0cpsrobi</a></li>
-<li>上古世纪反和谐补丁：<a href="https://www.lanzous.com/b797682">https://www.lanzous.com/b797682</a></li>
-</ul>
-<p>电子书</p>
-<ul>
-<li>基督教相关电子书：<a href="https://www.lanzous.com/b0b868z4d">https://www.lanzous.com/b0b868z4d</a></li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 二维码 </tag>
+            
+            <tag> API接口 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>软件APP蓝奏云网盘更新下载合集</title>
+      <link href="posts/e40bb0d.html"/>
+      <url>posts/e40bb0d.html</url>
+      
+        <content type="html"><![CDATA[<p>蓝奏云是目前最好用的网盘之一，下载速度很快，不过限制文件最大100M，所以大多是用来分享软件和APP。</p><a id="more"></a><ul><li><p>好软分享：<a href="https://github.com/yoyodadada/haoruanfenxiang">https://github.com/yoyodadada/haoruanfenxiang</a></p><ul><li>优质APP集散地： <a href="https://www.lanzous.com/u/yoyodadada">https://www.lanzous.com/u/yoyodadada</a></li><li>未归类的比较好用的软件： <a href="https://www.lanzous.com/b01b01h9a">https://www.lanzous.com/b01b01h9a</a></li></ul></li><li><p>安卓，请卡上车： <a href="https://www.lanzous.com/b136096/">https://www.lanzous.com/b136096/</a> 密码：app1</p></li><li><p>团队分享合集：<a href="https://www.lanzous.com/b93256/">https://www.lanzous.com/b93256/</a></p></li><li><p>安惠购分享合集：<a href="https://lanzous.com/b174576/">https://lanzous.com/b174576/</a></p></li><li><p>rjlm软件联盟：<a href="https://lanzous.com/b98540/">https://lanzous.com/b98540/</a></p></li><li><p>hai分享推荐合集：<a href="https://lanzous.com/b221497/">https://lanzous.com/b221497/</a></p></li><li><p>辉少软件分享合集：<a href="https://lanzous.com/b221505">https://lanzous.com/b221505</a></p></li><li><p>乐分享软件合集：<a href="https://lanzous.com/b215476/">https://lanzous.com/b215476/</a></p></li><li><p>大肥精品软件合集：<a href="https://lanzous.com/u/qianxun8">https://lanzous.com/u/qianxun8</a></p></li><li><p>影视合集软件：<a href="https://www.lanzous.com/b0jrkv4b">https://www.lanzous.com/b0jrkv4b</a></p></li><li><p>暗部分享免费软件：<a href="https://www.lanzous.com/u/chudali">https://www.lanzous.com/u/chudali</a></p></li><li><p>分享社软件分享：<a href="https://lanzous.com/b63771/">https://lanzous.com/b63771/</a></p></li><li><p>稚初软件集合：<a href="https://lanzous.com/b200130">https://lanzous.com/b200130</a></p></li><li><p>无名软件汇总：<a href="https://lanzous.com/b206983/">https://lanzous.com/b206983/</a></p></li><li><p>口令专享软件团队：<a href="https://lanzous.com/b240011/">https://lanzous.com/b240011/</a></p></li><li><p>安卓破解类软件：<a href="https://lanzous.com/b828085">https://lanzous.com/b828085</a></p></li><li><p>Hs团队破解游戏：<a href="https://lanzous.com/b888887">https://lanzous.com/b888887</a></p></li><li><p>淘购街软件分享：<a href="https://lanzous.com/b165784">https://lanzous.com/b165784</a></p></li><li><p>小聪分享社合集：<a href="https://lanzous.com/b94326/">https://lanzous.com/b94326/</a></p></li><li><p>允晨软件库合集：<a href="https://lanzous.com/b54212/">https://lanzous.com/b54212/</a></p></li><li><p>电视盒子软件：<a href="https://lanzous.com/b167839/">https://lanzous.com/b167839/</a></p></li><li><p>软件实验室合集：<a href="http://pan.lanzou.com/u/ygtq">http://pan.lanzou.com/u/ygtq</a></p></li><li><p>软件田园合集：<a href="https://lanzous.com/u/longluobo">https://lanzous.com/u/longluobo</a></p></li><li><p>日历APP分享合集：<a href="https://lanzous.com/u/hyfl">https://lanzous.com/u/hyfl</a></p></li><li><p>破解类游戏合集：<a href="https://lanzous.com/b778831">https://lanzous.com/b778831</a></p></li><li><p>青风软件分享合集：<a href="https://lanzous.com/b60564/">https://lanzous.com/b60564/</a></p></li><li><p>电脑软件仓库：<a href="https://lanzous.com/b105201">https://lanzous.com/b105201</a></p></li><li><p>搬运鼠服务公社：<a href="https://lanzous.com/b218606">https://lanzous.com/b218606</a></p></li><li><p>小说软件合集：<a href="https://lanzous.com/b158157/">https://lanzous.com/b158157/</a></p></li><li><p>漫画类软件合集：<a href="https://lanzous.com/b765262/">https://lanzous.com/b765262/</a></p></li><li><p>FKzhang_WX模块：<a href="https://lanzous.com/b44314">https://lanzous.com/b44314</a></p></li><li><p>TV/盒子软件合集：<a href="https://www.lanzous.com/b699768/">https://www.lanzous.com/b699768/</a>  密码：987456</p></li><li><p>清秋暖冬合集：<a href="https://www.lanzous.com/b474214">https://www.lanzous.com/b474214</a>    密码：qingqiu</p></li><li><p>二狗娱乐网合集：<a href="https://www.lanzous.com/b896145">https://www.lanzous.com/b896145</a></p></li><li><p>阿友软件合集：<a href="https://lanzous.com/u/aybaba">https://lanzous.com/u/aybaba</a></p></li><li><p>无作为分享：<a href="https://www.lanzous.com/u/wuzuowei">https://www.lanzous.com/u/wuzuowei</a></p></li><li><p>影视TV版APP合集： <a href="https://lanzous.com/b00t6lcrg">https://lanzous.com/b00t6lcrg</a> 密码：QPMZ</p></li><li><p>戏子软件库分享：<a href="https://www.lanzous.com/b554854">https://www.lanzous.com/b554854</a></p></li><li><p>免费看视频：<a href="https://www.lanzous.com/b749444">https://www.lanzous.com/b749444</a></p></li><li><p>黑科技玩机：<a href="https://www.lanzous.com/b281858">https://www.lanzous.com/b281858</a></p></li><li><p>兜兜线报软件合集： <a href="https://www.lanzous.com/b133841/">https://www.lanzous.com/b133841/</a></p></li><li><p>软科技软件合集： <a href="https://www.lanzous.com/u/13145212431">https://www.lanzous.com/u/13145212431</a></p></li><li><p>霖淘购软件共享： <a href="https://www.lanzous.com/b252370/">https://www.lanzous.com/b252370/</a></p></li><li><p>小鹏软件合集：<a href="http://www.lanzous.com/u/xiaopengi">http://www.lanzous.com/u/xiaopengi</a></p></li><li><p>分享社：<a href="https://www.lanzous.com/b63771/">https://www.lanzous.com/b63771/</a></p></li><li><p>『BhVip』软件更新合集：<a href="https://lanzous.com/u/%E5%BD%AA%E7%85%8Cqq1846055318">https://lanzous.com/u/彪煌qq1846055318</a></p></li><li><p>软件梦软件合集：<a href="https://www.lanzous.com/u/Hicro">https://www.lanzous.com/u/Hicro</a></p></li><li><p>全网软件分享合集：<a href="https://www.lanzous.com/b117359">https://www.lanzous.com/b117359</a></p></li><li><p>全网软件合集：<a href="https://www.lanzous.com/b66477">https://www.lanzous.com/b66477</a></p></li><li><p>软件合集：<a href="http://www.lanzous.com/u/9383679">http://www.lanzous.com/u/9383679</a></p></li><li><p>软件库软件阁线报软件基地：<a href="https://www.lanzous.com/b244238">https://www.lanzous.com/b244238</a></p></li><li><p>嗨分享软件合集：<a href="https://www.lanzous.com/u/%E6%8B%BD%E6%8B%BD">https://www.lanzous.com/u/拽拽</a></p></li><li><p>软件库软件游戏合集：<a href="https://www.lanzous.com/u/rjk">https://www.lanzous.com/u/rjk</a></p></li><li><p>牛之家：<a href="https://www.lanzous.com/u/memedawq">https://www.lanzous.com/u/memedawq</a></p></li><li><p>星辰软件合集：<a href="https://www.lanzous.com/u/azsoft">https://www.lanzous.com/u/azsoft</a></p></li><li><p>爱分享团队软件合集：<a href="https://www.lanzous.com/u/zqf000">https://www.lanzous.com/u/zqf000</a></p></li><li><p>七月软件库：<a href="https://www.lanzous.com/b196932">https://www.lanzous.com/b196932</a></p></li><li><p>软件大全：<a href="https://www.lanzous.com/u/296742969">https://www.lanzous.com/u/296742969</a></p></li><li><p>旧梦软件集合：<a href="https://www.lanzous.com/u/jinjunpo">https://www.lanzous.com/u/jinjunpo</a></p></li><li><p>大白雄哥软件合集：<a href="https://www.lanzous.com/u/%E9%9B%84%E5%93%A5%E7%BD%91%E7%BB%9C%E4%BC%A0%E5%AA%92">https://www.lanzous.com/u/雄哥网络传媒</a>.</p></li><li><p>轩哥软件网盘：<a href="https://www.lanzous.com/u/%E8%BD%A9%E5%93%A5%E7%BD%91%E7%BB%9C%E4%BC%A0%E5%AA%92">https://www.lanzous.com/u/轩哥网络传媒</a></p></li><li><p>安卓软件合集：<a href="https://www.lanzous.com/u/langman666">https://www.lanzous.com/u/langman666</a></p></li><li><p>小蠢货旗下软件合集：<a href="https://www.lanzous.com/u/616737520">https://www.lanzous.com/u/616737520</a></p></li><li><p>大白软件库：<a href="https://www.lanzous.com/u/dabai666">https://www.lanzous.com/u/dabai666</a></p></li><li><p>牛牛软件合集：<a href="http://www.lanzous.com/u/36277009">http://www.lanzous.com/u/36277009</a></p></li><li><p>软件屋：<a href="https://www.lanzous.com/u/xaichen">https://www.lanzous.com/u/xaichen</a></p></li><li><p>萝卜软件库：<a href="https://www.lanzous.com/u/longluobo">https://www.lanzous.com/u/longluobo</a></p></li><li><p>小银软件库：<a href="https://www.lanzous.com/u/jiek">https://www.lanzous.com/u/jiek</a></p></li><li><p>优享汇-软件镖局：<a href="https://www.lanzous.com/u/%E6%B1%9F%E4%B8%8A">https://www.lanzous.com/u/江上</a></p></li><li><p>新起点软件库：<a href="https://www.lanzous.com/u/xinqidian">https://www.lanzous.com/u/xinqidian</a></p></li><li><p>辉少软件集：<a href="https://www.lanzous.com/u/%E4%B8%9C%E6%80%BB2017">https://www.lanzous.com/u/东总2017</a></p></li><li><p>新世界软件合集：<a href="https://www.lanzous.com/u/adminqizhu">https://www.lanzous.com/u/adminqizhu</a></p></li><li><p>老撕鸡专区： <a href="https://www.lanzous.com/b04rzij1a?t">https://www.lanzous.com/b04rzij1a?t</a></p></li><li><p>少宇团队：<a href="https://www.lanzous.com/u/shaoyu">https://www.lanzous.com/u/shaoyu</a></p></li><li><p>阿轻软件库：<a href="https://www.lanzous.com/u/aq1433709042">https://www.lanzous.com/u/aq1433709042</a></p></li><li><p>稚初软件分享：<a href="https://www.lanzous.com/u/zhichu">https://www.lanzous.com/u/zhichu</a></p></li><li><p>Kl软件分享库：<a href="https://www.lanzous.com/u/aguo">https://www.lanzous.com/u/aguo</a></p></li><li><p>软件分享基地：<a href="https://www.lanzous.com/u/aiwange">https://www.lanzous.com/u/aiwange</a></p></li><li><p>软件园旗下软件共享：<a href="https://www.lanzous.com/u/anxin666">https://www.lanzous.com/u/anxin666</a></p></li><li><p>小伟软件库发布：<a href="https://www.lanzous.com/u/%E5%B0%8F%E4%BC%9F%E8%BD%AF%E4%BB%B6%E5%BA%93">https://www.lanzous.com/u/小伟软件库</a></p></li><li><p>千城软件库：<a href="https://www.lanzous.com/u/%E5%8D%83%E5%9F%8E1">https://www.lanzous.com/u/千城1</a></p></li><li><p>A分享-全网软件合集：<a href="https://www.lanzous.com/b205552/">https://www.lanzous.com/b205552/</a></p></li><li><p>秋颜软件库：<a href="https://www.lanzous.com/b341705">https://www.lanzous.com/b341705</a></p></li><li><p>天天分享软件库：<a href="http://pan.lanzou.com/u/qq348740911">http://pan.lanzou.com/u/qq348740911</a></p></li><li><p>游戏破解合集：<a href="https://www.lanzous.com/b654140">https://www.lanzous.com/b654140</a></p></li><li><p>H神科技软件库：<a href="https://www.lanzous.com/s/hsrjk8">https://www.lanzous.com/s/hsrjk8</a></p></li><li><p>阡陌软件库：<a href="https://lanzous.com/b221640/">https://lanzous.com/b221640/</a></p></li><li><p>浅陌vip软件合集：<a href="https://lanzous.com/b143023">https://lanzous.com/b143023</a></p></li><li><p>软件工厂精品软件：<a href="https://www.lanzous.com/u/sg88">https://www.lanzous.com/u/sg88</a></p></li><li><p>nPlayer： <a href="https://www.lanzous.com/b0cpu28tc">https://www.lanzous.com/b0cpu28tc</a></p></li><li><p>乐淘分享软件库： <a href="https://www.lanzous.com/u/YZ457104">https://www.lanzous.com/u/YZ457104</a></p></li><li><p>滚哥网盘资源： <a href="https://www.lanzous.com/b838976">https://www.lanzous.com/b838976</a></p></li><li><p>电视盒子软件合集： <a href="https://www.lanzous.com/b07xdohkf">https://www.lanzous.com/b07xdohkf</a> 密码：FULIBA</p></li><li><p>壹零贰肆软件分享：<a href="https://1024.lanzous.com/b06xqal9g">https://1024.lanzous.com/b06xqal9g</a> 密码:dl7p</p></li><li><p>乌龟上高速：<a href="https://www.lanzous.com/b0ejb48da">https://www.lanzous.com/b0ejb48da</a></p></li><li><p>安卓精选破解游戏合集：<a href="https://www.lanzous.com/b053xt4vg">https://www.lanzous.com/b053xt4vg</a></p></li></ul><p>破解辅助更新（辅助类无法确定是否有毒有木马，请慎用）</p><ul><li>超牛辅助网DNF专区：<a href="https://1fzba.lanzous.com/b015chjoj">https://1fzba.lanzous.com/b015chjoj</a></li><li>超牛辅助网CF专区：<a href="https://1fzba.lanzous.com/b015c17mj">https://1fzba.lanzous.com/b015c17mj</a></li><li>超牛辅助网和平精英专区：<a href="https://1fzba.lanzous.com/s/1fzba01">https://1fzba.lanzous.com/s/1fzba01</a></li><li>超牛辅助网云顶之弈专区：<a href="https://1fzba.lanzous.com/b015c9lpe">https://1fzba.lanzous.com/b015c9lpe</a></li><li>超牛辅助网绝地求生专区：<a href="https://1fzba.lanzous.com/b015chkwd">https://1fzba.lanzous.com/b015chkwd</a></li><li>超牛辅助网CSGO专区：<a href="https://lanzous.com/b015cdhwb">https://lanzous.com/b015cdhwb</a></li><li>超牛辅助网加速器专区：<a href="https://1fzba.lanzous.com/b015chlfc">https://1fzba.lanzous.com/b015chlfc</a></li></ul><p>附上一些应用官方自己的持续更新地址</p><ul><li>极客喵盒：<a href="https://www.lanzous.com/b0kdszfg">https://www.lanzous.com/b0kdszfg</a> 聚合多种工具APP</li><li><a href="https://github.com/eprendre/tingshu">我的听书</a>：<a href="https://www.lanzous.com/b873905">https://www.lanzous.com/b873905</a> 听有声小说APP</li><li><a href="http://www.wellcms.cn/">wellcms</a> v2.0：<a href="https://www.lanzous.com/b00t7l8kb">https://www.lanzous.com/b00t7l8kb</a> 密码:7ktk 建站CMS源码</li><li>GEE大师：<a href="https://www.lanzous.com/u/gee321">https://www.lanzous.com/u/gee321</a> 收费传奇游戏辅助</li><li>涨停板多多：<a href="https://www.lanzous.com/b00n52cha">https://www.lanzous.com/b00n52cha</a> 炒股软件，有电脑版和安卓版</li><li>穿越火线天煞者：<a href="https://www.lanzous.com/b098reauj/">https://www.lanzous.com/b098reauj/</a> 收费CF辅助</li></ul><p>第三方持续更新某一软件地址</p><ul><li>qBittorrentEE：<a href="https://www.lanzous.com/b073dnr7g">https://www.lanzous.com/b073dnr7g</a></li><li>BiliBili视频下载工具：<a href="https://www.lanzous.com/b0lkrxzg">https://www.lanzous.com/b0lkrxzg</a></li><li>比特彗星-BitComet：<a href="https://www.lanzous.com/b073c7g4f">https://www.lanzous.com/b073c7g4f</a></li><li><a href="https://www.runningcheese.com/v9">RunningCheese Firefox V9</a> 传统版：<a href="https://www.lanzous.com/b07lfbczc">https://www.lanzous.com/b07lfbczc</a></li><li><a href="https://www.runningcheese.com/firefox">RunningCheese Firefox</a>  定制版：<a href="https://lanzous.com/b0ufrtlc">https://lanzous.com/b0ufrtlc</a></li><li><a href="https://www.runningcheese.com/firefox-for-mac">RunningCheese Firefox for Mac</a> 定制版：<a href="https://lanzous.com/b07lbtsda">https://lanzous.com/b07lbtsda</a></li><li><a href="https://www.runningcheese.com/chrome">RunningCheese Chrome</a> 定制版：<a href="https://lanzous.com/b0ufru1i">https://lanzous.com/b0ufru1i</a></li><li><a href="https://www.runningcheese.com/chrome-for-mac">RunningCheese Chrome for Mac</a>  定制版：暂时没下载地址。</li><li><a href="https://www.runningcheese.com/edge">RunningCheese Edge</a> 定制版：<a href="https://www.lanzous.com/b07lee7ih">https://www.lanzous.com/b07lee7ih</a></li><li>北极XS 视频解析播放和下载工具(MPV启动器): <a href="https://www.lanzous.com/b07r5v35e">https://www.lanzous.com/b07r5v35e</a> 密码:35n5</li><li>南瓜影视[去广告_去投屏限制]：<a href="https://www.lanzous.com/b866490">https://www.lanzous.com/b866490</a></li><li>迅雷Thunder5：<a href="https://www.lanzous.com/b695126">https://www.lanzous.com/b695126</a></li><li>乐秀视频编辑器破解内购版：<a href="https://www.lanzous.com/b692872">https://www.lanzous.com/b692872</a></li><li>安卓抖音短视频精简版：<a href="https://www.lanzous.com/b834225">https://www.lanzous.com/b834225</a></li><li>闪电下载：<a href="https://www.lanzous.com/b643989/">https://www.lanzous.com/b643989/</a> 密码：heio</li><li>搜书大师：<a href="https://www.lanzous.com/b687426/">https://www.lanzous.com/b687426/</a> 密码：gfog</li><li>小米画报：<a href="https://www.lanzous.com/b0cpsrobi">https://www.lanzous.com/b0cpsrobi</a></li><li>上古世纪反和谐补丁：<a href="https://www.lanzous.com/b797682">https://www.lanzous.com/b797682</a></li></ul><p>电子书</p><ul><li>基督教相关电子书：<a href="https://www.lanzous.com/b0b868z4d">https://www.lanzous.com/b0b868z4d</a></li></ul>]]></content>
+      
+      
       <categories>
-        <category>网盘</category>
+          
+          <category> 网盘 </category>
+          
       </categories>
-      <tags>
-        <tag>合集</tag>
-        <tag>蓝奏云</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网盘合集</title>
-    <url>/posts/820b2d9b.html</url>
-    <content><![CDATA[<h2 id="长期保存文件网盘"><a href="#长期保存文件网盘" class="headerlink" title="长期保存文件网盘"></a>长期保存文件网盘</h2><ul>
-<li><p>百度网盘：<a href="https://pan.baidu.com/">https://pan.baidu.com/</a> 上传容易下载难，不是SVIP下载没速度</p>
-</li>
-<li><p>蓝奏网盘：<a href="https://www.lanzous.com/">https://www.lanzous.com</a> 空间不限，单文件最大100M，下载速度很快</p>
-</li>
-<li><p>谷歌网盘：  已经被墙，需要梯子，个人免费15G，教育版无限空间，团队盘无限空间，需要团队盘可看：<a href="http://svip2020.cf/index.php/archives/10/">免费无限容量谷歌团队云盘获得方法合集</a></p>
-<a id="more"></a>
-</li>
-<li><p>OneDrive： <a href="https://onedrive.live.com/">https://onedrive.live.com/</a> 微软网盘，网页版已经被墙，office365版可以直接访问</p>
-</li>
-<li><p>曲奇云盘：<a href="https://www.quqi.com/">https://www.quqi.com/</a> 注册送2T空间</p>
-</li>
-<li><p>坚果云： <a href="https://www.jianguoyun.com/">https://www.jianguoyun.com/</a> 支持WebDAV，空间小，每月限制流量，上传1G下载3G。</p>
-</li>
-<li><p>6盘： <a href="https://6pan.cn/">https://6pan.cn/</a> 注册6T空间，即将收费，每月10元</p>
-</li>
-<li><p>优点：下载速度快，可以离线下载（支持磁力BT、电驴、HTTP、百度网盘）</p>
-</li>
-<li><p>缺点：因为有人利用网盘传播成人内容，分享功能暂时关闭了</p>
-</li>
-<li><p>Loadbt：<a href="https://www.loadbt.com/zh">https://www.loadbt.com/zh</a> 注册2G，邀请好友1人500MB，可以离线下载</p>
-</li>
-<li><p>TeraCloud： <a href="https://teracloud.jp/">https://teracloud.jp/</a> 日本网盘，支持WebDAV</p>
-<ul>
-<li>注册10G空间，注册后在 <a href="https://teracloud.jp/ja/modules/mypage/">https://teracloud.jp/ja/modules/mypage/</a> 里面 Enter friends Introduce code 处填写 Y8Z5C 可多加5G。</li>
-<li>活动：2019年1月1日～2020年3月1日邀请好友，每达到6人可获得6G空间一年 <a href="https://teracloud.jp/ja/campaign_6th-anniversary.html">https://teracloud.jp/ja/campaign_6th-anniversary.html</a></li>
-</ul>
-</li>
-<li><p>Upload Street： <a href="https://upload.st/">https://upload.st/</a> 国外网盘，没有限制保存时间，但是没有账户系统，上传过后可能无法管理文件。</p>
-<ul>
-<li>电信测试上传大概190KB/s，下载不到10KB/s</li>
-<li>测试地址 <a href="https://upload.st/Fcd3j5X6n9/Xshell-5.0.1339p_exe">https://upload.st/Fcd3j5X6n9/Xshell-5.0.1339p_exe</a> 上传时间2020.02.09</li>
-<li>每个文件最大20 GB。每小时最多500个文件或50 GB。每天最多5000个文件或100 GB的空间大小。</li>
-</ul>
-</li>
-<li><p>BayFiles： <a href="https://bayfiles.com/">https://bayfiles.com/</a> 国外网盘，没有限制保存时间，常见问题几乎和 Upload Street 都一样，不一样的是有账户系统，注册需要注意保存密码，这家注册不需要邮箱，忘记密码无法找回账号。<br>每个文件最大20 GB。每小时最多500个文件或50 GB。每天最多5000个文件或100 GB的空间大小。</p>
-</li>
-<li><p>AnonFiles： <a href="https://anonfiles.com/">https://anonfiles.com/</a> 国外网盘，其他和上面 BayFiles 基本一样，直接看上面的，不复制粘贴了。</p>
-</li>
-<li><p>MegaUpload： <a href="https://megaupload.is/">https://megaupload.is/</a> 国外网盘，除了模板其他依然和 BayFiles 一样。</p>
-</li>
-<li><p>OpenLoad： <a href="https://openload.cc/">https://openload.cc/</a> 国外网盘，说明继续参考 BayFiles</p>
-</li>
-<li><p>LetsUpload： <a href="https://letsupload.cc/">https://letsupload.cc/</a></p>
-</li>
-<li><p>up-load： <a href="https://up-load.io/">https://up-load.io/</a> 国外网赚网盘，100G空间，分享挣美刀，最低$5起付。</p>
-</li>
-<li><p>666file： <a href="https://www.666file.com/">https://www.666file.com/</a> 不知道谁的，服务器韩国，单文件最大2G，可以设置密码，设置分享下载后删除文件，无账户系统，上传后无法管理，保存时长未知。</p>
-<ul>
-<li>电信测试上传大概400KB/s，下载不稳定，小到几百大到3MB/s</li>
-<li>测试地址 <a href="https://www.666file.com/ifuOoaIALiebaoFreeWiFi5.1F">https://www.666file.com/ifuOoaIALiebaoFreeWiFi5.1F</a> 上传时间2020.02.09</li>
-</ul>
-</li>
-<li><p>Catbox：<a href="https://catbox.moe/">https://catbox.moe/</a> 单文件最大200MB，直链下载，保存时长未知，有账户系统，注册可分享文件专辑。可以通过直链URL远程上传。<br>禁止上传文件格式.exe, .scr, .cpl, .doc*, .jar</p>
-<ul>
-<li>电信测试上传150KB/s-2MB/s，下载400KB/s左右</li>
-<li>测试地址 <a href="https://files.catbox.moe/8nu7bt.zip%E9%AB%98%E9%93%81%E4%BE%A09%E5%BC%80%E5%BF%83%E7%89%88">https://files.catbox.moe/8nu7bt.zip高铁侠9开心版</a> 上传时间2020.02.09</li>
-</ul>
-</li>
-</ul>
-<h2 id="临时中转文件网盘"><a href="#临时中转文件网盘" class="headerlink" title="临时中转文件网盘"></a>临时中转文件网盘</h2><ul>
-<li>Firefox Send： <a href="https://send.firefox.com/">https://send.firefox.com/</a></li>
-<li>奶牛快传： <a href="https://cowtransfer.com/">https://cowtransfer.com/</a></li>
-<li>文叔叔： <a href="https://www.wenshushu.cn/">https://www.wenshushu.cn/</a></li>
-<li>轻文档： <a href="http://qingwendang.com/">http://qingwendang.com/</a></li>
-<li>拷贝兔： <a href="https://cp.anyknew.com/">https://cp.anyknew.com/</a></li>
-<li>TMP.link ： <a href="https://app.tmp.link/">https://app.tmp.link/</a> 单文件最大5GB，限速512K，保存最长30天</li>
-<li>WeTransfer： <a href="https://wetransfer.com/">https://wetransfer.com/</a> 国外网盘，免费用户单文件最大2GB，文件保存7天，延迟时间、单文件最大20GB，1T空间、设置密码等都需要专业版$12/月。</li>
-<li>transfer.sh： <a href="https://transfer.sh/">https://transfer.sh/</a> 国外使用命令行的网盘，没仔细研究，可能更适合Linux使用，单文件最大10GB，保存14天</li>
-<li>Gofile： <a href="https://gofile.io/">https://gofile.io/</a> 国外网盘，速度无限制，文件大小无限制，但是如果文件无人下载会在保留几个月后删除。</li>
-</ul>
-<h2 id="视频网盘"><a href="#视频网盘" class="headerlink" title="视频网盘"></a>视频网盘</h2><ul>
-<li><p>Streamja： <a href="https://streamja.com/">https://streamja.com/</a> 限制文件最大50MB，国内播放速度尚可</p>
-</li>
-<li><p>Fembed： <a href="https://www.fembed.net/">https://www.fembed.net/</a> 登陆需要翻墙，可离线下载，可自定义域名，可自定义播放器，对于国内播放速度不是很好</p>
-</li>
-<li><p>Mp4upload： <a href="https://www.mp4upload.com/">https://www.mp4upload.com/</a><br>文件保存多长时间？通常就会永久保存。但是，出于合理使用的考虑，如果帐户中包含很多视频并且不记录有任何观看次数，则其文件将被删除。</p>
-</li>
-<li><p>HxLoad： <a href="https://hxload.co/">https://hxload.co/</a> 单文件最大7G，远程上传最大10G</p>
-<ul>
-<li>您将我的文件托管多长时间？由于任何闲置状态，在删除任何视频之前60天（不受信任）和90天（受信任）。</li>
-<li>我的帐户将存在多长时间？在180天内未登录会员区域的帐户将被视为无效帐户，并将在视频中包含的帐户将被立即删除。</li>
-</ul>
-</li>
-</ul>
-<h2 id="在线传输文件"><a href="#在线传输文件" class="headerlink" title="在线传输文件"></a>在线传输文件</h2><p>1对1传送，服务器不保存文件</p>
-<ul>
-<li>小鹿快传： <a href="https://deershare.com/">https://deershare.com</a> 小鹿快传使用P2P技术，文件数据不走服务器，直接发送给对方，且数据自带加密，免去隐私被泄漏的风险。</li>
-<li>FilePizza： <a href="https://file.pizza/">https://file.pizza/</a> 如果不信任国内网站，可以用这个国外的，点击 select a file 选择要传输的文件后会获得一个网址，分享给朋友，接收人在分享页点击 DOWNLOAD 即可接收</li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 合集 </tag>
+            
+            <tag> 蓝奏云 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网盘合集</title>
+      <link href="posts/820b2d9b.html"/>
+      <url>posts/820b2d9b.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="长期保存文件网盘"><a href="#长期保存文件网盘" class="headerlink" title="长期保存文件网盘"></a>长期保存文件网盘</h2><ul><li><p>百度网盘：<a href="https://pan.baidu.com/">https://pan.baidu.com/</a> 上传容易下载难，不是SVIP下载没速度</p></li><li><p>蓝奏网盘：<a href="https://www.lanzous.com/">https://www.lanzous.com</a> 空间不限，单文件最大100M，下载速度很快</p></li><li><p>谷歌网盘：  已经被墙，需要梯子，个人免费15G，教育版无限空间，团队盘无限空间，需要团队盘可看：<a href="http://svip2020.cf/index.php/archives/10/">免费无限容量谷歌团队云盘获得方法合集</a></p><a id="more"></a></li><li><p>OneDrive： <a href="https://onedrive.live.com/">https://onedrive.live.com/</a> 微软网盘，网页版已经被墙，office365版可以直接访问</p></li><li><p>曲奇云盘：<a href="https://www.quqi.com/">https://www.quqi.com/</a> 注册送2T空间</p></li><li><p>坚果云： <a href="https://www.jianguoyun.com/">https://www.jianguoyun.com/</a> 支持WebDAV，空间小，每月限制流量，上传1G下载3G。</p></li><li><p>6盘： <a href="https://6pan.cn/">https://6pan.cn/</a> 注册6T空间，即将收费，每月10元</p></li><li><p>优点：下载速度快，可以离线下载（支持磁力BT、电驴、HTTP、百度网盘）</p></li><li><p>缺点：因为有人利用网盘传播成人内容，分享功能暂时关闭了</p></li><li><p>Loadbt：<a href="https://www.loadbt.com/zh">https://www.loadbt.com/zh</a> 注册2G，邀请好友1人500MB，可以离线下载</p></li><li><p>TeraCloud： <a href="https://teracloud.jp/">https://teracloud.jp/</a> 日本网盘，支持WebDAV</p><ul><li>注册10G空间，注册后在 <a href="https://teracloud.jp/ja/modules/mypage/">https://teracloud.jp/ja/modules/mypage/</a> 里面 Enter friends Introduce code 处填写 Y8Z5C 可多加5G。</li><li>活动：2019年1月1日～2020年3月1日邀请好友，每达到6人可获得6G空间一年 <a href="https://teracloud.jp/ja/campaign_6th-anniversary.html">https://teracloud.jp/ja/campaign_6th-anniversary.html</a></li></ul></li><li><p>Upload Street： <a href="https://upload.st/">https://upload.st/</a> 国外网盘，没有限制保存时间，但是没有账户系统，上传过后可能无法管理文件。</p><ul><li>电信测试上传大概190KB/s，下载不到10KB/s</li><li>测试地址 <a href="https://upload.st/Fcd3j5X6n9/Xshell-5.0.1339p_exe">https://upload.st/Fcd3j5X6n9/Xshell-5.0.1339p_exe</a> 上传时间2020.02.09</li><li>每个文件最大20 GB。每小时最多500个文件或50 GB。每天最多5000个文件或100 GB的空间大小。</li></ul></li><li><p>BayFiles： <a href="https://bayfiles.com/">https://bayfiles.com/</a> 国外网盘，没有限制保存时间，常见问题几乎和 Upload Street 都一样，不一样的是有账户系统，注册需要注意保存密码，这家注册不需要邮箱，忘记密码无法找回账号。<br>每个文件最大20 GB。每小时最多500个文件或50 GB。每天最多5000个文件或100 GB的空间大小。</p></li><li><p>AnonFiles： <a href="https://anonfiles.com/">https://anonfiles.com/</a> 国外网盘，其他和上面 BayFiles 基本一样，直接看上面的，不复制粘贴了。</p></li><li><p>MegaUpload： <a href="https://megaupload.is/">https://megaupload.is/</a> 国外网盘，除了模板其他依然和 BayFiles 一样。</p></li><li><p>OpenLoad： <a href="https://openload.cc/">https://openload.cc/</a> 国外网盘，说明继续参考 BayFiles</p></li><li><p>LetsUpload： <a href="https://letsupload.cc/">https://letsupload.cc/</a></p></li><li><p>up-load： <a href="https://up-load.io/">https://up-load.io/</a> 国外网赚网盘，100G空间，分享挣美刀，最低$5起付。</p></li><li><p>666file： <a href="https://www.666file.com/">https://www.666file.com/</a> 不知道谁的，服务器韩国，单文件最大2G，可以设置密码，设置分享下载后删除文件，无账户系统，上传后无法管理，保存时长未知。</p><ul><li>电信测试上传大概400KB/s，下载不稳定，小到几百大到3MB/s</li><li>测试地址 <a href="https://www.666file.com/ifuOoaIALiebaoFreeWiFi5.1F">https://www.666file.com/ifuOoaIALiebaoFreeWiFi5.1F</a> 上传时间2020.02.09</li></ul></li><li><p>Catbox：<a href="https://catbox.moe/">https://catbox.moe/</a> 单文件最大200MB，直链下载，保存时长未知，有账户系统，注册可分享文件专辑。可以通过直链URL远程上传。<br>禁止上传文件格式.exe, .scr, .cpl, .doc*, .jar</p><ul><li>电信测试上传150KB/s-2MB/s，下载400KB/s左右</li><li>测试地址 <a href="https://files.catbox.moe/8nu7bt.zip%E9%AB%98%E9%93%81%E4%BE%A09%E5%BC%80%E5%BF%83%E7%89%88">https://files.catbox.moe/8nu7bt.zip高铁侠9开心版</a> 上传时间2020.02.09</li></ul></li></ul><h2 id="临时中转文件网盘"><a href="#临时中转文件网盘" class="headerlink" title="临时中转文件网盘"></a>临时中转文件网盘</h2><ul><li>Firefox Send： <a href="https://send.firefox.com/">https://send.firefox.com/</a></li><li>奶牛快传： <a href="https://cowtransfer.com/">https://cowtransfer.com/</a></li><li>文叔叔： <a href="https://www.wenshushu.cn/">https://www.wenshushu.cn/</a></li><li>轻文档： <a href="http://qingwendang.com/">http://qingwendang.com/</a></li><li>拷贝兔： <a href="https://cp.anyknew.com/">https://cp.anyknew.com/</a></li><li>TMP.link ： <a href="https://app.tmp.link/">https://app.tmp.link/</a> 单文件最大5GB，限速512K，保存最长30天</li><li>WeTransfer： <a href="https://wetransfer.com/">https://wetransfer.com/</a> 国外网盘，免费用户单文件最大2GB，文件保存7天，延迟时间、单文件最大20GB，1T空间、设置密码等都需要专业版$12/月。</li><li>transfer.sh： <a href="https://transfer.sh/">https://transfer.sh/</a> 国外使用命令行的网盘，没仔细研究，可能更适合Linux使用，单文件最大10GB，保存14天</li><li>Gofile： <a href="https://gofile.io/">https://gofile.io/</a> 国外网盘，速度无限制，文件大小无限制，但是如果文件无人下载会在保留几个月后删除。</li></ul><h2 id="视频网盘"><a href="#视频网盘" class="headerlink" title="视频网盘"></a>视频网盘</h2><ul><li><p>Streamja： <a href="https://streamja.com/">https://streamja.com/</a> 限制文件最大50MB，国内播放速度尚可</p></li><li><p>Fembed： <a href="https://www.fembed.net/">https://www.fembed.net/</a> 登陆需要翻墙，可离线下载，可自定义域名，可自定义播放器，对于国内播放速度不是很好</p></li><li><p>Mp4upload： <a href="https://www.mp4upload.com/">https://www.mp4upload.com/</a><br>文件保存多长时间？通常就会永久保存。但是，出于合理使用的考虑，如果帐户中包含很多视频并且不记录有任何观看次数，则其文件将被删除。</p></li><li><p>HxLoad： <a href="https://hxload.co/">https://hxload.co/</a> 单文件最大7G，远程上传最大10G</p><ul><li>您将我的文件托管多长时间？由于任何闲置状态，在删除任何视频之前60天（不受信任）和90天（受信任）。</li><li>我的帐户将存在多长时间？在180天内未登录会员区域的帐户将被视为无效帐户，并将在视频中包含的帐户将被立即删除。</li></ul></li></ul><h2 id="在线传输文件"><a href="#在线传输文件" class="headerlink" title="在线传输文件"></a>在线传输文件</h2><p>1对1传送，服务器不保存文件</p><ul><li>小鹿快传： <a href="https://deershare.com/">https://deershare.com</a> 小鹿快传使用P2P技术，文件数据不走服务器，直接发送给对方，且数据自带加密，免去隐私被泄漏的风险。</li><li>FilePizza： <a href="https://file.pizza/">https://file.pizza/</a> 如果不信任国内网站，可以用这个国外的，点击 select a file 选择要传输的文件后会获得一个网址，分享给朋友，接收人在分享页点击 DOWNLOAD 即可接收</li></ul>]]></content>
+      
+      
       <categories>
-        <category>网盘</category>
+          
+          <category> 网盘 </category>
+          
       </categories>
-      <tags>
-        <tag>合集</tag>
-        <tag>网盘</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>国内外短信接码平台合集</title>
-    <url>/posts/b9617f03.html</url>
-    <content><![CDATA[<p>最后更新于：2020年6月20日20点22分</p>
-<p>注册账号不想泄露自己手机号码或者建小号可以使用</p>
-<a id="more"></a>
-
-<h2 id="国外免费接码平台"><a href="#国外免费接码平台" class="headerlink" title="国外免费接码平台"></a>国外免费接码平台</h2><blockquote>
-<p>只列了一些出来，需要更多可以在搜索引擎网站搜关键词“Receive SMS”</p>
-</blockquote>
-<ul>
-<li><a href="https://ch.freephonenum.com/">https://ch.freephonenum.com</a></li>
-<li><a href="https://smsreceivefree.com/">https://smsreceivefree.com</a></li>
-<li><a href="https://zh.mytrashmobile.com/">https://zh.mytrashmobile.com</a></li>
-<li><a href="https://www.receive-sms-online.info/">https://www.receive-sms-online.info</a></li>
-<li><a href="https://receiveasms.com/">https://receiveasms.com</a></li>
-<li><a href="https://sms-online.co/receive-free-sms">https://sms-online.co/receive-free-sms</a></li>
-<li><a href="https://receive-sms.com/">https://receive-sms.com</a></li>
-<li><a href="http://receivefreesms.com/">http://receivefreesms.com/</a></li>
-<li><a href="https://www.receivesmsonline.net/">https://www.receivesmsonline.net/</a></li>
-<li><a href="https://www.freeonlinephone.org/">https://www.freeonlinephone.org/</a></li>
-<li><a href="https://us-phone-number.com/">https://us-phone-number.com</a></li>
-<li><a href="https://temporary-phone-number.com/">https://temporary-phone-number.com</a></li>
-<li><a href="https://www.receivesms.co/">https://www.receivesms.co/</a></li>
-<li><a href="https://www.smstibo.com/">https://www.smstibo.com/</a></li>
-<li><a href="https://pingme.tel/receive-sms-online-cn/">https://pingme.tel/receive-sms-online-cn/</a></li>
-<li><a href="https://receivefreesms.net/">http://receivefreesms.net/</a></li>
-<li><a href="http://receivesmsonline.in/">http://receivesmsonline.in/</a></li>
-<li><a href="https://sms-receive.net/">https://sms-receive.net/</a></li>
-<li><a href="https://www.receivesms.net/">https://www.receivesms.net/</a></li>
-</ul>
-<h2 id="国内免费接码平台"><a href="#国内免费接码平台" class="headerlink" title="国内免费接码平台"></a>国内免费接码平台</h2><ul>
-<li>超级云短信： <a href="http://www.bfkdim.com/">http://www.bfkdim.com/</a></li>
-<li>隐私短信：<a href="https://www.yinsiduanxin.com/">https://www.yinsiduanxin.com</a></li>
-<li>云短信： <a href="https://www.materialtools.com/">https://www.materialtools.com/</a></li>
-<li>在线短信：<a href="http://www.smszk.com/">http://www.smszk.com/</a></li>
-<li>游客短信：<a href="https://www.visitorsms.com/cn">https://www.visitorsms.com/cn</a></li>
-<li>免费接码：<a href="https://www.becmd.com/">https://www.becmd.com/</a></li>
-<li>接码平台：<a href="http://www.114sim.com/">http://www.114sim.com/</a> <a href="http://zg.114sim.com/">http://zg.114sim.com/</a></li>
-<li>云短信：<a href="https://www.materialtools.com/">https://www.materialtools.com</a></li>
-<li>免费接码：<a href="http://z-sms.com/">http://z-sms.com/</a></li>
-<li>掠影网络：<a href="https://zusms.com/receiving-sms">https://zusms.com/receiving-sms</a></li>
-<li>免费接码：<a href="https://www.shejiinn.com/">https://www.shejiinn.com/</a></li>
-<li>云接码：<a href="https://yunjiema.net/">https://yunjiema.net</a></li>
-<li>云验证码：<a href="https://www.cnwml.com/">https://www.cnwml.com</a></li>
-<li>免费接码：<a href="https://www.mffac.com/">https://www.mffac.com</a></li>
-<li>接码科技免费平台：<a href="https://f4.work/">https://f4.work/</a><ul>
-<li>主站<a href="http://jiema.tech/sms/">http://jiema.tech/</a></li>
-</ul>
-</li>
-<li>接码号：<a href="https://jiemahao.com/">https://jiemahao.com</a></li>
-<li>免费接码： <a href="https://mianfeijiema.com/">https://mianfeijiema.com/</a></li>
-<li>小鸟接码平台： <a href="http://www.xnsms.com/">http://www.xnsms.com/</a></li>
-<li>zero接码平台： <a href="https://xinghai.party/">https://xinghai.party/</a></li>
-<li>LotHelper： <a href="https://www.lothelper.com/cn">https://www.lothelper.com/cn</a></li>
-<li>免费接码平台： <a href="http://www.zsrq.net/">http://www.zsrq.net/</a></li>
-</ul>
-<h2 id="国外收费接码平台"><a href="#国外收费接码平台" class="headerlink" title="国外收费接码平台"></a>国外收费接码平台</h2><ul>
-<li><a href="https://sms-activate.ru/?ref=486565">https://sms-activate.ru/cn/</a> 1$起充，有中文页面</li>
-<li><a href="https://5sim.net/">https://5sim.net</a><ul>
-<li>便宜国家：俄罗斯（ Russia ）罗马尼亚（ Romania ）菲律宾（ Philippines ）蒙古（ Mongolia ）拉脱维亚（ Latvia ）哈萨克斯坦（ Kazakhstan ）以色列（ Israel ）哥伦比亚（ Colombia ）</li>
-</ul>
-</li>
-<li><a href="http://smspva.com/">http://smspva.com</a> 这家起步就是0.1$，也就是最便宜7毛起步</li>
-<li><a href="https://onlinesim.ru/zh">https://onlinesim.ru/zh</a> 就俄罗斯的码便宜，起步0.1卢布<ul>
-<li><a href="https://t.me/jindou">TG群</a></li>
-</ul>
-</li>
-<li><a href="https://meiguojiema.com/">https://meiguojiema.com</a> 又一个国人开的国外接码，主要美国和加拿大号码</li>
-<li><a href="https://www.smsjiema.com/">https://www.smsjiema.com/</a> 美国实体卡号码，可以注册GV</li>
-<li><a href="https://www.textverified.com/">https://www.textverified.com/</a> 2刀起充，接码也挺贵的</li>
-<li><a href="https://autofications.com/">https://autofications.com/</a> 不算贵也不算便宜，最低$0.5一个码</li>
-<li><a href="https://service.pvaverify.com/">https://service.pvaverify.com/</a> 美国实体卡</li>
-<li>52验证码 <a href="http://52yzm.top/">http://52yzm.top/</a> 可充值任意金额，提供多国号码，部分国外实体卡，接码1元/个起步，注意不能接二次短信，备用网址：<a href="http://66765.top/%EF%BC%8C%E6%9C%89%E5%BE%AE%E4%BF%A1%E3%80%81%E6%B7%98%E5%AE%9D%E7%AD%89%E5%9B%BD%E5%86%85%E9%A1%B9%E7%9B%AE%EF%BC%8C%E4%BD%86%E5%AE%9E%E9%99%85%E8%83%BD%E4%B8%8D%E8%83%BD%E6%8E%A5%E5%88%B0%E7%A0%81%E6%9C%AA%E8%AF%95">http://66765.top/，有微信、淘宝等国内项目，但实际能不能接到码未试</a></li>
-</ul>
-<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><p>有网友把部分免费接码网站的手机号码聚合成了软件版和APP版</p>
-<ul>
-<li><p>极简短信接收工具：</p>
-<ul>
-<li><p>Windows版</p>
-</li>
-<li><p>2020-5-11更新V1.1.7版 <a href="https://lanzous.com/icjhepc">https://lanzous.com/icjhepc</a> 应该是易语言写的，不确定杀毒软件是否会报毒</p>
-</li>
-<li><p>软件后续更新请看作者原帖：<a href="https://www.52pojie.cn/thread-1175199-1-1.html">https://www.52pojie.cn/thread-1175199-1-1.html</a></p>
-</li>
-</ul>
-</li>
-<li><p>云接码：<a href="https://www.lanzous.com/i8v0g4j">https://www.lanzous.com/i8v0g4j</a></p>
-<ul>
-<li>安卓版</li>
-<li>可以采集130+个手机号，大部分是国内的。</li>
-</ul>
-</li>
-<li><p>临时短信号码-升级版：<a href="https://www.lanzous.com/i9ho2fc">https://www.lanzous.com/i9ho2fc</a></p>
-<ul>
-<li>使用方法：打开软件，直接点击获取手机号码，右键复制手机号码，右边可以阅读对应手机号码的短信，阅读短信窗口可以随意拉伸窗口，表格内容可以双击进行操作。</li>
-</ul>
-</li>
-<li><p>免费短信接码神器：v5.9版 蓝奏云：<a href="https://1024.lanzous.com/ibbjegb">https://1024.lanzous.com/ibbjegb</a></p>
-<ul>
-<li>安卓版</li>
-<li>免费接码app是一款基于云端服务的在线接收短信的云验证码软件。# 内有多个电话号码，可以接收验证码</li>
-</ul>
-</li>
-<li><p>5G接码平台：<a href="http://5g.wewq1.com/">http://5g.wewq1.com/</a> 没有网页版，只能软件注册使用，接码国内项目，未测试有效性</p>
-</li>
-</ul>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 合集 </tag>
+            
+            <tag> 网盘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>国内外短信接码平台合集</title>
+      <link href="posts/b9617f03.html"/>
+      <url>posts/b9617f03.html</url>
+      
+        <content type="html"><![CDATA[<p>最后更新于：2020年6月20日20点22分</p><p>注册账号不想泄露自己手机号码或者建小号可以使用</p><a id="more"></a><h2 id="国外免费接码平台"><a href="#国外免费接码平台" class="headerlink" title="国外免费接码平台"></a>国外免费接码平台</h2><blockquote><p>只列了一些出来，需要更多可以在搜索引擎网站搜关键词“Receive SMS”</p></blockquote><ul><li><a href="https://ch.freephonenum.com/">https://ch.freephonenum.com</a></li><li><a href="https://smsreceivefree.com/">https://smsreceivefree.com</a></li><li><a href="https://zh.mytrashmobile.com/">https://zh.mytrashmobile.com</a></li><li><a href="https://www.receive-sms-online.info/">https://www.receive-sms-online.info</a></li><li><a href="https://receiveasms.com/">https://receiveasms.com</a></li><li><a href="https://sms-online.co/receive-free-sms">https://sms-online.co/receive-free-sms</a></li><li><a href="https://receive-sms.com/">https://receive-sms.com</a></li><li><a href="http://receivefreesms.com/">http://receivefreesms.com/</a></li><li><a href="https://www.receivesmsonline.net/">https://www.receivesmsonline.net/</a></li><li><a href="https://www.freeonlinephone.org/">https://www.freeonlinephone.org/</a></li><li><a href="https://us-phone-number.com/">https://us-phone-number.com</a></li><li><a href="https://temporary-phone-number.com/">https://temporary-phone-number.com</a></li><li><a href="https://www.receivesms.co/">https://www.receivesms.co/</a></li><li><a href="https://www.smstibo.com/">https://www.smstibo.com/</a></li><li><a href="https://pingme.tel/receive-sms-online-cn/">https://pingme.tel/receive-sms-online-cn/</a></li><li><a href="https://receivefreesms.net/">http://receivefreesms.net/</a></li><li><a href="http://receivesmsonline.in/">http://receivesmsonline.in/</a></li><li><a href="https://sms-receive.net/">https://sms-receive.net/</a></li><li><a href="https://www.receivesms.net/">https://www.receivesms.net/</a></li></ul><h2 id="国内免费接码平台"><a href="#国内免费接码平台" class="headerlink" title="国内免费接码平台"></a>国内免费接码平台</h2><ul><li>超级云短信： <a href="http://www.bfkdim.com/">http://www.bfkdim.com/</a></li><li>隐私短信：<a href="https://www.yinsiduanxin.com/">https://www.yinsiduanxin.com</a></li><li>云短信： <a href="https://www.materialtools.com/">https://www.materialtools.com/</a></li><li>在线短信：<a href="http://www.smszk.com/">http://www.smszk.com/</a></li><li>游客短信：<a href="https://www.visitorsms.com/cn">https://www.visitorsms.com/cn</a></li><li>免费接码：<a href="https://www.becmd.com/">https://www.becmd.com/</a></li><li>接码平台：<a href="http://www.114sim.com/">http://www.114sim.com/</a> <a href="http://zg.114sim.com/">http://zg.114sim.com/</a></li><li>云短信：<a href="https://www.materialtools.com/">https://www.materialtools.com</a></li><li>免费接码：<a href="http://z-sms.com/">http://z-sms.com/</a></li><li>掠影网络：<a href="https://zusms.com/receiving-sms">https://zusms.com/receiving-sms</a></li><li>免费接码：<a href="https://www.shejiinn.com/">https://www.shejiinn.com/</a></li><li>云接码：<a href="https://yunjiema.net/">https://yunjiema.net</a></li><li>云验证码：<a href="https://www.cnwml.com/">https://www.cnwml.com</a></li><li>免费接码：<a href="https://www.mffac.com/">https://www.mffac.com</a></li><li>接码科技免费平台：<a href="https://f4.work/">https://f4.work/</a><ul><li>主站<a href="http://jiema.tech/sms/">http://jiema.tech/</a></li></ul></li><li>接码号：<a href="https://jiemahao.com/">https://jiemahao.com</a></li><li>免费接码： <a href="https://mianfeijiema.com/">https://mianfeijiema.com/</a></li><li>小鸟接码平台： <a href="http://www.xnsms.com/">http://www.xnsms.com/</a></li><li>zero接码平台： <a href="https://xinghai.party/">https://xinghai.party/</a></li><li>LotHelper： <a href="https://www.lothelper.com/cn">https://www.lothelper.com/cn</a></li><li>免费接码平台： <a href="http://www.zsrq.net/">http://www.zsrq.net/</a></li></ul><h2 id="国外收费接码平台"><a href="#国外收费接码平台" class="headerlink" title="国外收费接码平台"></a>国外收费接码平台</h2><ul><li><a href="https://sms-activate.ru/?ref=486565">https://sms-activate.ru/cn/</a> 1$起充，有中文页面</li><li><a href="https://5sim.net/">https://5sim.net</a><ul><li>便宜国家：俄罗斯（ Russia ）罗马尼亚（ Romania ）菲律宾（ Philippines ）蒙古（ Mongolia ）拉脱维亚（ Latvia ）哈萨克斯坦（ Kazakhstan ）以色列（ Israel ）哥伦比亚（ Colombia ）</li></ul></li><li><a href="http://smspva.com/">http://smspva.com</a> 这家起步就是0.1$，也就是最便宜7毛起步</li><li><a href="https://onlinesim.ru/zh">https://onlinesim.ru/zh</a> 就俄罗斯的码便宜，起步0.1卢布<ul><li><a href="https://t.me/jindou">TG群</a></li></ul></li><li><a href="https://meiguojiema.com/">https://meiguojiema.com</a> 又一个国人开的国外接码，主要美国和加拿大号码</li><li><a href="https://www.smsjiema.com/">https://www.smsjiema.com/</a> 美国实体卡号码，可以注册GV</li><li><a href="https://www.textverified.com/">https://www.textverified.com/</a> 2刀起充，接码也挺贵的</li><li><a href="https://autofications.com/">https://autofications.com/</a> 不算贵也不算便宜，最低$0.5一个码</li><li><a href="https://service.pvaverify.com/">https://service.pvaverify.com/</a> 美国实体卡</li><li>52验证码 <a href="http://52yzm.top/">http://52yzm.top/</a> 可充值任意金额，提供多国号码，部分国外实体卡，接码1元/个起步，注意不能接二次短信，备用网址：<a href="http://66765.top/%EF%BC%8C%E6%9C%89%E5%BE%AE%E4%BF%A1%E3%80%81%E6%B7%98%E5%AE%9D%E7%AD%89%E5%9B%BD%E5%86%85%E9%A1%B9%E7%9B%AE%EF%BC%8C%E4%BD%86%E5%AE%9E%E9%99%85%E8%83%BD%E4%B8%8D%E8%83%BD%E6%8E%A5%E5%88%B0%E7%A0%81%E6%9C%AA%E8%AF%95">http://66765.top/，有微信、淘宝等国内项目，但实际能不能接到码未试</a></li></ul><h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><p>有网友把部分免费接码网站的手机号码聚合成了软件版和APP版</p><ul><li><p>极简短信接收工具：</p><ul><li><p>Windows版</p></li><li><p>2020-5-11更新V1.1.7版 <a href="https://lanzous.com/icjhepc">https://lanzous.com/icjhepc</a> 应该是易语言写的，不确定杀毒软件是否会报毒</p></li><li><p>软件后续更新请看作者原帖：<a href="https://www.52pojie.cn/thread-1175199-1-1.html">https://www.52pojie.cn/thread-1175199-1-1.html</a></p></li></ul></li><li><p>云接码：<a href="https://www.lanzous.com/i8v0g4j">https://www.lanzous.com/i8v0g4j</a></p><ul><li>安卓版</li><li>可以采集130+个手机号，大部分是国内的。</li></ul></li><li><p>临时短信号码-升级版：<a href="https://www.lanzous.com/i9ho2fc">https://www.lanzous.com/i9ho2fc</a></p><ul><li>使用方法：打开软件，直接点击获取手机号码，右键复制手机号码，右边可以阅读对应手机号码的短信，阅读短信窗口可以随意拉伸窗口，表格内容可以双击进行操作。</li></ul></li><li><p>免费短信接码神器：v5.9版 蓝奏云：<a href="https://1024.lanzous.com/ibbjegb">https://1024.lanzous.com/ibbjegb</a></p><ul><li>安卓版</li><li>免费接码app是一款基于云端服务的在线接收短信的云验证码软件。# 内有多个电话号码，可以接收验证码</li></ul></li><li><p>5G接码平台：<a href="http://5g.wewq1.com/">http://5g.wewq1.com/</a> 没有网页版，只能软件注册使用，接码国内项目，未测试有效性</p></li></ul>]]></content>
+      
+      
       <categories>
-        <category>杂七杂八</category>
+          
+          <category> 杂七杂八 </category>
+          
       </categories>
-      <tags>
-        <tag>合集</tag>
-        <tag>接码</tag>
-        <tag>短信</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 合集 </tag>
+            
+            <tag> 接码 </tag>
+            
+            <tag> 短信 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
