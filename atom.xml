@@ -6,7 +6,7 @@
   <link href="http://toss.gq/atom.xml" rel="self"/>
   
   <link href="http://toss.gq/"/>
-  <updated>2020-10-11T10:12:17.485Z</updated>
+  <updated>2020-11-04T13:21:37.183Z</updated>
   <id>http://toss.gq/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android 阅读3.0</title>
+    <link href="http://toss.gq/posts/8399ab0d.html"/>
+    <id>http://toss.gq/posts/8399ab0d.html</id>
+    <published>2020-11-04T13:11:14.000Z</published>
+    <updated>2020-11-04T13:21:37.183Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;新阅读采用kotlin开发，和老阅读大部分功能一样。&lt;/p&gt;
+&lt;h3 id=&quot;主要功能&quot;&gt;&lt;a href=&quot;#主要功能&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Android" scheme="http://toss.gq/categories/Android/"/>
+    
+    
+    <category term="阅读" scheme="http://toss.gq/tags/%E9%98%85%E8%AF%BB/"/>
+    
+    <category term="小说" scheme="http://toss.gq/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KinhDown(百度网盘下载)</title>
+    <link href="http://toss.gq/posts/9ceba5b.html"/>
+    <id>http://toss.gq/posts/9ceba5b.html</id>
+    <published>2020-11-04T12:53:32.000Z</published>
+    <updated>2020-11-04T13:09:55.836Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;KinhDown又一款百度网盘第三方下载工具。基于node做的界面，aria2c下载，目前不太稳定，算是百度网盘新的一种第三方尝试。有问题可以反馈。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/KinhDown.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;更新日志&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="网盘" scheme="http://toss.gq/categories/%E7%BD%91%E7%9B%98/"/>
+    
+    
+    <category term="百度网盘" scheme="http://toss.gq/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/"/>
+    
+    <category term="KinhDown" scheme="http://toss.gq/tags/KinhDown/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo+Github搭建博客笔记</title>
@@ -253,7 +310,7 @@
     <link href="http://toss.gq/posts/85e85e2c.html"/>
     <id>http://toss.gq/posts/85e85e2c.html</id>
     <published>2020-07-05T02:49:33.000Z</published>
-    <updated>2020-10-25T03:03:22.097Z</updated>
+    <updated>2020-11-03T14:20:53.726Z</updated>
     
     
       
@@ -314,9 +371,9 @@
     <category term="网盘" scheme="http://toss.gq/categories/%E7%BD%91%E7%9B%98/"/>
     
     
-    <category term="谷歌" scheme="http://toss.gq/tags/%E8%B0%B7%E6%AD%8C/"/>
-    
     <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+    <category term="谷歌" scheme="http://toss.gq/tags/%E8%B0%B7%E6%AD%8C/"/>
     
   </entry>
   

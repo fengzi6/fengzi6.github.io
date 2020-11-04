@@ -9,8 +9,69 @@
     <atom:link href="http://toss.gq/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>记录孤岛历程</description>
-    <pubDate>Sun, 11 Oct 2020 10:12:17 GMT</pubDate>
+    <pubDate>Wed, 04 Nov 2020 13:21:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Android 阅读3.0</title>
+      <link>http://toss.gq/posts/8399ab0d.html</link>
+      <guid>http://toss.gq/posts/8399ab0d.html</guid>
+      <pubDate>Wed, 04 Nov 2020 13:11:14 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;新阅读采用kotlin开发，和老阅读大部分功能一样。&lt;/p&gt;
+&lt;h3 id=&quot;主要功能&quot;&gt;&lt;a href=&quot;#主要功能&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://toss.gq/categories/Android/">Android</category>
+      
+      
+      <category domain="http://toss.gq/tags/%E9%98%85%E8%AF%BB/">阅读</category>
+      
+      <category domain="http://toss.gq/tags/%E5%B0%8F%E8%AF%B4/">小说</category>
+      
+      
+      <comments>http://toss.gq/posts/8399ab0d.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>KinhDown(百度网盘下载)</title>
+      <link>http://toss.gq/posts/9ceba5b.html</link>
+      <guid>http://toss.gq/posts/9ceba5b.html</guid>
+      <pubDate>Wed, 04 Nov 2020 12:53:32 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;KinhDown又一款百度网盘第三方下载工具。基于node做的界面，aria2c下载，目前不太稳定，算是百度网盘新的一种第三方尝试。有问题可以反馈。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/KinhDown.png&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;更新日志&quot;&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://toss.gq/categories/%E7%BD%91%E7%9B%98/">网盘</category>
+      
+      
+      <category domain="http://toss.gq/tags/%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98/">百度网盘</category>
+      
+      <category domain="http://toss.gq/tags/KinhDown/">KinhDown</category>
+      
+      
+      <comments>http://toss.gq/posts/9ceba5b.html#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Hexo+Github搭建博客笔记</title>
@@ -333,9 +394,9 @@
       <category domain="http://toss.gq/categories/%E7%BD%91%E7%9B%98/">网盘</category>
       
       
-      <category domain="http://toss.gq/tags/%E8%B0%B7%E6%AD%8C/">谷歌</category>
-      
       <category domain="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/">免费</category>
+      
+      <category domain="http://toss.gq/tags/%E8%B0%B7%E6%AD%8C/">谷歌</category>
       
       
       <comments>http://toss.gq/posts/f9e8a999.html#disqus_thread</comments>

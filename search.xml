@@ -51,7 +51,8 @@
 </div>
 
 <h3 id="大机场「V2RAY」"><a href="#大机场「V2RAY」" class="headerlink" title="大机场「V2RAY」"></a>大机场「V2RAY」</h3><blockquote>
-<p>使用30天、速度很好，晚上也能保持，YouTube -  4K视频秒开。</p>
+<p>直连，需要看奶飞或中转的看小机场。</p>
+<p>订阅年付赠送2月时长(工单申请)</p>
 <p><a href="https://大机场.com/#/register?code=gv1z9SZR">https://大机场.com/#/register?code=gv1z9SZR</a> </p>
 </blockquote>
 <ul>
@@ -59,6 +60,18 @@
 <p>【一点点流量订阅】3.99元/月、月流量为 1024G；年付29.9元。</p>
 <p>【有点多流量订阅】5.99元/月、月流量为 2048G；年付49.9元。</p>
 <p>【亿点点流量订阅】7.99元/月、月流量为 4096G；年付69.9元。</p>
+</li>
+</ul>
+<h3 id="小机场「V2RAY」"><a href="#小机场「V2RAY」" class="headerlink" title="小机场「V2RAY」"></a>小机场「V2RAY」</h3><blockquote>
+<p>中转，地区多，解锁流媒体。</p>
+<p>订阅季付赠送一周时长(工单申请)</p>
+<p><a href="https://小机场.com/#/register?code=HFsLUyQj">https://小机场.com/#/register?code=HFsLUyQj</a></p>
+</blockquote>
+<ul>
+<li><p>套餐限制：3设备</p>
+<p>【一点点流量订阅】9.9元/月、月流量为 1024G；</p>
+<p>【有点多流量订阅】18.8元/月、月流量为 2048G；</p>
+<p>【亿点点流量订阅】28.8元/月、月流量为 4096G；</p>
 </li>
 </ul>
 <h3 id="放心云「V2RAY」"><a href="#放心云「V2RAY」" class="headerlink" title="放心云「V2RAY」"></a>放心云「V2RAY」</h3><blockquote>
@@ -169,6 +182,51 @@
       </categories>
       <tags>
         <tag>机场</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android 阅读3.0</title>
+    <url>/posts/8399ab0d.html</url>
+    <content><![CDATA[<p>新阅读采用kotlin开发，和老阅读大部分功能一样。</p>
+<h3 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h3><p>自定义书源，自己设置规则，抓取网页数据，规则简单易懂，软件内有规则说明。</p>
+<p>列表书架，网格书架自由切换。</p>
+<p>书源规则支持搜索及发现，所有找书看书功能全部自定义，找书更方便。</p>
+<p>支持替换净化，去除广告替换内容很方便。</p>
+<p>支持本地TXT、EPUB阅读，手动浏览，智能扫描。</p>
+<p>支持高度自定义阅读界面，切换字体、颜色、背景、行距、段距、加粗、简繁转换等。</p>
+<p>支持多种翻页模式，覆盖、仿真、滑动、滚动等。</p>
+<p>软件开源，持续优化，无广告。</p>
+<p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B1.jpg"></p>
+<p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B2.jpg"></p>
+<p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B3.jpg"></p>
+<p>下载地址：<a href="https://kunfei.lanzous.com/b0f7pt4ja">https://kunfei.lanzous.com/b0f7pt4ja</a></p>
+<p>书源：<a href="https://yck.mumuceo.com/yuedu/shuyuan/index.html">https://yck.mumuceo.com/yuedu/shuyuan/index.html</a></p>
+]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+        <tag>小说</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>KinhDown(百度网盘下载)</title>
+    <url>/posts/9ceba5b.html</url>
+    <content><![CDATA[<p>KinhDown又一款百度网盘第三方下载工具。基于node做的界面，aria2c下载，目前不太稳定，算是百度网盘新的一种第三方尝试。有问题可以反馈。</p>
+<p><img src="/images/KinhDown.png"></p>
+<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>版本:1.8.32<br>内容:增加:1.自动识别磁力链接<br>2.磁力链接初步数据查询<br>更改:1.打开资源UI<br>2.直接下载与强制提速缓存大小</p>
+<p>版本:1.8.26<br>内容:重磅增加:磁力下载(首次使用如有问题请及时反馈！)<br>修复:魔法BUG</p>
+<p>版本:1.7.71<br>内容:增强:云解析稳定性提升95%<br>修复:无法连接服务器</p>
+<p>官方文档：<a href="http://kinhdown.kinh.cc/">http://kinhdown.kinh.cc/</a></p>
+<p>下载地址：<a href="https://ubaq.lanzous.com/s/KinhDown">https://ubaq.lanzous.com/s/KinhDown</a></p>
+]]></content>
+      <categories>
+        <category>网盘</category>
+      </categories>
+      <tags>
+        <tag>百度网盘</tag>
+        <tag>KinhDown</tag>
       </tags>
   </entry>
   <entry>
@@ -999,8 +1057,8 @@
         <category>网盘</category>
       </categories>
       <tags>
-        <tag>谷歌</tag>
         <tag>免费</tag>
+        <tag>谷歌</tag>
       </tags>
   </entry>
   <entry>
