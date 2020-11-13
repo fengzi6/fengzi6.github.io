@@ -25,7 +25,6 @@
     <title>机场推荐【墙外不是法外之地】</title>
     <url>/posts/85e85e2c.html</url>
     <content><![CDATA[<div class="note warning simple"><p><font color=#ff0000 >郑重声明：本文所介绍产品主要是为了方便学习、科研以及外贸工作，请遵守中华人民共和国法律法规，请珍惜当下还能让我们出去看看的大环境。</font></p>
-<p>用户自己心里也要有一杆秤，毕竟机场多数是个人站或合伙站，能做多久并不能保证，或因风险，或因卷钱，或因赔钱，都有可能不做，不了解的尽量不要一下充很多。</p>
 <p>V2RAY机场 - - 使用 - <code>Clash客户端</code>软件在下面提供</p>
 <p>SSR机场 - - 使用 - <code>SSR客户端</code>软件在下面提供</p>
 <p>订阅转换地址：<a href="https://acl4ssr-sub.github.io/">https://acl4ssr-sub.github.io/</a></p>
@@ -37,15 +36,6 @@
 </blockquote>
 <a class="btn-beautify button--animated blue larger" href="https://telegram.org/" 
   title="TG聊天软件"><span>TG聊天软件</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq/15" 
-  title="TG常见中文包"><span>TG常见中文包</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq1" 
-  title="TG孤岛公告板"><span>TG孤岛公告板</span></a>
-
-<a class="btn-beautify button--animated blue larger" href="https://t.me/tossgq" 
-  title="TG孤岛交流群"><span>TG孤岛交流群</span></a>
 
 <div class="note danger simple"><p><font color=#ff0000 >大家通过下方链接注册，我有返利，不能提现，但可以白嫖。</font></p>
 </div>
@@ -88,10 +78,12 @@
 </ul>
 <h3 id="Q巴巴Q「SSR」"><a href="#Q巴巴Q「SSR」" class="headerlink" title="Q巴巴Q「SSR」"></a>Q巴巴Q「SSR」</h3><blockquote>
 <p>使用2年、速度YouTube -  4K视频秒开。</p>
+<p>月或季五折优惠码：testing</p>
+<p>七折优惠码：regularcustomers</p>
 <p><a href="https://www.q88q.club/auth/register?code=VIP">https://www.q88q.club/auth/register?code=VIP</a> </p>
 </blockquote>
 <ul>
-<li><p>套餐限制：10设备</p>
+<li><p>套餐限制：10设备，可以找10个人平摊费用。</p>
 <p>20元/31天/总流量为 225G；55元/91天/总流量为 750G</p>
 <p>100元/180天/总流量为 1650G；190元/360天/总流量为 3600G</p>
 </li>
@@ -215,9 +207,18 @@
     <url>/posts/9ceba5b.html</url>
     <content><![CDATA[<p>KinhDown又一款百度网盘第三方下载工具。基于node做的界面，aria2c下载，目前不太稳定，算是百度网盘新的一种第三方尝试。有问题可以反馈。</p>
 <p><img src="/images/KinhDown.png"></p>
-<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>版本:1.8.32<br>内容:增加:1.自动识别磁力链接<br>2.磁力链接初步数据查询<br>更改:1.打开资源UI<br>2.直接下载与强制提速缓存大小</p>
-<p>版本:1.8.26<br>内容:重磅增加:磁力下载(首次使用如有问题请及时反馈！)<br>修复:魔法BUG</p>
-<p>版本:1.7.71<br>内容:增强:云解析稳定性提升95%<br>修复:无法连接服务器</p>
+<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>2020年11月13日</p>
+<p>目前PC板修复状态:<br>已完成80%，已完成159条，余剩23条代码未进行修改</p>
+<p>2020年11月12日</p>
+<p>安卓版停用中！免登录端口已被封杀，请等待修复！</p>
+<p>2020年11月11日</p>
+<p>部分用户可能出现bug（如下）<br>1.更新无限循环<br>2.空空如也<br>3.下载等待中任务消失<br>4.无法登录<br>（出现一个，你将无法使用软件，作者周五开始修复）</p>
+<p>云解析问题:由于端口被封杀，作者周五开始修复</p>
+<p>注意:网页版将会优先修！！！</p>
+<p>互相通知！<br>互相通知！<br>互相通知！</p>
+<p>版本:1.8.81<br>内容:修复:1.等待继续任务继续任务时无法操作<br>2.完成传输出现重复文件</p>
+<p>版本:1.8.79<br>内容:更改:更新程序下载全部重写！<br>（请手动下载更新包更新，否则以后将不再提供自动更新服务）</p>
+<p>版本:1.8.76<br>内容:更改:1.捐赠系统UI<br>2.Magnet与Torrent下载全部重写！<br>修复:下载完成列表卡空白</p>
 <p>官方文档：<a href="http://kinhdown.kinh.cc/">http://kinhdown.kinh.cc/</a></p>
 <p>下载地址：<a href="https://ubaq.lanzous.com/s/KinhDown">https://ubaq.lanzous.com/s/KinhDown</a></p>
 ]]></content>
@@ -719,120 +720,6 @@
       <tags>
         <tag>合集</tag>
         <tag>音乐</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SS/SSR/V2Ray/Clash 简介和客户端软件下载</title>
-    <url>/posts/42e8018b.html</url>
-    <content><![CDATA[<h2 id="SS-SSR-V2Ray-Clash简介"><a href="#SS-SSR-V2Ray-Clash简介" class="headerlink" title="SS/SSR/V2Ray/Clash简介"></a>SS/SSR/V2Ray/Clash简介</h2><ul>
-<li>SS = <a href="https://zh.wikipedia.org/wiki/Shadowsocks">Shadowsocks</a></li>
-<li>SSR = <a href="https://zh.wikipedia.org/wiki/ShadowsocksR">ShadowsocksR</a></li>
-<li>SS ≠ SOCKS5</li>
-<li>SS ≠ VPN</li>
-<li><a href="https://www.v2ray.com/">V2Ray</a></li>
-<li><a href="https://github.com/trojan-gfw/trojan">Trojan</a></li>
-<li><a href="https://github.com/Dreamacro/clash">Clash</a></li>
-</ul>
-<a id="more"></a>
-
-<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><h5 id="推荐客户端"><a href="#推荐客户端" class="headerlink" title="推荐客户端"></a>推荐客户端</h5><ul>
-<li><code>iOS</code>: Surge 4, Quantumult X, Quantumult, Loon, Shadowrocket</li>
-<li><code>Android</code>: Clash for Android, Surfboard</li>
-<li><code>macOS</code>: Surge for Mac, ClashX, Clash for Windows</li>
-<li><code>Windows</code>: Clash for Windows</li>
-<li><code>Linux</code>: Clash<br>*(下方有下载地址)*</li>
-</ul>
-<h5 id="iOS-客户端-仅国区下架-其他区可下载"><a href="#iOS-客户端-仅国区下架-其他区可下载" class="headerlink" title="iOS 客户端 (仅国区下架,其他区可下载)"></a>iOS 客户端 (仅国区下架,其他区可下载)</h5><ul>
-<li><a href="https://apps.apple.com/us/app/id1442620678">Surge 4</a> 更新订阅制,首年:$49.99,次年开始:$19.99/年 (支持SS/Snell/Vmess/Trojan)</li>
-<li><a href="https://apps.apple.com/us/app/quantumult-x/id1443988620">Quantumult X</a> $7.99 (支持SS/SSR/Vmess/Trojan)</li>
-<li><a href="https://apps.apple.com/us/app/quantumult/id1252015438">Quantumult</a> $4.99 (也叫:圈, 支持SS/SSR/Vmess)</li>
-<li><a href="https://apps.apple.com/us/app-bundle/quantumult-x-upgrade/id1482985563">Quantumult Bundle</a> $9.99 (Bundle包,包括Quantumult X和Quantumult)</li>
-<li><a href="https://apps.apple.com/us/app/shadowrocket/id932747118">Shadowrocket</a> $2.99 (也叫:小火箭, 支持SS/SSR/Vmess/Trojan/Snell/Lua/Vless)</li>
-</ul>
-<h5 id="macOS-客户端"><a href="#macOS-客户端" class="headerlink" title="macOS 客户端"></a>macOS 客户端</h5><ul>
-<li><a href="http://nssurge.com/">Surge for Mac</a> $49.99/$69.99/$99.99 (支持SS/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/yichengchen/clashX/releases">ClashX</a> Clash的Mac图形客户端 (支持SS/Snell/Vmess) - 推荐</li>
-<li><a href="https://github.com/paradiseduo/ClashXR/releases">ClashXR</a> ClashR的Mac图形客户端 (支持SS/SSR/Snell/Vmess) - 推荐</li>
-<li><a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public">ClashX Pro</a> 支持开启”增强模式的”ClashX</li>
-<li><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">Clash for Windows</a> Clash的Windows/macOS图形客户端,简称:CFW (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/Dreamacro/clash/releases">Clash 内核</a> 一个Go语言开发的多平台代理客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/Dreamacro/clash/releases/tag/premium">Clash Premium 内核</a></li>
-<li><a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases">ShadowsocksX-NG</a> (支持SS)</li>
-<li><a href="https://github.com/qinyuhang/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R8</a> (支持SS/SSR) - 推荐</li>
-<li><a href="https://github.com/paradiseduo/ShadowsocksX-NG-R8/releases">ShadowsocksX-NG-R8</a></li>
-<li><a href="https://github.com/leadscloud/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R</a></li>
-<li><a href="https://github.com/wzdnzd/ShadowsocksX-NG-R/releases">ShadowsocksX-NG-R</a></li>
-</ul>
-<h5 id="Windows-客户端"><a href="#Windows-客户端" class="headerlink" title="Windows 客户端"></a>Windows 客户端</h5><ul>
-<li><a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">Clash for Windows</a> Clash的Windows/macOS图形客户端,简称:CFW (支持SS/SSR/Snell/Vmess/Trojan) - 推荐</li>
-<li><a href="https://github.com/kallydev/clash_for_windows_pkg_zh-cn/releases">Clash for Windows 中文版</a> 非官方提供 - 推荐</li>
-<li><a href="https://github.com/Dreamacro/clash/releases">Clash 内核</a> 一个Go语言开发的多平台代理客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/Dreamacro/clash/releases/tag/premium">Clash Premium 内核</a></li>
-<li><a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/netchx/Netch/releases">Netch</a> (支持SS/SSR/Vmess)</li>
-<li><a href="https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases">ShadowsocksR</a> (简称:SSR)</li>
-<li><a href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases">ShadowsocksR</a> (HMBSbige 修改版) - 推荐</li>
-<li><a href="https://github.com/congcong0806/congcong0806.github.io/raw/master/files/ShadowsocksR_4.7.0_Windows.7z">ShadowsocksR 4.7.0</a> (@breakwa11 破娃最后一版)</li>
-</ul>
-<h5 id="Android-客户端"><a href="#Android-客户端" class="headerlink" title="Android 客户端"></a>Android 客户端</h5><ul>
-<li><a href="https://github.com/Kr328/ClashForAndroid/releases">Clash for Android</a> Clash的Android图形客户端 (支持SS/SSR/Snell/Vmess/Trojan) - 推荐</li>
-<li><a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">Clash for Android Google Play</a> Clash的Android图形客户端 (支持SS/SSR/Snell/Vmess/Trojan)</li>
-<li><a href="https://github.com/shadowsocksr-backup/shadowsocksr-android/releases">ShadowsocksR</a> (简称:SSR)</li>
-<li><a href="https://github.com/congcong0806/congcong0806.github.io/raw/master/files/ShadowsocksR_3.4.0.6_Android.zip">ShadowsocksR 3.4.0.6</a> (@breakwa11 破娃最后一版)</li>
-<li><a href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases">shadowsocksRb</a>(简称:酸酸乳) - 推荐</li>
-</ul>
-<h5 id="TV"><a href="#TV" class="headerlink" title="TV"></a>TV</h5><ul>
-<li><a href="https://github.com/Kr328/ClashForAndroid/releases">Clash for Android</a></li>
-<li><a href="https://github.com/shadowsocks/shadowsocks-android/releases">Shadowsocks 影梭</a> (选择shadowsocks-tv)</li>
-</ul>
-<h5 id="V2Ray-客户端"><a href="#V2Ray-客户端" class="headerlink" title="V2Ray 客户端"></a>V2Ray 客户端</h5><ul>
-<li>iOS<ul>
-<li>Surge 4, Quantumult X, Quantumult, Shadowrocket, Pharos Pro, Kitsunebi, Loon ↑</li>
-<li><a href="https://apps.apple.com/us/app/id1445270056">i2Ray</a> $3.99</li>
-</ul>
-</li>
-<li>Windows<ul>
-<li>Clash for Windows ↑</li>
-<li><a href="https://github.com/2dust/v2rayN/releases">v2rayN</a></li>
-<li><a href="https://github.com/Cenmrev/V2RayW/releases">V2RayW</a></li>
-<li><a href="https://github.com/Shinlor/V2RayS/releases">V2RayS</a></li>
-<li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li>
-</ul>
-</li>
-<li>macOS<ul>
-<li>ClashX ↑</li>
-<li><a href="https://github.com/Cenmrev/V2RayX/releases">V2RayX</a></li>
-<li><a href="https://github.com/yanue/V2rayU/releases">V2rayU</a></li>
-<li><a href="https://github.com/gssdromen/V2RayC">V2RayC</a></li>
-<li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li>
-</ul>
-</li>
-<li>Linux<ul>
-<li><a href="https://github.com/Qv2ray/Qv2ray/releases">Qv2ray</a></li>
-</ul>
-</li>
-<li>Android<ul>
-<li>Clash for Android ↑</li>
-<li><a href="https://github.com/2dust/v2rayNG/releases">v2rayNG</a></li>
-<li><a href="https://play.google.com/store/apps/details?id=com.v2ray.ang">v2rayNG Google Play</a></li>
-</ul>
-</li>
-</ul>
-<h5 id="Trojan-客户端"><a href="#Trojan-客户端" class="headerlink" title="Trojan 客户端"></a>Trojan 客户端</h5><ul>
-<li>iOS: Surge 4, Shadowrocket, Pharos Pro ↑</li>
-<li>Android: <a href="https://github.com/trojan-gfw/igniter/releases/tag/v0.1.0-pre-alpha16">igniter</a></li>
-<li>Windows: <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a></li>
-<li>macOS: Surge Mac, <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a> <a href="https://github.com/JimLee1996/TrojanX/releases">TrojanX</a></li>
-<li>Linux: <a href="https://github.com/TheWanderingCoel/Trojan-Qt5/releases">Trojan-Qt5</a></li>
-</ul>
-<h3 id="耗电-流量"><a href="#耗电-流量" class="headerlink" title="耗电/流量"></a>耗电/流量</h3><p><em>为什么使用了代理应用后在电量统计中显示耗电很多？</em><br>这是移动操作系统的一个特殊机制, Surge、Quantumult、Shadowrocket等等所有的 SS/SSR/V2Ray 客户端开启后会接管全局的（几乎）所有通信, 所以所有的网络方面电量消耗都会被算在 SS 客户端头上, 实际使用中不会感到 SS 客户端对电量有明显影响, 「设置-电池」中看到它的电池用量, 绝大部分都是网络所消耗的电量, 并不是 SS 客户端消耗的电量, SS 客户端就是背锅侠。<br>网络流量也是如此的。</p>
-]]></content>
-      <categories>
-        <category>科学上网</category>
-      </categories>
-      <tags>
-        <tag>机场</tag>
       </tags>
   </entry>
   <entry>
