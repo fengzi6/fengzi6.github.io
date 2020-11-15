@@ -6,7 +6,7 @@
   <link href="http://toss.gq/atom.xml" rel="self"/>
   
   <link href="http://toss.gq/"/>
-  <updated>2020-11-04T13:21:37.183Z</updated>
+  <updated>2020-11-15T01:45:07.782Z</updated>
   <id>http://toss.gq/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>显示器如何选择</title>
+    <link href="http://toss.gq/posts/969d9b17.html"/>
+    <id>http://toss.gq/posts/969d9b17.html</id>
+    <published>2020-11-15T01:26:32.000Z</published>
+    <updated>2020-11-15T01:45:07.782Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;1000 元以上的市场开始分层，一部分是追求高刷新率的游戏类显示器，一部分是追求高色准的设计类显示器，这次我们优先照顾了需要高色准的朋友。根据我们的调研，95% 的用户的预算都不会超过 3500，我们这次的选品就是落在了 1000-4000 元的价位区间。不管你是设计、剪辑、后期、调色、摄影、Mac 用户，或者只是单纯想挑一个 4K 显示器，我们也都尽量照顾到了，希望这期可以解答你长久以来的一些疑问。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="设备" scheme="http://toss.gq/categories/%E8%AE%BE%E5%A4%87/"/>
+    
+    
+    <category term="显示器" scheme="http://toss.gq/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>Android 阅读3.0</title>
@@ -283,7 +302,7 @@
     <link href="http://toss.gq/posts/85e85e2c.html"/>
     <id>http://toss.gq/posts/85e85e2c.html</id>
     <published>2020-07-05T02:49:33.000Z</published>
-    <updated>2020-11-13T13:41:00.775Z</updated>
+    <updated>2020-11-15T01:47:53.619Z</updated>
     
     
       
@@ -344,9 +363,9 @@
     <category term="网盘" scheme="http://toss.gq/categories/%E7%BD%91%E7%9B%98/"/>
     
     
-    <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
-    
     <category term="谷歌" scheme="http://toss.gq/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+    <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
     
   </entry>
   
