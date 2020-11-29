@@ -41,7 +41,7 @@
 </div>
 
 <h3 id="大机场「V2RAY」"><a href="#大机场「V2RAY」" class="headerlink" title="大机场「V2RAY」"></a>大机场「V2RAY」</h3><blockquote>
-<p>直连，需要看奶飞或中转的看小机场。</p>
+<p>全是香港直连，需要看奶飞或中转的看小机场。</p>
 <p>订阅年付赠送2月时长(工单申请)</p>
 <p><a href="https://大机场.com/#/register?code=gv1z9SZR">https://大机场.com/#/register?code=gv1z9SZR</a> </p>
 </blockquote>
@@ -107,32 +107,38 @@
 
 <h3 id="Clash-WIN版"><a href="#Clash-WIN版" class="headerlink" title="Clash WIN版"></a>Clash WIN版</h3><p>Clash for Windows 是目前在 Windows 上唯一可用的图形化 Clash 分支</p>
 <p>Github项目地址：<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
-<a class="btn-beautify button--animated purple larger" href="https://pigu.lanzoui.com/iPrXXidmofc" 
-  title="Clash.for.Windows-汉化版"><span>Clash.for.Windows-汉化版</span></a>
+<a class="btn-beautify button--animated purple larger" href="https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.13.4/Clash.for.Windows-0.13.4-win.7z" 
+  title="Github下载"><span>Github下载</span></a>
+
+<a class="btn-beautify button--animated purple larger" href="https://www.lanzoui.com/b07xydi1c" 
+  title="蓝奏云下载"><span>蓝奏云下载</span></a>
 
 <a class="btn-beautify button--animated purple larger" href="https://merlinblog.xyz/wiki/cfw.html" 
-  title="Clash(R) for Windows教程"><span>Clash(R) for Windows教程</span></a>
+  title="Clash Win教程"><span>Clash Win教程</span></a>
 
 <h3 id="Clash-MacOS版"><a href="#Clash-MacOS版" class="headerlink" title="Clash MacOS版"></a>Clash MacOS版</h3><p>Clash for Windows for Mac 是 Clash for Windows 作者的另一款作品。</p>
 <p>Github项目地址：<a href="https://github.com/Fndroid/clash_for_windows_pkg/releases">https://github.com/Fndroid/clash_for_windows_pkg/releases</a></p>
+<a class="btn-beautify button--animated purple larger" href="https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.13.4/Clash.for.Windows-0.13.4.dmg" 
+  title="Github下载"><span>Github下载</span></a>
+
 <a class="btn-beautify button--animated purple larger" href="https://merlinblog.xyz/wiki/clash-for-windows-for-mac.html" 
-  title="Clash for macOS教程（附带软件下载）"><span>Clash for macOS教程（附带软件下载）</span></a>
+  title="Clash Mac教程"><span>Clash Mac教程</span></a>
 
 <p>ClashX 是运行在 macOS 上的一款科学上网工具。</p>
 <p>Github地址：<a href="https://github.com/yichengchen/clashX/releases">https://github.com/yichengchen/clashX/releases</a></p>
-<a class="btn-beautify button--animated purple larger" href="https://pigu.lanzoui.com/iFwhMhpv7qb" 
-  title="ClashX.for.MacOS"><span>ClashX.for.MacOS</span></a>
-
-<a class="btn-beautify button--animated purple larger" href="https://pigu.lanzoui.com/iG6FLidmnvc" 
-  title="ClashX Pro.MacOS"><span>ClashX Pro.MacOS</span></a>
+<a class="btn-beautify button--animated purple larger" href="https://github.com/yichengchen/clashX/releases/download/1.31.0/ClashX.dmg" 
+  title="Github下载"><span>Github下载</span></a>
 
 <a class="btn-beautify button--animated purple larger" href="https://merlinblog.xyz/wiki/ClashX.html" 
-  title="ClashX(R) for macOS教程"><span>ClashX(R) for macOS教程</span></a>
+  title="ClashX Mac教程"><span>ClashX Mac教程</span></a>
 
 <p>ClashX Pro：这是作者的另一款软件，只用作代理的话，也非常好用。用法和ClashX差不多，有“增强模式”。</p>
 <h3 id="Clash-安卓版"><a href="#Clash-安卓版" class="headerlink" title="Clash 安卓版"></a>Clash 安卓版</h3><p>Clash for Android 是安卓系统上的一款 Clash 客户端。<br>Github 项目地址：<a href="https://github.com/Kr328/ClashForAndroid">https://github.com/Kr328/ClashForAndroid</a></p>
-<a class="btn-beautify button--animated purple larger" href="https://pigu.lanzoui.com/iTp85hpv6qf" 
-  title="Clash.Android"><span>Clash.Android</span></a>
+<a class="btn-beautify button--animated purple larger" href="https://github.com/Kr328/ClashForAndroid/releases/download/v2.1.6/app-arm64-v8a-release.apk" 
+  title="Github下载"><span>Github下载</span></a>
+
+<a class="btn-beautify button--animated purple larger" href="https://www.lanzoui.com/b07xydi4f" 
+  title="蓝奏云下载"><span>蓝奏云下载</span></a>
 
 <a class="btn-beautify button--animated purple larger" href="https://merlinblog.xyz/wiki/cfa.html" 
   title="Clash(R) for 安卓教程"><span>Clash(R) for 安卓教程</span></a>
@@ -145,17 +151,26 @@
 
 <h3 id="小飞机-WIN版"><a href="#小飞机-WIN版" class="headerlink" title="小飞机 WIN版"></a>小飞机 WIN版</h3><p>Windwos平台的 原版ShadowsocksR（简称SSR、小飞机和酸酸乳） 已经在 2017 年 7 月 24 日停止维护。</p>
 <p>Github 项目地址：<a href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases">https://github.com/HMBSbige/ShadowsocksR-Windows/releases</a></p>
-<a class="btn-beautify button--animated pink larger" href="https://pigu.lanzoui.com/i71KIidmpgj" 
-  title="小飞机【推荐】"><span>小飞机【推荐】</span></a>
+<a class="btn-beautify button--animated pink larger" href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/5.1.9/ShadowsocksR-net48-5.1.9.zip" 
+  title="Github下载"><span>Github下载</span></a>
+
+<a class="btn-beautify button--animated pink larger" href="https://paoluzhong.lanzoui.com/ico1u2j" 
+  title="蓝奏云下载"><span>蓝奏云下载</span></a>
 
 <h4 id="小飞机-MacOS版"><a href="#小飞机-MacOS版" class="headerlink" title="小飞机 MacOS版"></a>小飞机 MacOS版</h4><p>ShadowsocksX-NG-R 是一款运行在 macOS 上的科学上网工具。还在维护。</p>
 <p>Github 项目地址：<a href="https://github.com/wzdnzd/ShadowsocksX-NG-R/releases">https://github.com/wzdnzd/ShadowsocksX-NG-R/releases</a></p>
-<a class="btn-beautify button--animated pink larger" href="https://pigu.lanzoui.com/iDRuvhpv8zg" 
-  title="ShadowsocksX-NG-R"><span>ShadowsocksX-NG-R</span></a>
+<a class="btn-beautify button--animated pink larger" href="https://github.com/wzdnzd/ShadowsocksX-NG-R/releases/download/1.5.1/ShadowsocksX-NG.app.zip" 
+  title="Github下载"><span>Github下载</span></a>
+
+<a class="btn-beautify button--animated pink larger" href="https://yakult.lanzous.com/icgOphezhsb" 
+  title="蓝奏云下载"><span>蓝奏云下载</span></a>
 
 <h4 id="小飞机-安卓版"><a href="#小飞机-安卓版" class="headerlink" title="小飞机 安卓版"></a>小飞机 安卓版</h4><p>Github 项目地址：<a href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases">https://github.com/shadowsocksRb/shadowsocksRb-android/releases</a></p>
-<a class="btn-beautify button--animated pink larger" href="https://pigu.lanzoui.com/iFgwrhpv91i" 
-  title="酸酸乳【推荐】"><span>酸酸乳【推荐】</span></a>
+<a class="btn-beautify button--animated pink larger" href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases/download/v5.0.6R.1/v5.0.6R.1.apk" 
+  title="Github下载"><span>Github下载</span></a>
+
+<a class="btn-beautify button--animated pink larger" href="https://paoluzhong.lanzoui.com/ico20be" 
+  title="蓝奏云下载"><span>蓝奏云下载</span></a>
 
 ]]></content>
       <categories>
@@ -198,8 +213,9 @@
 <p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B1.jpg"></p>
 <p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B2.jpg"></p>
 <p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B3.jpg"></p>
-<p>下载地址：<a href="https://kunfei.lanzous.com/b0f7pt4ja">https://kunfei.lanzous.com/b0f7pt4ja</a></p>
-<p>书源：<a href="https://yck.mumuceo.com/yuedu/shuyuan/index.html">https://yck.mumuceo.com/yuedu/shuyuan/index.html</a></p>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>蓝奏云：<a href="https://kunfei.lanzous.com/b0f7pt4ja">https://kunfei.lanzous.com/b0f7pt4ja</a></p>
+<p>2000+书源：<a href="https://www.lanzoui.com/b01hqwmji">https://www.lanzoui.com/b01hqwmji</a></p>
+<p>书源库：<a href="https://yck.mumuceo.com/yuedu/shuyuan/index.html">https://yck.mumuceo.com/yuedu/shuyuan/index.html</a></p>
 ]]></content>
       <categories>
         <category>Android</category>
@@ -574,7 +590,7 @@
 <li>支持更换皮肤和自定义皮肤</li>
 <li>历史流量统计</li>
 </ul>
-<h4 id="下载链接："><a href="#下载链接：" class="headerlink" title="下载链接："></a>下载链接：</h4><p>官方下载：<a href="https://github.com/zhongyang219/TrafficMonitor/releases/latest">点击此处下载</a><br>蓝奏网盘：<a href="https://pigu.lanzoui.com/i4fh9h8n41i">https://pigu.lanzoui.com/i4fh9h8n41i</a></p>
+<h4 id="下载链接："><a href="#下载链接：" class="headerlink" title="下载链接："></a>下载链接：</h4><p>官方下载：<a href="https://github.com/zhongyang219/TrafficMonitor/releases/latest">点击此处下载</a></p>
 ]]></content>
       <categories>
         <category>Windows</category>
