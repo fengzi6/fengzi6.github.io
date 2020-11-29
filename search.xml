@@ -181,6 +181,54 @@
       </tags>
   </entry>
   <entry>
+    <title>TechSmith Camtasia Studio v2020.0.12/2019.0.10 破解版</title>
+    <url>/posts/e29e138f.html</url>
+    <content><![CDATA[<p>TechSmith Camtasia Studio，顶级屏幕录像视频编辑软件，最专业的屏幕录制及编辑软件！这款专业录屏与视频创作大型软件包含屏幕录像、视频编辑、视频菜单制作、视频录音配音、视频发布等系列强大功能。此汉化版录像机用语言包实现汉化，运行更稳定方便；安装汉化补丁实现Camtasia完美汉化，此汉化是目前网上最完整和最完善的汉化版本；汉化补丁采用安装方式，不再需要手动进行繁琐等操作，自动化完成软件汉化，素材库汉化，激活密钥导入操作，并已集成英文原版还原功能，方便你的需求。</p>
+<p><img src="/images/20201129201349.png"></p>
+<h3 id="软件特点"><a href="#软件特点" class="headerlink" title="软件特点"></a>软件特点</h3><ul>
+<li>录制您的屏幕：记录任何内容 – 您的整个屏幕或只是一个窗口。或者，添加您已有的视频，图像，音频和PowerPoint演示文稿。</li>
+<li>进行编辑：简单的时间表使编辑视频变得简单。合并或分割剪辑，修剪，加速或减慢镜头。然后，立即在视频编辑器中预览。</li>
+<li>添加效果：通过专业的视频编辑器效果为视频打磨。添加高光，动画，标题，过渡等。只需将效果拖放到时间线上即可。</li>
+</ul>
+<h3 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h3><a class="btn-beautify button--animated blue larger" href="https://drive.google.com/drive/folders/1OcXLa-2Q1j0PCp_-CiofffTG0TiPUxSP?usp=sharing" 
+  title="谷歌网盘"><i class="fas fa-cloud-download-alt fa-fw"></i><span>谷歌网盘</span></a>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>屏幕录像</tag>
+        <tag>Camtasia</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>班迪录屏 Bandicam v4.6.5 破解版</title>
+    <url>/posts/3e4d68fc.html</url>
+    <content><![CDATA[<p>Bandicam 是一款功能强大的屏幕录制工具，可以录制各种游戏高清视频。Bandicam 视频录制工具可在电脑上进行任意定制录制区域位置及大小，还可以在录制时添加自己自定义的 logo。Bandicam 游戏视频录制工具的优势在于对电脑配置要求低，一些配置较为低端点的电脑，通常在录制视过程中会出现不同步现象，使用这款工具就可以避免此问题。</p>
+<p><img src="/images/1566185329-101310.png"></p>
+<h3 id="功能特点："><a href="#功能特点：" class="headerlink" title="功能特点："></a>功能特点：</h3><p>　　DirectX/OpenGL程序录制;<br>　　电脑屏幕录制;<br>　　高清截图;<br>　　支持 MPEG-1、Xvid、MJPEG、MP2、PCM 编码程式;<br>　　FPS (每秒传输帧数)显示及管理工程;<br>　　被录制的视频容量很小;<br>　　能够 24小时以上录制视频;<br>　　能够录制 3840x2160 高清晰度的视频;<br>　　能够将录制的视频上传到 YouTube(720p/1080p);</p>
+<p><img src="/images/1566185578-100947.png"></p>
+<h3 id="安装说明："><a href="#安装说明：" class="headerlink" title="安装说明："></a>安装说明：</h3><p>运行「安装程序」默认安装即可。安装完成后不要启动程序，把Bandicam安装目录下的exe文件全部加到系统防火墙的出站规则里，屏蔽联网；默认安装路径：C:\Program Files（x86）\Bandicam依次进入“Windows设置?更新和安全?Windows安全?Windows Defender安全中心?防火墙和网络保护?高级设置?出站规则?新建规则”，此时会弹出新的窗口，选择“程序?下一步”，然后点击“浏览”按钮依次找到“bdcam.exe、bdcam_nonadmin.exe、bdfix.exe和uninstall.exe”的程序图标文件（注册前务必使用Windows防火墙屏蔽程序安装目录下bdcam.exe、bdcam_nonadmin.exe、bdfix.exe和uninstall.exe联网），点击“下一步”，选择“阻止连接”点击“下一步”，勾选“域、专用、公用”三个选项，点击“下一步”，随便取个名字，然后点击“完成”即可。</p>
+<p><strong>关于“应用程序无效，您需要重新安装Bandicam”的问题：</strong>如果运行Bandicam初次成功，第二次运行出现“应用程序无效，您需要重新安装Bandicam”的错误提示，请修改Hosts文件（Windows系统Hosts文件路径：C:\Windows\System32\drivers\etc\hosts），手动添加如下信息到Hosts进行屏蔽：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">127.0.0.1 bandicam.com</span><br><span class="line">127.0.0.1 ssl.bandisoft.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>请不要在翻墙时使用Bandicam，导致Bandicam程序破解失效，出现“应用程序出现严重问题，请尝试重新安装Bandicam”的错误提示，这类问题基本上都是翻墙时使用Bandicam导致的。</p>
+<h3 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h3><a class="btn-beautify button--animated blue larger" href="https://drive.google.com/file/d/12I21m8baEjheTOnTnFgxA6IMckhj3G5t/view?usp=sharing" 
+  title="谷歌网盘"><i class="fas fa-cloud-download-alt fa-fw"></i><span>谷歌网盘</span></a>
+
+
+
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Bandicam</tag>
+        <tag>屏幕录像</tag>
+        <tag>班迪录屏</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>显示器如何选择</title>
     <url>/posts/969d9b17.html</url>
     <content><![CDATA[<p>1000 元以上的市场开始分层，一部分是追求高刷新率的游戏类显示器，一部分是追求高色准的设计类显示器，这次我们优先照顾了需要高色准的朋友。根据我们的调研，95% 的用户的预算都不会超过 3500，我们这次的选品就是落在了 1000-4000 元的价位区间。不管你是设计、剪辑、后期、调色、摄影、Mac 用户，或者只是单纯想挑一个 4K 显示器，我们也都尽量照顾到了，希望这期可以解答你长久以来的一些疑问。</p>
@@ -754,14 +802,16 @@
 <p><img src="/images/Ventoy.png"></p>
 <p><img src="/images/Ventoy1.png"></p>
 <h4 id="五大优势"><a href="#五大优势" class="headerlink" title="五大优势"></a>五大优势</h4><p>广泛兼容：支持Windows10、Windows8.1、Windows7、WinPE系统及Ubuntu等多种Linux发行版<br>无需格盘：可以直接安装到U盘上且不需要将其他镜像刻录U盘，用户需要做的仅仅是将ISO复制到U盘中<br>启动兼容：无差别支持LegacyBIOS和UEFI模式，无论电脑主板什么模式Ventoy都可以自动检测识别<br>大型文件：支持将超过4GB的镜像文件复制到U盘，这点很重要因为Windows 10 镜像文件已超过4GB<br>其他优势：可并存多个操作系统镜像无需每次使用重新格盘刻录、启动过程支持写保护、版本升级不丢数据</p>
-<h4 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h4><ul>
-<li><a href="https://github.com/ventoy/Ventoy/releases">https://github.com/ventoy/Ventoy/releases</a></li>
-<li><a href="https://gitee.com/longpanda/Ventoy/releases/">https://gitee.com/longpanda/Ventoy/releases/</a></li>
-<li><a href="https://www.lanzoux.com/b01bd54gb">https://www.lanzoux.com/b01bd54gb</a> （蓝奏云）</li>
-<li><a href="https://cloud.189.cn/t/b2eMBrrmay2y">https://cloud.189.cn/t/b2eMBrrmay2y</a> （天翼云）      </li>
-<li><a href="https://pan.baidu.com/s/1UzHMzn6SToxHRYw7HR16_w">https://pan.baidu.com/s/1UzHMzn6SToxHRYw7HR16_w</a> 提取码: vtoy （百度网盘）</li>
-</ul>
-]]></content>
+<h4 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h4><p><a href="https://github.com/ventoy/Ventoy/releases">https://github.com/ventoy/Ventoy/releases</a></p>
+<p><a href="https://gitee.com/longpanda/Ventoy/releases/">https://gitee.com/longpanda/Ventoy/releases/</a></p>
+<a class="btn-beautify button--animated blue larger" href="https://pan.baidu.com/s/1UzHMzn6SToxHRYw7HR16_w" 
+  title="百度云盘"><i class="fas fa-cloud-download-alt fa-fw"></i><span>百度云盘</span></a>提取码: vtoy
+
+<a class="btn-beautify button--animated blue larger" href="https://www.lanzoux.com/b01bd54gb" 
+  title="蓝奏云"><i class="fas fa-cloud-download-alt fa-fw"></i><span>蓝奏云</span></a>
+
+<a class="btn-beautify button--animated blue larger" href="https://cloud.189.cn/t/b2eMBrrmay2y" 
+  title="天翼云"><i class="fas fa-cloud-download-alt fa-fw"></i><span>天翼云</span></a>]]></content>
       <categories>
         <category>Windows</category>
       </categories>
@@ -814,8 +864,8 @@
         <category>网盘</category>
       </categories>
       <tags>
-        <tag>免费</tag>
         <tag>合集</tag>
+        <tag>免费</tag>
       </tags>
   </entry>
   <entry>
@@ -1472,9 +1522,9 @@
         <category>杂七杂八</category>
       </categories>
       <tags>
-        <tag>合集</tag>
         <tag>接码</tag>
         <tag>短信</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
 </search>
