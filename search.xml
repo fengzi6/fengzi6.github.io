@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Adobe 2020 全家桶 Mac/Win 中文/英文破解版</title>
+    <title>Adobe 2021 全家桶 Mac/Win 中文/英文破解版</title>
     <url>/posts/ec0349fb.html</url>
     <content><![CDATA[<h3 id="Adobe-2020全家桶"><a href="#Adobe-2020全家桶" class="headerlink" title="Adobe 2020全家桶"></a><strong>Adobe 2020全家桶</strong></h3><p>Adobe 2020全家桶俺们求稳更新完毕，为小伙伴们带来丰富的Adobe家族产品，WiN/MAC都有！附大师版和独立安装包！不管你想要制图、剪视频还是做网页等，这里全都能满足你，无需激活，更精简操作流程，方便用户快速上手。内置Adobe Photoshop、Illustrator、Dreamweaver、InDesign、Lightroom、Animate、Audition等2020系列软件均已通过微博大神vposy修改，内置破解激活授权文件，采用独家技术封包优化处理，不集成ACC组件(不自动更新)一次安装永久授权。</p>
 <a id="more"></a>
@@ -181,6 +181,69 @@
       </tags>
   </entry>
   <entry>
+    <title>Everything搜索神器</title>
+    <url>/posts/4a1ff687.html</url>
+    <content><![CDATA[<h3 id="Everything是什么？"><a href="#Everything是什么？" class="headerlink" title="Everything是什么？"></a>Everything是什么？</h3><p>“Everything” 是 Windows 上一款搜索引擎，它能够基于文件名快速定文件和文件夹位置。</p>
+<p>不像 Windows 内置搜索，”Everything” 默认显示电脑上每个文件和文件夹 (就如其名 “Everything”)。</p>
+<p>您在搜索框输入的关键词将会筛选显示的文件和文件夹。</p>
+<p><img src="/images/20201130193753.png"></p>
+<p><img src="/images/20201130193810.png"></p>
+<h4 id="索引全部文件需要多长时间？"><a href="#索引全部文件需要多长时间？" class="headerlink" title="索引全部文件需要多长时间？"></a>索引全部文件需要多长时间？</h4><p>“Everything” 仅索引文件和文件夹名，一般仅需几秒便可建立其数据库。</p>
+<p>全新安装的 Windows 10 (大约 120,000 个文件) 仅需 1 秒即可索引完成。</p>
+<p>索引 1,000,000 个文件将需要大约 1 分钟。</p>
+<h4 id="能否搜索文件内容？"><a href="#能否搜索文件内容？" class="headerlink" title="能否搜索文件内容？"></a>能否搜索文件内容？</h4><p>可以，”Everything” 可以通过搜索函数 content: 来搜索文件内容。</p>
+<p>文件内容未被索引时，搜索内容将会很慢。</p>
+<h4 id="是否占用很多系统资源？"><a href="#是否占用很多系统资源？" class="headerlink" title="是否占用很多系统资源？"></a>是否占用很多系统资源？</h4><p>不，”Everything” 仅需要使用非常少的系统资源。</p>
+<p>全新安装的 Windows 10 (大约 120,000 个文件) 仅需要大约 14 MB 的内存以及不到 9 MB 的硬盘空间。</p>
+<p>1,000,000 个文件需要大约 75 MB 的内存和 45 MB 的硬盘空间。</p>
+<h4 id="能否监控文件系统变更？"><a href="#能否监控文件系统变更？" class="headerlink" title="能否监控文件系统变更？"></a>能否监控文件系统变更？</h4><p>可以，”Everything” 可以监控文件系统变更。</p>
+<p>搜索结果就可以反映出文件系统变更。</p>
+<h4 id="免费么？"><a href="#免费么？" class="headerlink" title="免费么？"></a>免费么？</h4><p>免费，”Everything” 是一款免费软件。</p>
+<h4 id="是否包含恶意、间谍软件或广告？"><a href="#是否包含恶意、间谍软件或广告？" class="headerlink" title="是否包含恶意、间谍软件或广告？"></a>是否包含恶意、间谍软件或广告？</h4><p>完全没有，”Everything” 不包含任何恶意、间谍软件或广告。</p>
+<h4 id="在非运行时是否会丢失文件系统变更？"><a href="#在非运行时是否会丢失文件系统变更？" class="headerlink" title="在非运行时是否会丢失文件系统变更？"></a>在非运行时是否会丢失文件系统变更？</h4><p>不会，”Everything” 在关闭和重新打开中不会丢失文件系统变更 (甚至系统重启也不会)。</p>
+<p>“Everything” 将在启动后更新数据库。</p>
+<h4 id="的系统要求是什么？"><a href="#的系统要求是什么？" class="headerlink" title="的系统要求是什么？"></a>的系统要求是什么？</h4><p>“Everything” 能在 Windows XP、Vista、Windows 7、Windows 8 和 Windows 10 上运行。</p>
+<p>NTFS 索引功能需要 Everything 服务或用管理员方式打开 “Everything”。</p>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><h4 id="如何搜索文件或文件夹？"><a href="#如何搜索文件或文件夹？" class="headerlink" title="如何搜索文件或文件夹？"></a>如何搜索文件或文件夹？</h4><p>在搜索框中输入文件或文件夹部分名称，搜索结果将会立即出现。</p>
+<h4 id="如何使用布尔运算符？"><a href="#如何使用布尔运算符？" class="headerlink" title="如何使用布尔运算符？"></a>如何使用布尔运算符？</h4><p><strong>AND</strong> 是默认布尔运算符。</p>
+<p>例如，搜索 abc 和 123，您可以：</p>
+<p>abc 123</p>
+<p>搜索两个搜索项中任意一个，在两项中加上 | 。</p>
+<p>例如，搜索 .jpg 或 .bmp，您可以：</p>
+<p>.jpg | .bmp</p>
+<p>搜索时排除某项，在其开头加上 ! 。</p>
+<p>例如，搜索除了 abc 以外的内容，您可以：</p>
+<p>!abc</p>
+<p>查看 Everything 基础搜索语法：</p>
+<p>在 <strong><em>“Everything”\</em></strong> 中，打开<strong>帮助</strong>菜单，点击<strong>搜索语法</strong>。</p>
+<h4 id="如何使用通配符？"><a href="#如何使用通配符？" class="headerlink" title="如何使用通配符？"></a>如何使用通配符？</h4><p>搜索关键词中使用通配符 * 将会匹配任意数量的任意字符。</p>
+<p>例如，搜索以 e 开头并以 g 结尾的文件和文件夹：e*g</p>
+<p>搜索关键词中使用通配符 ? 将会匹配任一字符。</p>
+<p>例如，搜索含有两个字符扩展名的文件：*.??</p>
+<h4 id="如何搜索包含空格的关键词？"><a href="#如何搜索包含空格的关键词？" class="headerlink" title="如何搜索包含空格的关键词？"></a>如何搜索包含空格的关键词？</h4><p>搜索包含空格的关键词，请用双引号。</p>
+<p>例如，搜索关键词 foo<space>bar：”foo bar”</p>
+<h4 id="如何搜索文件类型？"><a href="#如何搜索文件类型？" class="headerlink" title="如何搜索文件类型？"></a>如何搜索文件类型？</h4><p>搜索文件类型，请在搜索框输入扩展名，</p>
+<p>例如，搜索 mp3 文件，输入 *.mp3 即可。</p>
+<p>搜索多个文件类型，请使用 | 分隔，</p>
+<p>例如：*.bmp|*.jpg 将会搜索 bmp 或 jpg 类型文件。</p>
+<h4 id="如何搜索指定位置的文件和文件夹？"><a href="#如何搜索指定位置的文件和文件夹？" class="headerlink" title="如何搜索指定位置的文件和文件夹？"></a>如何搜索指定位置的文件和文件夹？</h4><p>搜索指定位置的文件和文件夹，请在搜索框中使用 \。</p>
+<p>例如，在 downloads 文件夹中搜索全部 mp3 文件：downloads\ .mp3</p>
+<p>您也可以在搜索菜单中启用匹配路径并包含路径到搜索关键词中。</p>
+<p>例如，启用匹配路径并在 downloads 文件夹中搜索全部 avi 文件：downloads .avi</p>
+<h3 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h3><a class="btn-beautify button--animated blue larger" href="https://www.voidtools.com/Everything-1.4.1.1000.x64.zip" 
+  title="下载便携版 64 位"><i class="fas fa-cloud-download-alt fa-fw"></i><span>下载便携版 64 位</span></a>
+
+<a class="btn-beautify button--animated blue larger" href="https://www.voidtools.com/Everything-1.4.1.1000.x64-Setup.exe" 
+  title="下载安装版 64 位"><i class="fas fa-cloud-download-alt fa-fw"></i><span>下载安装版 64 位</span></a>]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Everything</tag>
+        <tag>搜索</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>TechSmith Camtasia Studio v2020.0.12/2019.0.10 破解版</title>
     <url>/posts/e29e138f.html</url>
     <content><![CDATA[<p>TechSmith Camtasia Studio，顶级屏幕录像视频编辑软件，最专业的屏幕录制及编辑软件！这款专业录屏与视频创作大型软件包含屏幕录像、视频编辑、视频菜单制作、视频录音配音、视频发布等系列强大功能。此汉化版录像机用语言包实现汉化，运行更稳定方便；安装汉化补丁实现Camtasia完美汉化，此汉化是目前网上最完整和最完善的汉化版本；汉化补丁采用安装方式，不再需要手动进行繁琐等操作，自动化完成软件汉化，素材库汉化，激活密钥导入操作，并已集成英文原版还原功能，方便你的需求。</p>
@@ -294,10 +357,10 @@
 <p>下载地址：<a href="https://ubaq.lanzous.com/s/KinhDown">https://ubaq.lanzous.com/s/KinhDown</a></p>
 ]]></content>
       <categories>
-        <category>网盘</category>
+        <category>Windows</category>
       </categories>
       <tags>
-        <tag>百度网盘</tag>
+        <tag>网盘</tag>
         <tag>KinhDown</tag>
       </tags>
   </entry>
@@ -864,8 +927,8 @@
         <category>网盘</category>
       </categories>
       <tags>
-        <tag>合集</tag>
         <tag>免费</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -1017,8 +1080,8 @@
         <category>网盘</category>
       </categories>
       <tags>
-        <tag>谷歌</tag>
         <tag>免费</tag>
+        <tag>谷歌</tag>
       </tags>
   </entry>
   <entry>
@@ -1406,8 +1469,8 @@
         <category>网盘</category>
       </categories>
       <tags>
-        <tag>合集</tag>
         <tag>网盘</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -1522,9 +1585,9 @@
         <category>杂七杂八</category>
       </categories>
       <tags>
+        <tag>合集</tag>
         <tag>接码</tag>
         <tag>短信</tag>
-        <tag>合集</tag>
       </tags>
   </entry>
 </search>
