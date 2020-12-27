@@ -52,18 +52,6 @@
 <p>【亿点点流量订阅】7.99元/月、月流量为 4096G；年付69.9元。</p>
 </li>
 </ul>
-<h3 id="小机场「V2RAY」"><a href="#小机场「V2RAY」" class="headerlink" title="小机场「V2RAY」"></a>小机场「V2RAY」</h3><blockquote>
-<p>中转，地区多，解锁流媒体。</p>
-<p>订阅季付赠送一周时长(工单申请)</p>
-<p><a href="https://小机场.com/#/register?code=HFsLUyQj">https://小机场.com/#/register?code=HFsLUyQj</a></p>
-</blockquote>
-<ul>
-<li><p>套餐限制：3设备</p>
-<p>【一点点流量订阅】9.9元/月、月流量为 1024G；</p>
-<p>【有点多流量订阅】18.8元/月、月流量为 2048G；</p>
-<p>【亿点点流量订阅】28.8元/月、月流量为 4096G；</p>
-</li>
-</ul>
 <h3 id="奇异のtravel"><a href="#奇异のtravel" class="headerlink" title="奇异のtravel"></a>奇异のtravel</h3><blockquote>
 <p>使用过2年，这个机场有四五年了。</p>
 <p>我用过10元和20的区别不大。</p>
@@ -151,26 +139,26 @@
 
 <h3 id="小飞机-WIN版"><a href="#小飞机-WIN版" class="headerlink" title="小飞机 WIN版"></a>小飞机 WIN版</h3><p>Windwos平台的 原版ShadowsocksR（简称SSR、小飞机和酸酸乳） 已经在 2017 年 7 月 24 日停止维护。</p>
 <p>Github 项目地址：<a href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases">https://github.com/HMBSbige/ShadowsocksR-Windows/releases</a></p>
-<a class="btn-beautify button--animated pink larger" href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/5.1.9/ShadowsocksR-net48-5.1.9.zip" 
-  title="Github下载"><span>Github下载</span></a>
+<a class="btn-beautify button--animated blue larger" href="https://github.com/HMBSbige/ShadowsocksR-Windows/releases/download/5.1.9/ShadowsocksR-net48-5.1.9.zip" 
+  title="Github下载"><i class="fas fa-cloud-download-alt fa-fw"></i><span>Github下载</span></a>
 
-<a class="btn-beautify button--animated pink larger" href="https://paoluzhong.lanzoui.com/ico1u2j" 
-  title="蓝奏云下载"><span>蓝奏云下载</span></a>
+<a class="btn-beautify button--animated blue larger" href="https://paoluzhong.lanzoui.com/ico1u2j" 
+  title="蓝奏云"><i class="fas fa-cloud-download-alt fa-fw"></i><span>蓝奏云</span></a>
 
 <h4 id="小飞机-MacOS版"><a href="#小飞机-MacOS版" class="headerlink" title="小飞机 MacOS版"></a>小飞机 MacOS版</h4><p>ShadowsocksX-NG-R 是一款运行在 macOS 上的科学上网工具。还在维护。</p>
 <p>Github 项目地址：<a href="https://github.com/wzdnzd/ShadowsocksX-NG-R/releases">https://github.com/wzdnzd/ShadowsocksX-NG-R/releases</a></p>
-<a class="btn-beautify button--animated pink larger" href="https://github.com/wzdnzd/ShadowsocksX-NG-R/releases/download/1.5.1/ShadowsocksX-NG.app.zip" 
-  title="Github下载"><span>Github下载</span></a>
+<a class="btn-beautify button--animated blue larger" href="https://github.com/wzdnzd/ShadowsocksX-NG-R/releases/download/1.5.1/ShadowsocksX-NG.app.zip" 
+  title="Github下载"><i class="fas fa-cloud-download-alt fa-fw"></i><span>Github下载</span></a>
 
-<a class="btn-beautify button--animated pink larger" href="https://yakult.lanzous.com/icgOphezhsb" 
-  title="蓝奏云下载"><span>蓝奏云下载</span></a>
+<a class="btn-beautify button--animated blue larger" href="https://yakult.lanzous.com/icgOphezhsb" 
+  title="蓝奏云"><i class="fas fa-cloud-download-alt fa-fw"></i><span>蓝奏云</span></a>
 
 <h4 id="小飞机-安卓版"><a href="#小飞机-安卓版" class="headerlink" title="小飞机 安卓版"></a>小飞机 安卓版</h4><p>Github 项目地址：<a href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases">https://github.com/shadowsocksRb/shadowsocksRb-android/releases</a></p>
-<a class="btn-beautify button--animated pink larger" href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases/download/v5.0.6R.1/v5.0.6R.1.apk" 
-  title="Github下载"><span>Github下载</span></a>
+<a class="btn-beautify button--animated blue larger" href="https://github.com/shadowsocksRb/shadowsocksRb-android/releases/download/v5.0.6R.1/v5.0.6R.1.apk" 
+  title="Github下载"><i class="fas fa-cloud-download-alt fa-fw"></i><span>Github下载</span></a>
 
-<a class="btn-beautify button--animated pink larger" href="https://paoluzhong.lanzoui.com/ico20be" 
-  title="蓝奏云下载"><span>蓝奏云下载</span></a>
+<a class="btn-beautify button--animated blue larger" href="https://paoluzhong.lanzoui.com/ico20be" 
+  title="蓝奏云"><i class="fas fa-cloud-download-alt fa-fw"></i><span>蓝奏云</span></a>
 
 ]]></content>
       <categories>
@@ -265,7 +253,7 @@
       </tags>
   </entry>
   <entry>
-    <title>班迪录屏 Bandicam v4.6.5 破解版</title>
+    <title>班迪录屏 Bandicam v5.0.0.1796 破解版</title>
     <url>/posts/3e4d68fc.html</url>
     <content><![CDATA[<p>Bandicam 是一款功能强大的屏幕录制工具，可以录制各种游戏高清视频。Bandicam 视频录制工具可在电脑上进行任意定制录制区域位置及大小，还可以在录制时添加自己自定义的 logo。Bandicam 游戏视频录制工具的优势在于对电脑配置要求低，一些配置较为低端点的电脑，通常在录制视过程中会出现不同步现象，使用这款工具就可以避免此问题。</p>
 <p><img src="/images/1566185329-101310.png"></p>
@@ -276,11 +264,11 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">127.0.0.1 bandicam.com</span><br><span class="line">127.0.0.1 ssl.bandisoft.com</span><br></pre></td></tr></table></figure>
 
 <h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><p>请不要在翻墙时使用Bandicam，导致Bandicam程序破解失效，出现“应用程序出现严重问题，请尝试重新安装Bandicam”的错误提示，这类问题基本上都是翻墙时使用Bandicam导致的。</p>
-<h3 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h3><a class="btn-beautify button--animated blue larger" href="https://drive.google.com/file/d/12I21m8baEjheTOnTnFgxA6IMckhj3G5t/view?usp=sharing" 
+<h3 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h3><a class="btn-beautify button--animated blue larger" href="https://drive.google.com/file/d/1bvcFk2vcBoBaNcRb5KEBsQKVAz4Uilnp/view?usp=sharing" 
   title="谷歌网盘"><i class="fas fa-cloud-download-alt fa-fw"></i><span>谷歌网盘</span></a>
 
-
-
+<a class="btn-beautify button--animated blue larger" href="https://ws28.cn/f/4blur1kopvw" 
+  title="文叔叔"><i class="fas fa-cloud-download-alt fa-fw"></i><span>文叔叔</span></a>
 ]]></content>
       <categories>
         <category>Windows</category>
@@ -324,10 +312,14 @@
 <p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B1.jpg"></p>
 <p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B2.jpg"></p>
 <p><img src="https://raw.githubusercontent.com/gedoor/gedoor.github.io/master/images/%E9%98%85%E8%AF%BB%E7%AE%80%E4%BB%8B3.jpg"></p>
-<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>蓝奏云：<a href="https://kunfei.lanzous.com/b0f7pt4ja">https://kunfei.lanzous.com/b0f7pt4ja</a></p>
-<p>2000+书源：<a href="https://www.lanzoui.com/b01hqwmji">https://www.lanzoui.com/b01hqwmji</a></p>
-<p>书源库：<a href="https://yck.mumuceo.com/yuedu/shuyuan/index.html">https://yck.mumuceo.com/yuedu/shuyuan/index.html</a></p>
-]]></content>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><a class="btn-beautify button--animated blue larger" href="https://kunfei.lanzous.com/b0f7pt4ja" 
+  title="蓝奏云"><i class="fas fa-cloud-download-alt fa-fw"></i><span>蓝奏云</span></a>
+
+<a class="btn-beautify button--animated blue larger" href="https://www.lanzoui.com/b01hqwmji" 
+  title="2000+书源"><i class="fas fa-cloud-download-alt fa-fw"></i><span>2000+书源</span></a>
+
+<a class="btn-beautify button--animated blue larger" href="https://kunfei.lanzous.com/b0f7pt4ja" 
+  title="书源库"><i class="fas fa-cloud-download-alt fa-fw"></i><span>书源库</span></a>]]></content>
       <categories>
         <category>Android</category>
       </categories>
@@ -354,8 +346,8 @@
 <p>版本:1.8.79<br>内容:更改:更新程序下载全部重写！<br>（请手动下载更新包更新，否则以后将不再提供自动更新服务）</p>
 <p>版本:1.8.76<br>内容:更改:1.捐赠系统UI<br>2.Magnet与Torrent下载全部重写！<br>修复:下载完成列表卡空白</p>
 <p>官方文档：<a href="http://kinhdown.kinh.cc/">http://kinhdown.kinh.cc/</a></p>
-<p>下载地址：<a href="https://ubaq.lanzous.com/s/KinhDown">https://ubaq.lanzous.com/s/KinhDown</a></p>
-]]></content>
+<a class="btn-beautify button--animated blue larger" href="https://ubaq.lanzous.com/s/KinhDown" 
+  title="蓝奏云"><i class="fas fa-cloud-download-alt fa-fw"></i><span>蓝奏云</span></a>]]></content>
       <categories>
         <category>Windows</category>
       </categories>
@@ -927,8 +919,8 @@
         <category>网盘</category>
       </categories>
       <tags>
-        <tag>免费</tag>
         <tag>合集</tag>
+        <tag>免费</tag>
       </tags>
   </entry>
   <entry>
@@ -1585,9 +1577,9 @@
         <category>杂七杂八</category>
       </categories>
       <tags>
-        <tag>合集</tag>
         <tag>接码</tag>
         <tag>短信</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
 </search>
