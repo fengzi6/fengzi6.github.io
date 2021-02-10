@@ -311,9 +311,9 @@
     <category term="网盘" scheme="http://toss.gq/categories/%E7%BD%91%E7%9B%98/"/>
     
     
-    <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
-    
     <category term="合集" scheme="http://toss.gq/tags/%E5%90%88%E9%9B%86/"/>
+    
+    <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
     
   </entry>
   
@@ -447,9 +447,9 @@
     <category term="网盘" scheme="http://toss.gq/categories/%E7%BD%91%E7%9B%98/"/>
     
     
-    <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
-    
     <category term="谷歌" scheme="http://toss.gq/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+    <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
     
   </entry>
   
