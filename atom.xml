@@ -64,9 +64,9 @@
     <category term="Windows" scheme="http://toss.gq/categories/Windows/"/>
     
     
-    <category term="Camtasia" scheme="http://toss.gq/tags/Camtasia/"/>
-    
     <category term="屏幕录像" scheme="http://toss.gq/tags/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%83%8F/"/>
+    
+    <category term="Camtasia" scheme="http://toss.gq/tags/Camtasia/"/>
     
   </entry>
   
@@ -91,9 +91,9 @@
     <category term="Windows" scheme="http://toss.gq/categories/Windows/"/>
     
     
-    <category term="屏幕录像" scheme="http://toss.gq/tags/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%83%8F/"/>
-    
     <category term="Bandicam" scheme="http://toss.gq/tags/Bandicam/"/>
+    
+    <category term="屏幕录像" scheme="http://toss.gq/tags/%E5%B1%8F%E5%B9%95%E5%BD%95%E5%83%8F/"/>
     
     <category term="班迪录屏" scheme="http://toss.gq/tags/%E7%8F%AD%E8%BF%AA%E5%BD%95%E5%B1%8F/"/>
     
@@ -311,9 +311,9 @@
     <category term="网盘" scheme="http://toss.gq/categories/%E7%BD%91%E7%9B%98/"/>
     
     
-    <category term="合集" scheme="http://toss.gq/tags/%E5%90%88%E9%9B%86/"/>
-    
     <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+    <category term="合集" scheme="http://toss.gq/tags/%E5%90%88%E9%9B%86/"/>
     
   </entry>
   
@@ -385,7 +385,7 @@
     <link href="http://toss.gq/posts/85e85e2c.html"/>
     <id>http://toss.gq/posts/85e85e2c.html</id>
     <published>2020-07-05T02:49:33.000Z</published>
-    <updated>2021-02-05T12:42:07.352Z</updated>
+    <updated>2021-02-18T05:52:14.832Z</updated>
     
     
       
@@ -447,9 +447,9 @@
     <category term="网盘" scheme="http://toss.gq/categories/%E7%BD%91%E7%9B%98/"/>
     
     
-    <category term="谷歌" scheme="http://toss.gq/tags/%E8%B0%B7%E6%AD%8C/"/>
-    
     <category term="免费" scheme="http://toss.gq/tags/%E5%85%8D%E8%B4%B9/"/>
+    
+    <category term="谷歌" scheme="http://toss.gq/tags/%E8%B0%B7%E6%AD%8C/"/>
     
   </entry>
   

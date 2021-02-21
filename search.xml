@@ -67,7 +67,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="奇异のtravel「SSR」"><a href="#奇异のtravel「SSR」" class="headerlink" title="奇异のtravel「SSR」"></a>奇异のtravel「SSR」</h3><blockquote>
+<h3 id="奇异のtravel「SSR、V2RAY（需要转换）」"><a href="#奇异のtravel「SSR、V2RAY（需要转换）」" class="headerlink" title="奇异のtravel「SSR、V2RAY（需要转换）」"></a>奇异のtravel「SSR、V2RAY（需要转换）」</h3><blockquote>
 <p>使用过2年，这个机场有四五年了。</p>
 <p>我用过10元和20的区别不大。</p>
 <p><a href="https://www.ustravel.cloud/aff.php?aff=319">https://www.ustravel.cloud/aff.php?aff=319</a></p>
@@ -87,11 +87,12 @@
 <p><a href="https://www.q88q.site/auth/register?code=VIP">https://www.q88q.site/auth/register?code=VIP</a> </p>
 </blockquote>
 <ul>
-<li>套餐限制：10设备，可以找10个人平摊费用。<ul>
-<li>20元/31天、总流量为 225G；</li>
-<li>55元/91天、总流量为 750G；</li>
-<li>100元/180天、总流量为 1650G；</li>
-<li>190元/360天、总流量为 3600G；</li>
+<li>套餐，可以找人平摊费用。<ul>
+<li>25元/31天、10个设备、总流量为 225G；</li>
+<li>70元/91天、15个设备、总流量为 750G；</li>
+<li>135元/180天、20个设备、总流量为 1650G；</li>
+<li>240元/360天、25个设备、总流量为 3600G；</li>
+<li>400元/360天、50个设备、总流量为 7200G；</li>
 </ul>
 </li>
 </ul>
@@ -212,8 +213,8 @@
         <category>Windows</category>
       </categories>
       <tags>
-        <tag>Camtasia</tag>
         <tag>屏幕录像</tag>
+        <tag>Camtasia</tag>
       </tags>
   </entry>
   <entry>
@@ -237,8 +238,8 @@
         <category>Windows</category>
       </categories>
       <tags>
-        <tag>屏幕录像</tag>
         <tag>Bandicam</tag>
+        <tag>屏幕录像</tag>
         <tag>班迪录屏</tag>
       </tags>
   </entry>
@@ -855,8 +856,8 @@
         <category>网盘</category>
       </categories>
       <tags>
-        <tag>合集</tag>
         <tag>免费</tag>
+        <tag>合集</tag>
       </tags>
   </entry>
   <entry>
@@ -1008,8 +1009,8 @@
         <category>网盘</category>
       </categories>
       <tags>
-        <tag>谷歌</tag>
         <tag>免费</tag>
+        <tag>谷歌</tag>
       </tags>
   </entry>
   <entry>
@@ -1512,9 +1513,9 @@
         <category>杂七杂八</category>
       </categories>
       <tags>
+        <tag>合集</tag>
         <tag>接码</tag>
         <tag>短信</tag>
-        <tag>合集</tag>
       </tags>
   </entry>
 </search>
